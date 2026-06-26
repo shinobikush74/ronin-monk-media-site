@@ -53,7 +53,9 @@
 | RPT-039 | ../ros/agents/PROPOSAL_AGENT.md | 012 | Proposal Agent — Proposal Officer, 24-hour turnaround standard, 12-element spec | 2026-06-26 | Awaiting approval |
 | RPT-040 | ../ros/agents/PUBLISHING_AGENT.md | 012 | Publishing Agent — Publishing Officer, multi-platform adaptation standard, 12-element spec | 2026-06-26 | Awaiting approval |
 | RPT-041 | ../ros/agents/MARKET_INTELLIGENCE_AGENT.md | 012 | Market Intelligence Agent — one actionable signal per day standard, 12-element spec | 2026-06-26 | Awaiting approval |
-| RPT-042 | ../ros/agents/CRM_AGENT.md | 012 | CRM Agent — CRM Officer, no relationship lost to neglect standard, 12-element spec | 2026-06-26 | Awaiting approval |
+| RPT-042 | ../ros/agents/CRM_AGENT.md | 012 | CRM Agent — CRM Officer, no relationship lost to neglect standard, 12-element spec | 2026-06-26 | Active |
+| RPT-043 | reports/SPR_012A_RELEASE_PACKET.md | 012A | Constitution v1.3 — Leverage Principle · Stewardship Principle · Daily Council Principle · Phase IV Execution declared | 2026-06-26 | Complete |
+| RPT-044 | — | 012B | Constitution v1.4 LOCKED — Compounding Principle added | 2026-06-26 | Complete |
 
 ---
 

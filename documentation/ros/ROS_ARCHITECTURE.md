@@ -2,6 +2,8 @@
 ## Ronin Operating System v1.0 — Structural Architecture
 **Established:** 2026-06-26
 **Status:** Active — governs all system design decisions within ROS
+**Governing Constitution:** `CONSTITUTION_OF_RONIN_MONK_MEDIA.md` v1.3 — **LOCKED**
+**Current Phase:** **PHASE IV — EXECUTION**
 
 ---
 

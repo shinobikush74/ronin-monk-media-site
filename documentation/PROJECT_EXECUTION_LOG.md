@@ -133,6 +133,30 @@
 
 ---
 
+## TASK-028 | Sprint 012B — Constitution v1.4 (Compounding Principle)
+**Date:** 2026-06-26
+**Trigger:** Creator directive — The Compounding Principle amendment.
+**Amendment:** Compounding Principle — inserted after Leverage Principle. Relationship → Trust → Opportunity → Prosperity → Stewardship. Build for momentum, durability, generations.
+**Constitution:** v1.3 → v1.4 — **LOCKED**
+**Files updated:** `CONSTITUTION_OF_RONIN_MONK_MEDIA.md`, `PROJECT_STATUS.md`, `PROJECT_EXECUTION_LOG.md`, `REPORT_INDEX.md`
+
+---
+
+## TASK-027 | Sprint 012A — Constitution v1.3 (Operation Forge Order 001)
+**Date:** 2026-06-26
+**Trigger:** Creator directive — Operation Forge Order 001. Final constitutional revision before Execution Phase.
+**Amendments added:**
+- Leverage Principle (after Revenue Principle) — every hour should create value beyond that hour
+- Stewardship Principle (before Governing Hierarchy) — Creative Order exists in stewardship, not ownership
+- Daily Council Principle (before Governing Hierarchy) — five daily questions, Daily Council as heartbeat of ROS
+**Constitution:** v1.2 → v1.3 — **LOCKED**
+**Phase declared:** Phase IV — Execution. Mission Priority: Revenue · Clients · Publishing · Collector Growth · Global Expansion · Automation · ROS. Infrastructure is maintenance only.
+**Documents updated:** `CONSTITUTION_OF_RONIN_MONK_MEDIA.md`, `REVENUE_CONSTITUTION.md` (v1.2), `CEO_DASHBOARD.md`, `PROJECT_STATUS.md`, `ADR.md` (ADR-024), `ROS_ARCHITECTURE.md`
+**Release Packet:** `SPR_012A_RELEASE_PACKET.md`
+**Status:** Complete — Awaiting Creator approval
+
+---
+
 ## TASK-026 | Sprint 012 — Operation Forge (Ronin Operating System v1.0)
 **Date:** 2026-06-26
 **Trigger:** Creator directive — Operation Forge. "Build the foundation that will allow the Creative Order to scale globally for decades."

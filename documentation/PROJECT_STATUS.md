@@ -2,11 +2,12 @@
 **Platform:** RMHQ Creator OS
 **Last Updated:** 2026-06-26
 **Current Version:** v3.0
-**Governing Document:** `documentation/CONSTITUTION_OF_RONIN_MONK_MEDIA.md` — Version 1.2
-**Ronin Operating System:** `documentation/ros/RONIN_OPERATING_SYSTEM.md` — ROS v1.0 — Awaiting Creator approval
+**Governing Document:** `documentation/CONSTITUTION_OF_RONIN_MONK_MEDIA.md` — Version 1.4 — **LOCKED**
+**Ronin Operating System:** `documentation/ros/RONIN_OPERATING_SYSTEM.md` — ROS v1.0
+**Current Phase:** **PHASE IV — EXECUTION**
 **Revenue Constitution:** `documentation/REVENUE_CONSTITUTION.md` — Version 1.0 — governs all sprint prioritization
 **Brand Reference:** `documentation/BRAND_DOCTRINE.md`
-**Current Phase:** Revenue Acceleration — infrastructure is maintenance, revenue/audience/publishing/community are primary missions
+**Current Phase:** **PHASE IV — EXECUTION** — Revenue · Clients · Publishing · Collector Growth · Global Expansion · Automation · ROS
 
 ---
 
@@ -44,7 +45,9 @@
 | 009G | Production Deployment + Audit | Complete | 2026-06-26 | Netlify reconnected. All pages audited live. CSS/nav/products/blog/admin all verified. **v2.0 Production Stable.** |
 | 010 | Immersive Transformation — Blueprint | **APPROVED** | 2026-06-26 | Doctrine of Remembrance permanent canon. Eight doctrine documents. Fifth Frequency added. All doc prerequisites complete. 010A implementation authorized — superseded by Operation First Revenue. |
 | 011 | Operation First Revenue — Revenue Command Center | **Complete** | 2026-06-26 | Revenue Command Center rebuilt. Daily CEO Dashboard. Sales Pipeline (8 stages). Collector Pipeline (6 tiers). Client Pipeline (8 stages). Revenue by Stream, Forecast, Business Intelligence tabs. Sprint 011 CSS (.s11-*). |
-| 012 | Operation Forge — Ronin Operating System v1.0 | **Complete** | 2026-06-26 | ROS v1.0 established. 12 foundational documents created. 5 agent specs (CRO, Proposal, Publishing, Market Intelligence, CRM). Constitution amended (Daily Builder Principle + Agent Principle). Executive Council, Daily Council Protocol, NEXT_100_PROTOCOL, LEVERAGE_FRAMEWORK, ROS_ARCHITECTURE, AGENT_STANDARD complete. Awaiting Creator approval before implementation. |
+| 012 | Operation Forge — Ronin Operating System v1.0 | **Complete** | 2026-06-26 | ROS v1.0 established. 12 foundational documents created. 5 agent specs (CRO, Proposal, Publishing, Market Intelligence, CRM). Constitution amended (Daily Builder Principle + Agent Principle). Executive Council, Daily Council Protocol, NEXT_100_PROTOCOL, LEVERAGE_FRAMEWORK, ROS_ARCHITECTURE, AGENT_STANDARD complete. |
+| 012A | Constitution v1.3 — Operation Forge Order 001 | **Complete** | 2026-06-26 | Three amendments: Leverage Principle · Stewardship Principle · Daily Council Principle. Phase IV — Execution declared. |
+| 012B | Constitution v1.4 — Compounding Principle | **Complete** | 2026-06-26 | Amendment: Compounding Principle. Constitution LOCKED at v1.4. |
 
 ---
 

@@ -187,3 +187,11 @@
 **Decision:** ROS v1.0 uses a strict five-layer architecture: Foundation (Documents) → Operations (Protocols) → Agents (Execution) → Councils (Oversight) → Constitution (Authority). Information flows up for reporting and down for direction. No agent may bypass its council to issue directives. No council may amend the Constitution.
 **Rationale:** A system that allows any component to act outside its layer creates governance failures — agents accumulating authority they were never granted, councils drifting from their scope. The layer architecture enforces the Creator's authority by making every path to action traceable through the hierarchy.
 **Status:** Active — enforced in all agent Authority sections and Executive Council definitions (`documentation/ros/ROS_ARCHITECTURE.md`).
+
+---
+
+## ADR-024 | Constitution v1.3 LOCKED — Phase IV Execution
+**Sprint:** 012A (Operation Forge Order 001)
+**Decision:** The Constitution is locked at Version 1.3. No further amendments shall be made without an explicit Creator directive marking a new constitutional period. The Creative Order enters Phase IV — Execution. Infrastructure is maintenance only. Mission priority order: Revenue · Clients · Publishing · Collector Growth · Global Expansion · Automation · ROS.
+**Rationale:** A constitution that changes frequently is not a constitution. With three principles added in Operation Forge (Leverage, Stewardship, Daily Council), the governing doctrine is now complete for the Execution Phase. Locking prevents scope drift — sprints now execute against the doctrine rather than continuing to define it.
+**Status:** Active — permanent. Phase IV execution begins on Creator approval of this release packet.

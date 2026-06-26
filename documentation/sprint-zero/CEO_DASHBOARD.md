@@ -9,7 +9,7 @@
 
 | Document | Location | Authority |
 |----------|----------|-----------|
-| **Constitution of Ronin Monk Media** | `documentation/CONSTITUTION_OF_RONIN_MONK_MEDIA.md` | **SUPREME** — all decisions defer here (v1.2) |
+| **Constitution of Ronin Monk Media** | `documentation/CONSTITUTION_OF_RONIN_MONK_MEDIA.md` | **SUPREME — LOCKED v1.3** — all decisions defer here |
 | **Revenue Constitution** | `documentation/REVENUE_CONSTITUTION.md` | **OPERATIONAL** — governs all sprint prioritization (v1.1) |
 | **Ronin Operating System** | `documentation/ros/RONIN_OPERATING_SYSTEM.md` | **SYSTEMS** — daily operating rhythm, agents, councils (v1.0) |
 | Brand Doctrine | `documentation/BRAND_DOCTRINE.md` | Applied doctrine reference |

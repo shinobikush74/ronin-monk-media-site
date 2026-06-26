@@ -1,5 +1,5 @@
 # CONSTITUTION OF RONIN MONK MEDIA
-## Version 1.2 — Permanent Constitutional Authority
+## Version 1.4 — LOCKED — Permanent Constitutional Authority
 **Established:** 2026-06-26
 **Established by:** LaRon Monte Adams (Creator / CEO)
 **Status:** HIGHEST GOVERNING DOCUMENT
@@ -186,6 +186,60 @@ If it accomplishes none of these, it belongs in the backlog.
 
 ---
 
+## THE LEVERAGE PRINCIPLE
+*(Constitutional Amendment — 2026-06-26)*
+
+Every hour should create value beyond that hour.
+
+A story continues to teach.
+
+A song continues to inspire.
+
+A website continues to attract.
+
+An agent continues to assist.
+
+A system continues to improve.
+
+Knowledge continues to compound.
+
+The Creative Order builds assets that continue working long after they are created.
+
+When choosing between two worthy efforts, favor the one whose value compounds over time.
+
+The purpose of leverage is not to work less.
+
+The purpose of leverage is to create more good with the same finite life.
+
+---
+
+## THE COMPOUNDING PRINCIPLE
+*(Constitutional Amendment — 2026-06-26)*
+
+The Creative Order favors work that compounds.
+
+A relationship compounds into trust.
+
+Trust compounds into opportunity.
+
+Opportunity compounds into prosperity.
+
+Prosperity compounds into stewardship.
+
+Every system should become stronger through continued use.
+
+Every lesson should improve future decisions.
+
+Every success should increase the ability to serve others.
+
+Build for momentum.
+
+Build for durability.
+
+Build for generations.
+
+---
+
 ## THE NEXT PHASE
 
 Infrastructure work becomes maintenance.
@@ -250,6 +304,50 @@ They do not define it.
 
 ---
 
+## THE STEWARDSHIP PRINCIPLE
+*(Constitutional Amendment — 2026-06-26)*
+
+The Creative Order exists in stewardship, not ownership.
+
+Ideas are cultivated.
+
+Knowledge is preserved.
+
+Opportunities are shared.
+
+Success creates responsibility.
+
+As the Order grows stronger, it creates opportunities for others to discover, develop, and realize their own creative potential.
+
+The measure of success is not only what we build, but what others are able to build because we refused to stop building.
+
+---
+
+## THE DAILY COUNCIL PRINCIPLE
+*(Constitutional Amendment — 2026-06-26)*
+
+No day is promised.
+
+Therefore no day shall begin without intention.
+
+Each day the Creative Order convenes its Daily Council.
+
+Daily Questions:
+
+- What is the fastest ethical path to the next $100?
+- What shall we publish today?
+- Who shall we help today?
+- What system shall we improve today?
+- What shall we build today that still matters five years from now?
+
+Every day begins with purpose.
+
+Every day ends with reflection.
+
+The Daily Council is the heartbeat of the Ronin Operating System.
+
+---
+
 ## GOVERNING HIERARCHY
 
 | Rank | Document | Authority |
@@ -281,9 +379,12 @@ Each amendment increments the version number and records the date and nature of 
 | 1.0 | 2026-06-26 | Original Constitution established |
 | 1.1 | 2026-06-26 | Amendment: Daily Builder Principle — Creator builds every day |
 | 1.2 | 2026-06-26 | Amendment: Agent Principle — agents serve Creator judgment; all output advisory until Creator approves |
+| 1.3 | 2026-06-26 | Amendments: Leverage Principle · Stewardship Principle · Daily Council Principle. Phase IV — Execution declared. |
+| 1.4 | 2026-06-26 | Amendment: Compounding Principle — relationships, trust, opportunity, prosperity, stewardship. Build for momentum, durability, generations. **LOCKED.** |
 
 ---
 
-*Constitution of Ronin Monk Media LLC — Version 1.0*
+*Constitution of Ronin Monk Media LLC — Version 1.4 — LOCKED*
 *Highest governing document. All decisions defer to this Constitution.*
 *Only the Creator may amend.*
+*Phase IV — Execution is now active.*

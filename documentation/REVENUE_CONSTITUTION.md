@@ -3,7 +3,7 @@
 **Established:** 2026-06-26
 **Established by:** LaRon Monte Adams (Creator / CEO)
 **Status:** PERMANENT OPERATIONAL DIRECTIVE
-**Authority:** Subordinate to `CONSTITUTION_OF_RONIN_MONK_MEDIA.md` — operationalizes The Next Phase directive
+**Authority:** Subordinate to `CONSTITUTION_OF_RONIN_MONK_MEDIA.md` v1.3 (LOCKED) — operationalizes Phase IV — Execution
 
 > The platform foundation is sufficiently complete.
 > The primary mission of every sprint is measurable business growth.
@@ -116,6 +116,7 @@ This Revenue Constitution may be updated by Creator directive to reflect changes
 |---------|------|--------|
 | 1.0 | 2026-06-26 | Established |
 | 1.1 | 2026-06-26 | Operation Forge — ROS v1.0 integrated. CRO Agent now governs daily revenue focus. Next $100 Protocol governs daily revenue action. Revenue Constitution Sprint Test unchanged. |
+| 1.2 | 2026-06-26 | Cross-reference updated. Constitution v1.3 LOCKED. Phase IV — Execution active. Mission Priority: Revenue · Clients · Publishing · Collector Growth · Global Expansion · Automation · ROS. |
 
 ---
 
@@ -134,6 +135,6 @@ Reference: `documentation/ros/RONIN_OPERATING_SYSTEM.md`
 
 ---
 
-*Revenue Constitution — Version 1.1*
+*Revenue Constitution — Version 1.2*
 *Permanent operational directive. Subordinate to CONSTITUTION_OF_RONIN_MONK_MEDIA.md.*
 *Governs all sprint prioritization and business development decisions.*
