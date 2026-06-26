@@ -38,6 +38,9 @@
 | RPT-030 | SPR_011_RELEASE_PACKET.md | 011 | Operation First Revenue — Revenue Command Center, Daily CEO Dashboard, Sales/Collector/Client Pipelines, Sprint 011 CSS | 2026-06-26 | Complete |
 | RPT-029 | ../REVENUE_CONSTITUTION.md | 010A | Revenue Constitution v1.0 — Revenue Acceleration Phase, four sprint questions, three financial phases, revenue priority order, sprint rule | 2026-06-26 | **PERMANENT OPERATIONAL DIRECTIVE** |
 | RPT-027 | ../CONSTITUTION_OF_RONIN_MONK_MEDIA.md | 010A | Constitution v1.0 — Highest governing document. Doctrine of Resonance, Ronin Method, The Ethic, Revenue Principle, Next Phase directive. | 2026-06-26 | **SUPREME AUTHORITY** |
+| RPT-028 | SPR_012_RELEASE_PACKET.md | 012 | Operation Forge — ROS v1.0 Architecture Presentation | 2026-06-26 | Complete |
+| RPT-031 | SPR_012A_RELEASE_PACKET.md | 012A | Constitution v1.3 — Phase IV Declaration | 2026-06-26 | Complete |
+| RPT-032 | SPR_013_RELEASE_PACKET.md | 013 | Operation Forge Order 003 — Revenue Acceleration System v1.0 | 2026-06-26 | **AWAITING CREATOR APPROVAL** |
 | RPT-028 | ../BRAND_DOCTRINE.md | 010A | Brand Doctrine — Applied synthesis of the Constitution into operational brand standards | 2026-06-26 | Active |
 
 ---

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Creator Command — RMHQ · Ronin Monk Media LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body class="theme-obsidian admin-body">
+<div class="admin-shell">
+
+  <header class="admin-topbar">
+    <a class="admin-home-link" href="/">← Public Site</a>
+    <span class="admin-brand">RMHQ</span>
+    <span class="admin-badge">RAS v1.0 · Creator Command</span>
+    <span class="admin-topbar-right" id="mc-datetime">Ronin Monk Media LLC</span>
+  </header>
+
+  <aside class="admin-sidebar" role="navigation" aria-label="RMHQ Navigation">
+    <p class="admin-nav-section">Command</p>
+    <a class="admin-nav-item" href="/admin/"><span class="admin-nav-icon">⬛</span> Mission Control</a>
+    <a class="admin-nav-item" href="/admin/crm.html"><span class="admin-nav-icon">👥</span> CRM</a>
+    <p class="admin-nav-section">Revenue</p>
+    <a class="admin-nav-item" href="/admin/revenue.html"><span class="admin-nav-icon">💰</span> Revenue Center</a>
+    <a class="admin-nav-item" href="/admin/revenue-command.html"><span class="admin-nav-icon">🎯</span> Revenue Command</a>
+    <a class="admin-nav-item" href="/admin/client-command.html"><span class="admin-nav-icon">🤝</span> Client Command</a>
+    <a class="admin-nav-item" href="/admin/proposals-command.html"><span class="admin-nav-icon">📄</span> Proposal Command</a>
+    <a class="admin-nav-item" href="/admin/collector-command.html"><span class="admin-nav-icon">🏆</span> Collector Command</a>
+    <a class="admin-nav-item" href="/admin/proposals.html"><span class="admin-nav-icon">🗂️</span> Proposals &amp; Invoices</a>
+    <p class="admin-nav-section">Grow</p>
+    <a class="admin-nav-item" href="/admin/opportunity-radar.html"><span class="admin-nav-icon">📡</span> Opportunity Radar</a>
+    <a class="admin-nav-item active" href="/admin/creator-command.html"><span class="admin-nav-icon">⚡</span> Creator Command</a>
+    <a class="admin-nav-item" href="/admin/products.html"><span class="admin-nav-icon">📦</span> Product Center</a>
+    <a class="admin-nav-item" href="/admin/marketing.html"><span class="admin-nav-icon">📈</span> Marketing Center</a>
+    <a class="admin-nav-item" href="/admin/analytics.html"><span class="admin-nav-icon">📊</span> Analytics</a>
+    <a class="admin-nav-item" href="/admin/audience.html"><span class="admin-nav-icon">🌍</span> Audience Intel</a>
+    <p class="admin-nav-section">Create</p>
+    <a class="admin-nav-item" href="/admin/publishing.html"><span class="admin-nav-icon">📚</span> Publishing Center</a>
+    <a class="admin-nav-item" href="/admin/music-center.html"><span class="admin-nav-icon">🎵</span> Music Center</a>
+    <a class="admin-nav-item" href="/admin/content.html"><span class="admin-nav-icon">✍️</span> Creator Studio</a>
+    <a class="admin-nav-item" href="/admin/lore.html"><span class="admin-nav-icon">📜</span> Lore Engine</a>
+    <p class="admin-nav-section">Intelligence</p>
+    <a class="admin-nav-item" href="/admin/knowledge.html"><span class="admin-nav-icon">🧠</span> Knowledge Center</a>
+    <a class="admin-nav-item" href="/admin/queue.html"><span class="admin-nav-icon">🔄</span> Agent Queue</a>
+    <p class="admin-nav-section">System</p>
+    <a class="admin-nav-item" href="/admin/agents.html"><span class="admin-nav-icon">🤖</span> AI Workforce</a>
+    <a class="admin-nav-item" href="/admin/reports.html"><span class="admin-nav-icon">📋</span> Reports</a>
+    <a class="admin-nav-item" href="/admin/settings.html"><span class="admin-nav-icon">⚙️</span> Settings</a>
+  </aside>
+
+  <main class="admin-main">
+
+    <div class="mc-page-header">
+      <div>
+        <p class="admin-page-eyebrow">Revenue Acceleration System · Module 7</p>
+        <h1 class="admin-page-title">Creator Command</h1>
+        <p class="admin-page-sub">Track how Creator hours are spent. ROS recommends better allocation over time.</p>
+      </div>
+      <div class="mc-system-status">
+        <span class="status-dot status-dot--live"></span>
+        Phase IV — Execution
+        <span class="mc-sprint-label">RAS v1.0</span>
+      </div>
+    </div>
+
+    <!-- Daily Constitution Reminder -->
+    <div class="s13-constitution-strip">
+      <span class="s13-constitution-label">Daily Builder Principle</span>
+      <span class="s13-constitution-text">No day ends without visible progress. Build today. Ship when ready. Never stop building.</span>
+    </div>
+
+    <!-- Hour Allocation Today -->
+    <p class="admin-section-head">Today's Hour Allocation</p>
+    <div class="s13-hour-grid">
+      <div class="s13-hour-block s13-hour-block--revenue">
+        <div class="s13-hour-icon">💰</div>
+        <div class="s13-hour-label">Revenue Hours</div>
+        <div class="s13-hour-desc">Outreach, proposals, client work, product promotion</div>
+        <input class="s13-hour-input" type="number" min="0" max="24" step="0.5" value="0" placeholder="0" />
+        <div class="s13-hour-rec">ROS recommends: <strong>3+ hrs</strong></div>
+      </div>
+      <div class="s13-hour-block s13-hour-block--create">
+        <div class="s13-hour-icon">✍️</div>
+        <div class="s13-hour-label">Creative Hours</div>
+        <div class="s13-hour-desc">Writing, music, lore, art, story, worldbuilding</div>
+        <input class="s13-hour-input" type="number" min="0" max="24" step="0.5" value="0" placeholder="0" />
+        <div class="s13-hour-rec">ROS recommends: <strong>2+ hrs</strong></div>
+      </div>
+      <div class="s13-hour-block s13-hour-block--publish">
+        <div class="s13-hour-icon">📚</div>
+        <div class="s13-hour-label">Publishing Hours</div>
+        <div class="s13-hour-desc">Adapting content, posting, scheduling, platform management</div>
+        <input class="s13-hour-input" type="number" min="0" max="24" step="0.5" value="0" placeholder="0" />
+        <div class="s13-hour-rec">ROS recommends: <strong>1 hr</strong></div>
+      </div>
+      <div class="s13-hour-block s13-hour-block--learn">
+        <div class="s13-hour-icon">🧠</div>
+        <div class="s13-hour-label">Learning Hours</div>
+        <div class="s13-hour-desc">Study, research, skill development, market learning</div>
+        <input class="s13-hour-input" type="number" min="0" max="24" step="0.5" value="0" placeholder="0" />
+        <div class="s13-hour-rec">ROS recommends: <strong>0.5 hr</strong></div>
+      </div>
+      <div class="s13-hour-block s13-hour-block--admin">
+        <div class="s13-hour-icon">⚙️</div>
+        <div class="s13-hour-label">Administration Hours</div>
+        <div class="s13-hour-desc">Systems, documentation, reporting, ROS maintenance</div>
+        <input class="s13-hour-input" type="number" min="0" max="24" step="0.5" value="0" placeholder="0" />
+        <div class="s13-hour-rec">ROS recommends: <strong>&lt;1 hr</strong></div>
+      </div>
+      <div class="s13-hour-block s13-hour-block--relate">
+        <div class="s13-hour-icon">🤝</div>
+        <div class="s13-hour-label">Relationship Hours</div>
+        <div class="s13-hour-desc">Client communication, community, mentorship, collaboration</div>
+        <input class="s13-hour-input" type="number" min="0" max="24" step="0.5" value="0" placeholder="0" />
+        <div class="s13-hour-rec">ROS recommends: <strong>1 hr</strong></div>
+      </div>
+    </div>
+
+    <!-- ROS Allocation Recommendation -->
+    <div class="s13-allocation-rec">
+      <p class="admin-section-head">ROS Recommended Daily Allocation — Phase I</p>
+      <div class="s13-alloc-bars">
+        <div class="s13-alloc-row">
+          <span class="s13-alloc-label">Revenue</span>
+          <div class="s13-alloc-bar-wrap"><div class="s13-alloc-bar s13-alloc-bar--revenue" style="width:40%"></div></div>
+          <span class="s13-alloc-pct">40% · ~3.2 hrs of 8</span>
+        </div>
+        <div class="s13-alloc-row">
+          <span class="s13-alloc-label">Creation</span>
+          <div class="s13-alloc-bar-wrap"><div class="s13-alloc-bar s13-alloc-bar--create" style="width:25%"></div></div>
+          <span class="s13-alloc-pct">25% · ~2 hrs of 8</span>
+        </div>
+        <div class="s13-alloc-row">
+          <span class="s13-alloc-label">Publishing</span>
+          <div class="s13-alloc-bar-wrap"><div class="s13-alloc-bar s13-alloc-bar--publish" style="width:13%"></div></div>
+          <span class="s13-alloc-pct">13% · ~1 hr of 8</span>
+        </div>
+        <div class="s13-alloc-row">
+          <span class="s13-alloc-label">Relationships</span>
+          <div class="s13-alloc-bar-wrap"><div class="s13-alloc-bar s13-alloc-bar--relate" style="width:13%"></div></div>
+          <span class="s13-alloc-pct">13% · ~1 hr of 8</span>
+        </div>
+        <div class="s13-alloc-row">
+          <span class="s13-alloc-label">Learning</span>
+          <div class="s13-alloc-bar-wrap"><div class="s13-alloc-bar s13-alloc-bar--learn" style="width:6%"></div></div>
+          <span class="s13-alloc-pct">6% · ~0.5 hr of 8</span>
+        </div>
+        <div class="s13-alloc-row">
+          <span class="s13-alloc-label">Admin</span>
+          <div class="s13-alloc-bar-wrap"><div class="s13-alloc-bar s13-alloc-bar--admin" style="width:3%"></div></div>
+          <span class="s13-alloc-pct">&lt;3% · minimize</span>
+        </div>
+      </div>
+      <p class="s13-alloc-note">As revenue grows and systems mature, the allocation shifts: Revenue hours decrease (agents handle more), Creation hours increase, Teaching hours emerge.</p>
+    </div>
+
+    <!-- Daily Five Questions -->
+    <p class="admin-section-head">Daily Council Questions</p>
+    <div class="s13-daily-five">
+      <div class="s13-daily-q">
+        <span class="s13-daily-q-num">1</span>
+        <span class="s13-daily-q-text">What is the fastest ethical path to the next $100?</span>
+        <textarea class="s13-daily-answer" rows="2" placeholder="Today's answer..."></textarea>
+      </div>
+      <div class="s13-daily-q">
+        <span class="s13-daily-q-num">2</span>
+        <span class="s13-daily-q-text">What shall we publish today?</span>
+        <textarea class="s13-daily-answer" rows="2" placeholder="Today's answer..."></textarea>
+      </div>
+      <div class="s13-daily-q">
+        <span class="s13-daily-q-num">3</span>
+        <span class="s13-daily-q-text">Who shall we help today?</span>
+        <textarea class="s13-daily-answer" rows="2" placeholder="Today's answer..."></textarea>
+      </div>
+      <div class="s13-daily-q">
+        <span class="s13-daily-q-num">4</span>
+        <span class="s13-daily-q-text">What system shall we improve today?</span>
+        <textarea class="s13-daily-answer" rows="2" placeholder="Today's answer..."></textarea>
+      </div>
+      <div class="s13-daily-q">
+        <span class="s13-daily-q-num">5</span>
+        <span class="s13-daily-q-text">What shall we build today that still matters five years from now?</span>
+        <textarea class="s13-daily-answer" rows="2" placeholder="Today's answer..."></textarea>
+      </div>
+    </div>
+
+    <!-- End of Day Reflection -->
+    <p class="admin-section-head">End of Day Reflection</p>
+    <div class="admin-card" style="padding:.85rem">
+      <textarea class="notes-area" rows="5" placeholder="What was built today? What was learned? What does tomorrow need? (not saved automatically)"></textarea>
+    </div>
+
+  </main>
+</div>
+<script src="/js/admin-payment-config.js"></script>
+<script src="../js/admin-utils.js" defer></script>
+</body>
+</html>

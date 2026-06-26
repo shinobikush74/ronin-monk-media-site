@@ -1788,3 +1788,216 @@
   .s11-ct { grid-template-columns: 50px 1fr; }
   .s11-ct-product { grid-column: 2; }
 }
+
+
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   SPRINT 013 â€” REVENUE ACCELERATION SYSTEM v1.0
+   Namespace: .s13-*
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+
+/* --- North Star Metrics Strip -------------------------------------- */
+.s13-ns-strip { display: grid; grid-template-columns: repeat(6, 1fr); gap: .75rem; margin-bottom: 1.5rem; }
+.s13-ns-metric { background: var(--obsidian-2); border: 1px solid rgba(196,160,98,.15); border-radius: 6px; padding: .9rem 1rem; display: flex; flex-direction: column; gap: .2rem; }
+.s13-ns-value { font-size: 1.5rem; font-weight: 700; font-family: var(--font-display); color: var(--brass-2); letter-spacing: .04em; }
+.s13-ns-value--zero { color: rgba(240,144,26,.7); }
+.s13-ns-label { font-size: .75rem; color: var(--mist-2); letter-spacing: .04em; }
+.s13-ns-target { font-size: .7rem; color: var(--mist-3); }
+
+/* --- Mission Block ------------------------------------------------- */
+.s13-mission-block { background: linear-gradient(135deg, rgba(42,157,86,.08) 0%, rgba(6,6,10,.9) 100%); border: 1px solid rgba(42,157,86,.3); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.s13-mission-badge { font-size: .65rem; letter-spacing: .2em; text-transform: uppercase; color: rgba(42,157,86,.9); margin-bottom: .6rem; font-weight: 600; }
+.s13-mission-title { font-family: var(--font-display); font-size: 1.3rem; color: var(--mist-1); margin: 0 0 .6rem; letter-spacing: .04em; }
+.s13-mission-desc { font-size: .9rem; color: var(--mist-2); line-height: 1.7; margin: 0 0 1.2rem; }
+.s13-mission-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; margin-bottom: 1.2rem; }
+.s13-mission-stat { background: rgba(0,0,0,.3); border: 1px solid rgba(196,160,98,.1); border-radius: 4px; padding: .6rem .85rem; display: flex; flex-direction: column; gap: .25rem; }
+.s13-mission-stat-label { font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mist-3); }
+.s13-mission-stat-value { font-size: .9rem; color: var(--mist-1); font-weight: 600; }
+.s13-val--green { color: rgba(42,157,86,.9); }
+.s13-val--required { color: rgba(240,144,26,.9); font-size: .8rem; }
+
+/* --- Contact Slots ------------------------------------------------- */
+.s13-mission-contacts { margin-top: 1rem; }
+.s13-contact-row { display: flex; flex-direction: column; gap: .5rem; }
+.s13-contact-slot { display: flex; align-items: center; gap: .75rem; background: rgba(0,0,0,.25); border: 1px solid rgba(196,160,98,.1); border-radius: 4px; padding: .6rem .85rem; }
+.s13-contact-num { font-family: var(--font-display); font-size: .85rem; color: var(--brass-3); width: 1.2rem; flex-shrink: 0; }
+.s13-contact-fields { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: .5rem; flex: 1; }
+.s13-input { background: rgba(255,255,255,.04); border: 1px solid rgba(196,160,98,.15); border-radius: 3px; color: var(--mist-1); font-size: .82rem; padding: .4rem .65rem; font-family: var(--font-body); }
+.s13-input:focus { outline: none; border-color: rgba(196,160,98,.4); }
+.s13-input::placeholder { color: var(--mist-3); }
+
+/* --- Milestones ---------------------------------------------------- */
+.s13-milestones { display: flex; flex-direction: column; gap: 0; margin-bottom: 1.5rem; }
+.s13-milestone { display: flex; align-items: center; gap: 1rem; padding: .85rem 1rem; background: var(--obsidian-2); border: 1px solid rgba(196,160,98,.12); border-radius: 4px; opacity: .55; }
+.s13-milestone--active { opacity: 1; border-color: rgba(42,157,86,.35); background: rgba(42,157,86,.06); }
+.s13-milestone-line { width: 2px; height: 1.2rem; background: rgba(196,160,98,.15); margin-left: calc(1rem + 6px); }
+.s13-milestone-dot { width: 12px; height: 12px; border-radius: 50%; border: 2px solid rgba(196,160,98,.3); flex-shrink: 0; }
+.s13-milestone-dot--active { background: rgba(42,157,86,.8); border-color: rgba(42,157,86,.8); box-shadow: 0 0 8px rgba(42,157,86,.4); }
+.s13-milestone-body { flex: 1; display: flex; flex-direction: column; gap: .2rem; }
+.s13-milestone-label { font-size: .88rem; color: var(--mist-1); font-weight: 600; }
+.s13-milestone-status { font-size: .78rem; color: var(--mist-3); }
+.s13-milestone-value { font-family: var(--font-display); font-size: .9rem; color: var(--brass-2); letter-spacing: .06em; }
+
+/* --- Four Paths ---------------------------------------------------- */
+.s13-paths { display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; margin-bottom: 1.5rem; }
+.s13-path { background: var(--obsidian-2); border: 1px solid rgba(196,160,98,.15); border-radius: 6px; padding: 1rem; display: flex; flex-direction: column; gap: .5rem; }
+.s13-path--selected { border-color: rgba(42,157,86,.4); background: rgba(42,157,86,.05); }
+.s13-path--inactive { opacity: .5; }
+.s13-path-head { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.s13-path-num { font-size: .65rem; letter-spacing: .15em; text-transform: uppercase; color: var(--mist-3); }
+.s13-path-name { font-size: .9rem; color: var(--mist-1); font-weight: 600; }
+.s13-path-badge { font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; background: rgba(42,157,86,.2); color: rgba(42,157,86,.9); padding: .15rem .45rem; border-radius: 999px; margin-left: auto; }
+.s13-path-badge--inactive { background: rgba(240,144,26,.15); color: rgba(240,144,26,.8); }
+.s13-path-desc { font-size: .82rem; color: var(--mist-2); line-height: 1.5; flex: 1; }
+.s13-path-stats { display: flex; flex-direction: column; gap: .2rem; font-size: .75rem; color: var(--mist-3); border-top: 1px solid rgba(196,160,98,.1); padding-top: .5rem; }
+
+/* --- Tables -------------------------------------------------------- */
+.s13-table { width: 100%; border-collapse: collapse; font-size: .84rem; }
+.s13-table th { background: rgba(0,0,0,.3); color: var(--mist-3); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; padding: .65rem 1rem; text-align: left; border-bottom: 1px solid rgba(196,160,98,.12); font-weight: 500; }
+.s13-table td { padding: .75rem 1rem; color: var(--mist-2); border-bottom: 1px solid rgba(196,160,98,.06); }
+.s13-table tr:last-child td { border-bottom: none; }
+.s13-table tr:hover td { background: rgba(212,175,55,.03); }
+.s13-action-cell { color: var(--brass-3); font-size: .8rem; }
+.s13-status-ok { color: rgba(42,157,86,.8); font-size: .8rem; }
+.s13-status-warn { color: rgba(240,144,26,.8); font-size: .8rem; }
+
+/* --- Acquisition Pipeline ------------------------------------------ */
+.s13-acq-pipeline { display: flex; align-items: stretch; gap: .4rem; margin-bottom: 1.5rem; overflow-x: auto; }
+.s13-acq-stage { flex: 1; min-width: 160px; background: var(--obsidian-2); border: 1px solid rgba(196,160,98,.15); border-radius: 6px; padding: 1rem; }
+.s13-acq-stage--highlight { border-color: rgba(212,175,55,.3); background: rgba(212,175,55,.04); }
+.s13-acq-stage--won { border-color: rgba(42,157,86,.3); background: rgba(42,157,86,.04); }
+.s13-acq-stage-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: .4rem; }
+.s13-acq-stage-name { font-size: .8rem; color: var(--mist-1); font-weight: 600; }
+.s13-acq-count { font-family: var(--font-display); font-size: 1.1rem; color: var(--brass-2); }
+.s13-acq-desc { font-size: .75rem; color: var(--mist-3); margin: 0 0 .5rem; line-height: 1.4; }
+.s13-acq-empty { font-size: .75rem; color: var(--mist-3); font-style: italic; padding: .5rem 0; }
+.s13-acq-arrow { color: var(--mist-3); font-size: 1.2rem; display: flex; align-items: center; flex-shrink: 0; }
+
+/* --- Law Banner ---------------------------------------------------- */
+.s13-law-banner { background: rgba(212,175,55,.06); border-left: 3px solid var(--brass-2); border-radius: 0 4px 4px 0; padding: .75rem 1.1rem; font-size: .84rem; color: var(--mist-2); line-height: 1.6; margin-bottom: 1.5rem; }
+
+/* --- Service Catalog ----------------------------------------------- */
+.s13-catalog { display: grid; grid-template-columns: repeat(5, 1fr); gap: .75rem; margin-bottom: 1.5rem; }
+.s13-catalog-item { background: var(--obsidian-2); border: 1px solid rgba(196,160,98,.15); border-radius: 6px; padding: .85rem 1rem; display: flex; flex-direction: column; gap: .3rem; }
+.s13-catalog-name { font-size: .84rem; color: var(--mist-1); font-weight: 600; }
+.s13-catalog-price { font-family: var(--font-display); font-size: 1rem; color: var(--brass-2); letter-spacing: .04em; }
+.s13-catalog-desc { font-size: .74rem; color: var(--mist-3); }
+
+/* --- Two Column ---------------------------------------------------- */
+.s13-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+
+/* --- Collector Ladder ---------------------------------------------- */
+.s13-collector-ladder { display: flex; flex-direction: column; align-items: flex-start; gap: 0; margin-bottom: 1.5rem; max-width: 640px; }
+.s13-tier { width: 100%; background: var(--obsidian-2); border: 1px solid rgba(196,160,98,.15); border-radius: 6px; padding: .85rem 1.2rem; display: grid; grid-template-columns: 60px 1fr auto; align-items: center; gap: 1rem; }
+.s13-tier--members { border-color: rgba(42,157,86,.3); background: rgba(42,157,86,.04); }
+.s13-tier--builders { border-color: rgba(42,157,86,.45); background: rgba(42,157,86,.07); }
+.s13-tier-count { font-family: var(--font-display); font-size: 1.6rem; color: var(--brass-2); text-align: center; }
+.s13-tier-name { font-size: .9rem; color: var(--mist-1); font-weight: 600; }
+.s13-tier-desc { font-size: .78rem; color: var(--mist-3); }
+.s13-tier-conv { font-size: .72rem; color: var(--mist-3); text-align: right; }
+.s13-tier-arrow { font-size: .85rem; color: var(--mist-3); padding: .2rem 1.2rem; }
+
+/* --- Promo Recommendation ------------------------------------------ */
+.s13-promo-rec { background: rgba(212,175,55,.06); border: 1px solid rgba(212,175,55,.25); border-radius: 8px; padding: 1.2rem 1.5rem; margin-bottom: 1.5rem; }
+.s13-promo-badge { font-size: .62rem; letter-spacing: .18em; text-transform: uppercase; color: var(--brass-3); margin-bottom: .5rem; font-weight: 600; }
+.s13-promo-title { font-family: var(--font-display); font-size: 1.05rem; color: var(--mist-1); margin: 0 0 .5rem; }
+.s13-promo-body { font-size: .88rem; color: var(--mist-2); line-height: 1.6; margin: 0 0 .85rem; }
+.s13-promo-meta { display: flex; flex-wrap: wrap; gap: 1rem; font-size: .78rem; color: var(--mist-3); border-top: 1px solid rgba(196,160,98,.12); padding-top: .65rem; }
+
+/* --- Collector Growth Bars ----------------------------------------- */
+.s13-growth-goals { display: flex; flex-direction: column; gap: .5rem; margin-bottom: 1.5rem; }
+.s13-growth-row { display: grid; grid-template-columns: 100px 1fr 40px 120px; align-items: center; gap: .75rem; }
+.s13-growth-tier { font-size: .84rem; color: var(--mist-2); font-weight: 600; }
+.s13-growth-bar-wrap { height: 6px; background: rgba(255,255,255,.05); border-radius: 999px; overflow: hidden; }
+.s13-growth-bar { height: 100%; background: var(--brass-2); border-radius: 999px; }
+.s13-growth-current { font-size: .84rem; color: var(--brass-2); text-align: right; font-weight: 600; }
+.s13-growth-target { font-size: .76rem; color: var(--mist-3); }
+
+/* --- Opportunity Radar --------------------------------------------- */
+.s13-radar-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: .75rem; margin-bottom: 1.5rem; }
+.s13-radar-cat { background: var(--obsidian-2); border: 1px solid rgba(196,160,98,.12); border-radius: 6px; padding: .85rem 1rem; display: flex; flex-direction: column; gap: .4rem; }
+.s13-radar-cat--active { border-color: rgba(42,157,86,.35); background: rgba(42,157,86,.04); }
+.s13-radar-cat-head { display: flex; align-items: center; justify-content: space-between; }
+.s13-radar-cat-name { font-size: .82rem; color: var(--mist-1); font-weight: 600; }
+.s13-radar-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(196,160,98,.2); }
+.s13-radar-dot--active { background: rgba(42,157,86,.8); box-shadow: 0 0 6px rgba(42,157,86,.4); }
+.s13-radar-cat-desc { font-size: .74rem; color: var(--mist-3); line-height: 1.4; }
+.s13-radar-signal { font-size: .72rem; color: var(--mist-3); font-style: italic; }
+
+/* --- Top Signal ---------------------------------------------------- */
+.s13-top-signal { background: linear-gradient(135deg, rgba(42,157,86,.07) 0%, rgba(6,6,10,.9) 100%); border: 1px solid rgba(42,157,86,.3); border-radius: 8px; padding: 1.2rem 1.5rem; margin-bottom: 1.5rem; }
+.s13-signal-badge { font-size: .62rem; letter-spacing: .18em; text-transform: uppercase; font-weight: 600; margin-bottom: .5rem; }
+.s13-signal-badge--green { color: rgba(42,157,86,.9); }
+.s13-signal-title { font-family: var(--font-display); font-size: 1.1rem; color: var(--mist-1); margin: 0 0 .5rem; }
+.s13-signal-body { font-size: .88rem; color: var(--mist-2); line-height: 1.6; margin: 0 0 1rem; }
+.s13-signal-meta { display: grid; grid-template-columns: repeat(5, 1fr); gap: .5rem; }
+.s13-signal-stat { display: flex; flex-direction: column; gap: .2rem; font-size: .78rem; color: var(--mist-2); }
+.s13-signal-stat-label { font-size: .66rem; color: var(--mist-3); text-transform: uppercase; letter-spacing: .1em; }
+
+/* --- Creator Command ----------------------------------------------- */
+.s13-constitution-strip { background: rgba(212,175,55,.06); border: 1px solid rgba(212,175,55,.2); border-radius: 6px; padding: .75rem 1.1rem; display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; font-size: .84rem; }
+.s13-constitution-label { font-family: var(--font-display); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--brass-3); white-space: nowrap; }
+.s13-constitution-text { color: var(--mist-2); line-height: 1.5; }
+
+.s13-hour-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; margin-bottom: 1.5rem; }
+.s13-hour-block { background: var(--obsidian-2); border: 1px solid rgba(196,160,98,.15); border-radius: 6px; padding: 1rem; display: flex; flex-direction: column; gap: .4rem; }
+.s13-hour-block--revenue { border-color: rgba(42,157,86,.2); }
+.s13-hour-block--create { border-color: rgba(212,175,55,.2); }
+.s13-hour-block--publish { border-color: rgba(0,144,208,.2); }
+.s13-hour-icon { font-size: 1.2rem; }
+.s13-hour-label { font-size: .84rem; color: var(--mist-1); font-weight: 600; }
+.s13-hour-desc { font-size: .76rem; color: var(--mist-3); line-height: 1.4; }
+.s13-hour-input { background: rgba(0,0,0,.3); border: 1px solid rgba(196,160,98,.2); border-radius: 4px; color: var(--brass-2); font-size: 1.2rem; font-family: var(--font-display); padding: .4rem .6rem; width: 5rem; text-align: center; margin-top: .2rem; }
+.s13-hour-input:focus { outline: none; border-color: rgba(196,160,98,.5); }
+.s13-hour-rec { font-size: .73rem; color: var(--mist-3); }
+
+.s13-allocation-rec { margin-bottom: 1.5rem; }
+.s13-alloc-bars { display: flex; flex-direction: column; gap: .5rem; margin-bottom: .75rem; }
+.s13-alloc-row { display: grid; grid-template-columns: 110px 1fr 180px; align-items: center; gap: .75rem; }
+.s13-alloc-label { font-size: .84rem; color: var(--mist-2); font-weight: 600; }
+.s13-alloc-bar-wrap { height: 8px; background: rgba(255,255,255,.05); border-radius: 999px; overflow: hidden; }
+.s13-alloc-bar { height: 100%; border-radius: 999px; }
+.s13-alloc-bar--revenue { background: rgba(42,157,86,.7); }
+.s13-alloc-bar--create { background: rgba(212,175,55,.7); }
+.s13-alloc-bar--publish { background: rgba(0,144,208,.7); }
+.s13-alloc-bar--relate { background: rgba(138,0,16,.6); }
+.s13-alloc-bar--learn { background: rgba(196,160,98,.5); }
+.s13-alloc-bar--admin { background: rgba(100,100,100,.5); }
+.s13-alloc-pct { font-size: .78rem; color: var(--mist-3); }
+.s13-alloc-note { font-size: .8rem; color: var(--mist-3); font-style: italic; line-height: 1.5; }
+
+.s13-daily-five { display: flex; flex-direction: column; gap: .75rem; margin-bottom: 1.5rem; }
+.s13-daily-q { display: grid; grid-template-columns: 2rem 1fr 1fr; gap: .75rem; align-items: start; background: var(--obsidian-2); border: 1px solid rgba(196,160,98,.12); border-radius: 6px; padding: .85rem 1rem; }
+.s13-daily-q-num { font-family: var(--font-display); font-size: .9rem; color: var(--brass-3); padding-top: .1rem; }
+.s13-daily-q-text { font-size: .88rem; color: var(--mist-1); line-height: 1.5; padding-top: .1rem; }
+.s13-daily-answer { background: rgba(0,0,0,.25); border: 1px solid rgba(196,160,98,.15); border-radius: 3px; color: var(--mist-1); font-size: .82rem; padding: .5rem .65rem; font-family: var(--font-body); resize: vertical; line-height: 1.5; }
+.s13-daily-answer:focus { outline: none; border-color: rgba(196,160,98,.35); }
+.s13-daily-answer::placeholder { color: var(--mist-3); }
+
+/* --- Admin Page Sub ------------------------------------------------ */
+.admin-page-sub { font-size: .87rem; color: var(--mist-3); margin: .3rem 0 0; line-height: 1.5; }
+
+/* --- Sprint 013 Responsive ----------------------------------------- */
+@media (max-width: 1200px) {
+  .s13-ns-strip { grid-template-columns: repeat(3, 1fr); }
+  .s13-radar-grid { grid-template-columns: repeat(3, 1fr); }
+  .s13-signal-meta { grid-template-columns: repeat(3, 1fr); }
+  .s13-catalog { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 900px) {
+  .s13-ns-strip { grid-template-columns: repeat(2, 1fr); }
+  .s13-paths { grid-template-columns: repeat(2, 1fr); }
+  .s13-mission-meta { grid-template-columns: repeat(2, 1fr); }
+  .s13-radar-grid { grid-template-columns: repeat(2, 1fr); }
+  .s13-hour-grid { grid-template-columns: repeat(2, 1fr); }
+  .s13-catalog { grid-template-columns: repeat(2, 1fr); }
+  .s13-two-col { grid-template-columns: 1fr; }
+  .s13-contact-fields { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .s13-ns-strip { grid-template-columns: 1fr 1fr; }
+  .s13-paths { grid-template-columns: 1fr; }
+  .s13-hour-grid { grid-template-columns: 1fr; }
+  .s13-catalog { grid-template-columns: 1fr; }
+  .s13-daily-q { grid-template-columns: 2rem 1fr; }
+  .s13-daily-answer { grid-column: 2; }
+}

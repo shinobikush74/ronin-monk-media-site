@@ -183,6 +183,28 @@
 
 ---
 
+## TASK-029 | Sprint 013 — Revenue Acceleration System v1.0 (Operation Forge Order 003)
+**Date:** 2026-06-26
+**Trigger:** Creator directive — Operation Forge Order 003. "Build the revenue engine that moves Ronin Monk Media from infrastructure to income."
+**Revenue Constitution questions answered:** Revenue (yes — 7 command modules, Next $100 Mission) · Audience (yes — Collector Command, Collector Pipeline) · IP (yes — artifact catalog, promo playbook) · Time savings (yes — eliminates daily revenue questions)
+**What was built:**
+- `admin/revenue-command.html` — Module 1: Next $100 Engine (North Star Metrics, Mission Block, Four Paths, Milestone Tracker)
+- `admin/client-command.html` — Module 2: Client Acquisition Command (5-stage pipeline, service demand, referral sources)
+- `admin/proposals-command.html` — Module 3: Proposal Command (active proposals, won/lost, service catalog)
+- `admin/collector-command.html` — Module 4: Collector Command (6-tier ladder, artifact performance, promo rec, growth goals)
+- `admin/opportunity-radar.html` — Module 6: Opportunity Radar (top signal, 10 categories, platform watch)
+- `admin/creator-command.html` — Module 7: Creator Command (hour allocation, ROS recommendations, Daily Five Questions)
+- `admin/admin.css` — Sprint 013 CSS (.s13-*) appended (2003 total lines)
+- `admin/index.html` — Mission Control rebuilt with RAS v1.0 integration, updated sidebar, North Star Metrics strip, RAS Module Grid, Phase IV header
+- `documentation/REVENUE_ACCELERATION_SYSTEM.md` — RAS master document
+- `documentation/NORTH_STAR_METRICS.md` — 8 North Star Metrics with targets and review protocol
+- `documentation/CLIENT_ACQUISITION_PLAYBOOK.md` — Full acquisition pipeline, discovery protocol, follow-up cadence
+- `documentation/COLLECTOR_GROWTH_PLAYBOOK.md` — Collector ladder, artifact catalog, promotion principles, email strategy
+**Release Packet:** `documentation/reports/SPR_013_RELEASE_PACKET.md`
+**Status:** AWAITING CREATOR APPROVAL — returning for approval before Order 004
+
+---
+
 ## TASK-025 | Sprint 011 — Revenue Command Center (Operation First Revenue)
 **Date:** 2026-06-26
 **Revenue Constitution questions answered:** Revenue (yes — daily dashboard + ROI actions) · Audience (yes — Collector Pipeline) · IP (yes — artifact framing) · Time savings (yes — replaces 5+ manual checks)
