@@ -10,6 +10,7 @@
 | Document | Location | Authority |
 |----------|----------|-----------|
 | **Constitution of Ronin Monk Media** | `documentation/CONSTITUTION_OF_RONIN_MONK_MEDIA.md` | **SUPREME** — all decisions defer here |
+| **Revenue Constitution** | `documentation/REVENUE_CONSTITUTION.md` | **OPERATIONAL** — governs all sprint prioritization |
 | Brand Doctrine | `documentation/BRAND_DOCTRINE.md` | Applied doctrine reference |
 | Doctrine of Remembrance | `documentation/doctrine/DOCTRINE_OF_REMEMBRANCE.md` | Permanent canon |
 | Eight Doctrine Documents | `documentation/doctrine/` | Active governance |
@@ -153,24 +154,40 @@
 
 ---
 
-## THE NEXT PHASE (Constitution Directive)
+## REVENUE ACCELERATION PHASE
 
-Infrastructure work is now **maintenance**.
+**Status: ACTIVE** — Revenue Constitution v1.0 in effect. See `documentation/REVENUE_CONSTITUTION.md`.
 
-| Mission | Priority |
-|---------|----------|
-| **Revenue** | Primary mission |
-| **Audience** | Primary mission |
-| **Publishing** | Primary mission |
-| **Community** | Primary mission |
+### Financial Targets
 
-**Sprint Test (Revenue Principle):** Every sprint must accomplish at least one of:
-- Increase revenue
-- Increase audience
-- Strengthen the Sky Khan intellectual property
-- Save the Creator meaningful time
+| Phase | Annual Revenue | Status |
+|-------|---------------|--------|
+| **I — Survival** | $100,000 | **ACTIVE** |
+| II — Stability | $350,000 | Pending Phase I |
+| III — Multiplication | $1,000,000+ | Pending Phase II |
 
-If it accomplishes none of these → backlog.
+**Monthly target (Phase I):** $8,333 · **Gap:** ~$8,333/month · **Immediate lever:** First consulting booking
+
+### Revenue Priority Order
+
+1. High-value consulting + custom websites ← **START HERE**
+2. Digital collector products
+3. Recurring memberships
+4. Music monetization
+5. Licensing and partnerships
+6. Educational offerings
+7. Community-supported initiatives
+
+### Sprint Test (Revenue Constitution)
+
+Before any sprint — must answer YES to at least one:
+
+- Does this increase revenue within 30/60/90 days?
+- Does this increase audience?
+- Does this strengthen Sky Khan IP?
+- Does this reduce Creator workload through automation?
+
+**If all NO → backlog.**
 
 ---
 

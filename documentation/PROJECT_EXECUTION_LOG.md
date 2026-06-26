@@ -133,6 +133,24 @@
 
 ---
 
+## TASK-024 | Revenue Constitution — Permanent Operational Directive
+**Date:** 2026-06-26
+**Trigger:** Creator directive — Revenue Constitution, Version 1.0
+**Authority:** Permanent operational directive, subordinate to Constitution. Governs all sprint prioritization effective immediately.
+**Key decisions:**
+- Ronin Monk Media enters **Revenue Acceleration Phase** — platform foundation is sufficiently complete
+- Three financial phases: Phase I Survival ($100K), Phase II Stability ($350K), Phase III Multiplication ($1M+)
+- $350K target exists to provide: creative independence, family support, investment capital for future creators, sustainable Creative Order growth
+- Revenue Priority Order established (7 tiers): consulting + custom sites first, digital collector products second, recurring memberships third
+- Four Sprint Questions: every sprint must answer all four before implementation
+- Sprint Rule: no sprint may focus exclusively on infrastructure unless it directly unlocks or protects revenue
+- When two ideas are equally good, prioritize the one generating income in the shortest timeframe without compromising the Constitution
+**Files created:** `documentation/REVENUE_CONSTITUTION.md`
+**Files updated:** `CEO_DASHBOARD.md` (Revenue Acceleration section, financial targets, sprint test), `PROJECT_STATUS.md` (revenue constitution pointer, current phase), `REPORT_INDEX.md` (RPT-029), `PROJECT_EXECUTION_LOG.md`
+**Status:** Complete — Revenue Constitution is stable operational doctrine
+
+---
+
 ## TASK-023 | Constitution of Ronin Monk Media — Highest Governing Document
 **Date:** 2026-06-26
 **Trigger:** Creator directive — Constitution of Ronin Monk Media, Version 1.0

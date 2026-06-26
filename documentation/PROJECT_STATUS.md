@@ -2,8 +2,10 @@
 **Platform:** RMHQ Creator OS
 **Last Updated:** 2026-06-26
 **Current Version:** v3.0
-**Governing Document:** `documentation/CONSTITUTION_OF_RONIN_MONK_MEDIA.md` — Version 1.0 — all decisions defer to the Constitution.
+**Governing Document:** `documentation/CONSTITUTION_OF_RONIN_MONK_MEDIA.md` — Version 1.0
+**Revenue Constitution:** `documentation/REVENUE_CONSTITUTION.md` — Version 1.0 — governs all sprint prioritization
 **Brand Reference:** `documentation/BRAND_DOCTRINE.md`
+**Current Phase:** Revenue Acceleration — infrastructure is maintenance, revenue/audience/publishing/community are primary missions
 
 ---
 
