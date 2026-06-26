@@ -35,4 +35,11 @@
 
 ---
 
+| RPT-027 | ../CONSTITUTION_OF_RONIN_MONK_MEDIA.md | 010A | Constitution v1.0 — Highest governing document. Doctrine of Resonance, Ronin Method, The Ethic, Revenue Principle, Next Phase directive. | 2026-06-26 | **SUPREME AUTHORITY** |
+| RPT-028 | ../BRAND_DOCTRINE.md | 010A | Brand Doctrine — Applied synthesis of the Constitution into operational brand standards | 2026-06-26 | Active |
+
+---
+
 *All release packets stored in: `documentation/reports/`*
+*All doctrine documents stored in: `documentation/doctrine/`*
+*Constitution and Brand Doctrine stored in: `documentation/`*

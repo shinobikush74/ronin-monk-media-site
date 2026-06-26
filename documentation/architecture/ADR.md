@@ -1,6 +1,7 @@
 # ARCHITECTURE DECISION RECORD (ADR)
 ## Ronin Monk Media LLC — RMHQ Creator OS
 **Last Updated:** 2026-06-26
+**Governing Document:** `documentation/CONSTITUTION_OF_RONIN_MONK_MEDIA.md` — all architectural decisions must align with the Constitution.
 
 ---
 
@@ -137,3 +138,28 @@
 **Decision:** International content strategy (FR/DE/JA/KO/PT/ES) is documented as structure only. No translated content is written, no translated pages are created, and no AI agent generates translations without explicit Creator review and approval.
 **Rationale:** Machine-translated lore content degrades brand quality and can introduce factual errors in sensitive IP material (Sky Khan universe). Structure is established now so translation can be added incrementally when Creator is ready, one market at a time.
 **Status:** Active — enforced in audience.html International Content tab and agent constraints.
+
+
+---
+
+## ADR-018 | Constitutional Authority — Highest Governing Document
+**Sprint:** 010A
+**Decision:** `CONSTITUTION_OF_RONIN_MONK_MEDIA.md` is the supreme governing document for all Ronin Monk Media decisions. All design, development, business, and creative decisions must align with the Constitution. Sprint briefs may not supersede it. Only the Creator may amend it.
+**Rationale:** The Headquarters is no longer built as a website. It is built as the digital home of a living philosophy. A constitution prevents drift — individual sprint decisions accumulating into something inconsistent with the founding vision. The Constitution is the anchor.
+**Status:** Active — permanent authority. Governs all future sprints.
+
+---
+
+## ADR-019 | Five-Frequency Navigation — ACTION Added
+**Sprint:** 010A
+**Decision:** The global navigation expands from four frequencies (WORD · SOUND · SYMBOL · STORY) to five (WORD · SOUND · SYMBOL · STORY · ACTION). ACTION is The Fifth Frequency — where doctrine becomes participation, community, creative missions, mentorship, and each one teach one.
+**Rationale:** The Headquarters must not end with consumption. The Constitution's Revenue Principle requires every sprint to grow revenue, audience, or IP. The Fifth Frequency is the primary audience growth mechanism — it converts receivers into carriers. Sprint 010B implements the placeholder; full build follows Sprint 013.
+**Status:** Active — placeholder page Sprint 010B, full implementation Sprint 013+.
+
+---
+
+## ADR-020 | Discovery System — Hidden Elements as World Architecture
+**Sprint:** 010A
+**Decision:** Every page of the Headquarters contains at least one discovery element — hidden environmental copy, clickable glyphs, lore fragments in HTML source, hidden audio, or unlockable content. These are never advertised. They are found by curiosity.
+**Rationale:** A world has more in it than is immediately visible. The Discovery System is how the Headquarters communicates depth — it rewards the visitor who looks more carefully, creating return visits and the feeling that the Headquarters is alive. Discovery elements are catalogued in `documentation/doctrine/DISCOVERY_SYSTEM.md` and never load-bearing (critical information is never only hidden).
+**Status:** Active — Sprint 010 implementation per the discovery map in DISCOVERY_SYSTEM.md.

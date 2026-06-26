@@ -5,6 +5,19 @@
 
 ---
 
+## GOVERNING AUTHORITY
+
+| Document | Location | Authority |
+|----------|----------|-----------|
+| **Constitution of Ronin Monk Media** | `documentation/CONSTITUTION_OF_RONIN_MONK_MEDIA.md` | **SUPREME** — all decisions defer here |
+| Brand Doctrine | `documentation/BRAND_DOCTRINE.md` | Applied doctrine reference |
+| Doctrine of Remembrance | `documentation/doctrine/DOCTRINE_OF_REMEMBRANCE.md` | Permanent canon |
+| Eight Doctrine Documents | `documentation/doctrine/` | Active governance |
+
+**Highest Statement:** *We remember the future our ancestors imagined.*
+
+---
+
 ## CURRENT STATUS
 
 | Field | Value |
@@ -137,6 +150,27 @@
 | Test | Colombia | Low-Medium |
 
 **Top Language Priority:** English → French → German → Japanese → Korean → Portuguese → Spanish
+
+---
+
+## THE NEXT PHASE (Constitution Directive)
+
+Infrastructure work is now **maintenance**.
+
+| Mission | Priority |
+|---------|----------|
+| **Revenue** | Primary mission |
+| **Audience** | Primary mission |
+| **Publishing** | Primary mission |
+| **Community** | Primary mission |
+
+**Sprint Test (Revenue Principle):** Every sprint must accomplish at least one of:
+- Increase revenue
+- Increase audience
+- Strengthen the Sky Khan intellectual property
+- Save the Creator meaningful time
+
+If it accomplishes none of these → backlog.
 
 ---
 

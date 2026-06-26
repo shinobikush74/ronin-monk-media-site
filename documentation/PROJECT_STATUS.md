@@ -2,6 +2,8 @@
 **Platform:** RMHQ Creator OS
 **Last Updated:** 2026-06-26
 **Current Version:** v3.0
+**Governing Document:** `documentation/CONSTITUTION_OF_RONIN_MONK_MEDIA.md` — Version 1.0 — all decisions defer to the Constitution.
+**Brand Reference:** `documentation/BRAND_DOCTRINE.md`
 
 ---
 
