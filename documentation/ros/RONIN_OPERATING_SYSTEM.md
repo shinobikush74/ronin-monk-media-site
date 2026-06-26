@@ -226,6 +226,107 @@ Full architecture detail: `ROS_ARCHITECTURE.md`
 
 ---
 
+## THE ROS CYCLE
+
+Every day ROS operates in the following sequence.
+
+### 1. Observe
+
+Gather information.
+
+Revenue. Audience. Publishing. Clients. Market Intelligence. Operations.
+
+---
+
+### 2. Analyze
+
+The Executive Councils review the information.
+
+Patterns. Risks. Opportunities. Bottlenecks. Recommendations.
+
+---
+
+### 3. Recommend
+
+Each Council submits only its highest-value recommendations.
+
+No information overload. No unnecessary reports. Only actionable decisions.
+
+---
+
+### 4. Decide
+
+The Creator reviews Mission Control.
+
+The Creator approves, rejects, or modifies recommendations.
+
+The Creator establishes today's mission.
+
+---
+
+### 5. Execute
+
+The Agents prepare approved work.
+
+Drafts. Reports. Publishing assets. Client proposals. Market research. Automation.
+
+Nothing is published or committed without Creator approval.
+
+---
+
+### 6. Measure
+
+ROS measures outcomes.
+
+Revenue generated. Time saved. Audience growth. Collector growth. Publishing completed. Client activity. Knowledge preserved. Lessons learned.
+
+---
+
+### 7. Improve
+
+Every completed mission strengthens ROS.
+
+Successful systems become standards.
+
+Failed systems become lessons.
+
+ROS becomes stronger every day.
+
+The cycle begins again tomorrow.
+
+---
+
+## THE ROS MOTTO
+
+The Councils analyze.
+
+The Agents prepare.
+
+The Creator decides.
+
+The Order advances.
+
+---
+
+## REVENUE ROADMAP
+
+Every component below must demonstrate a measurable return in revenue, leverage, audience growth, or Creator time saved before development begins.
+
+| Priority | Component | Business Outcome |
+|----------|-----------|-----------------|
+| 1 | Client Acquisition System | More consultations and website clients |
+| 2 | Proposal Automation | Faster closes and higher conversion |
+| 3 | Collector Membership | Predictable recurring revenue |
+| 4 | Publishing Automation | Daily publishing with less effort |
+| 5 | CRM V2 | Stronger relationships and repeat business |
+| 6 | Automation Engine | Reduce repetitive work across Headquarters |
+| 7 | Lore Engine Alpha | Increase long-term IP and collector value |
+| 8 | Netlify Identity | Secure member access and future premium services |
+
+No component moves into development until it answers the Four Sprint Questions defined by the Revenue Constitution.
+
+---
+
 ## THE GLOBAL PRINCIPLE
 
 The Creative Order serves the entire world.
@@ -244,6 +345,7 @@ The goal is not globalization. The goal is meaningful participation across cultu
 |---------|------|-----------|
 | 1.0 | 2026-06-26 | ROS v1.0 established — Operation Forge |
 | 1.1 | 2026-06-26 | First Law of Operation Forge added — measurable value standard for all components |
+| 1.2 | 2026-06-26 | ROS Cycle added (7 steps: Observe → Analyze → Recommend → Decide → Execute → Measure → Improve) · ROS Motto added · Revenue Roadmap added (8 components, priority order) |
 
 ---
 
