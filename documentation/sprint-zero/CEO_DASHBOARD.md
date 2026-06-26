@@ -10,7 +10,7 @@
 | Field | Value |
 |-------|-------|
 | Platform | **Ronin Monk Media Creator OS v2.0 — PRODUCTION STABLE** |
-| Sprint | Sprint 010 Blueprint REVISED — Awaiting Creator approval before 010A |
+| Sprint | **Sprint 010A — AUTHORIZED** · Doctrine of Remembrance permanent canon · All doctrine docs complete |
 | Repository | https://github.com/shinobikush74/ronin-monk-media-site |
 | Live URL | https://www.roninmonkmediallc.com |
 | Commit deployed | `0a17d44` — feat(v2): Mission Control, Audience Intelligence, Revenue Center… |
@@ -20,17 +20,37 @@
 
 ---
 
-## SPRINT 010 — NEXT ACTIONS
+## SPRINT 010A — NEXT ACTIONS
 
 | # | Action | Status |
 |---|--------|--------|
-| S1 | Approve SPR_010_MASTER_BLUEPRINT_REVISION.md | **Awaiting Creator** |
-| S2 | Sprint 010A begins after approval | Blocked on S1 |
+| S1 | ~~Approve SPR_010_MASTER_BLUEPRINT_REVISION.md~~ | ✓ **Approved** |
+| S2 | ~~Create eight doctrine documents~~ | ✓ **Complete** |
+| S3 | Sprint 010A — Homepage implementation | **READY TO BEGIN** |
+| S4 | Sprint 010B — Five frequency pages (WORD/SOUND/SYMBOL/STORY/ACTION) | Follows 010A |
+| S5 | Sprint 010C — Existing page upgrades + site-wide doctrine language | Follows 010B |
 
-**Permanent Brand Mantra (approved 2026-06-26):**
+**Permanent Brand Doctrine (Doctrine of Remembrance — established 2026-06-26):**
+> *Ronin Monk Media is not a creative studio. It is a place of remembrance.*
 > *Every story is a weapon against hopelessness.*
 > *Every symbol is a reminder of forgotten greatness.*
 > *Every song is a transmission.*
+> *Enter not to consume, but to remember.*
+
+**The Second Doctrine:**
+> *Remember who you were.*
+> *Imagine who you could become.*
+> *Build what the world has forgotten.*
+
+**Doctrine Documents Created:**
+- `documentation/doctrine/DOCTRINE_OF_REMEMBRANCE.md` — permanent canon
+- `documentation/doctrine/CREATIVE_ORDER_CHARTER.md`
+- `documentation/doctrine/IMMERSIVE_EXPERIENCE_GUIDE.md`
+- `documentation/doctrine/WORLDBUILDING_STYLE_GUIDE.md`
+- `documentation/doctrine/VISITOR_JOURNEY_MAP.md`
+- `documentation/doctrine/SERVICE_RENAMING_GUIDE.md`
+- `documentation/doctrine/DISCOVERY_SYSTEM.md`
+- `documentation/doctrine/ACTION_FREQUENCY.md`
 
 ---
 

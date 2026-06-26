@@ -23,7 +23,15 @@
 | RPT-015 | SPR_009E_009F_GITHUB_DEPLOYMENT_REPORT.md | 009E/F | GitHub Push — 81 files to ronin-monk-media-site, Creator OS v2.0 on GitHub | 2026-06-26 | Complete |
 | RPT-016 | DEPLOYMENT_VERIFICATION_REPORT.md | 009G | Production Audit — v2.0 Production Stable · All pages, nav, products, blog, admin verified | 2026-06-26 | Complete |
 | RPT-017 | SPR_010_MASTER_BLUEPRINT.md | 010 | Immersive Transformation Master Blueprint v1 — Four Frequencies, asset map, connection web, homepage wireframe | 2026-06-26 | Superseded by RPT-018 |
-| RPT-018 | SPR_010_MASTER_BLUEPRINT_REVISION.md | 010 | Blueprint Revision 1 — Permanent mantra integrated, transformation doctrine, sacred locations, artifact language, CTA standards | 2026-06-26 | Awaiting Approval |
+| RPT-018 | SPR_010_MASTER_BLUEPRINT_REVISION.md | 010 | Blueprint Revision 1 — Permanent mantra integrated, transformation doctrine, sacred locations, artifact language, CTA standards | 2026-06-26 | **APPROVED** |
+| RPT-019 | doctrine/DOCTRINE_OF_REMEMBRANCE.md | 010A | Permanent Canon — Doctrine of Remembrance, purpose, seven principles, design question, emotional standard | 2026-06-26 | **Permanent — cannot be superseded** |
+| RPT-020 | doctrine/CREATIVE_ORDER_CHARTER.md | 010A | Creative Order Charter — organizational identity, engagement, service/product/space/language/mystery standards | 2026-06-26 | Active |
+| RPT-021 | doctrine/IMMERSIVE_EXPERIENCE_GUIDE.md | 010A | Immersive Experience Guide — cinematic model, five principles, page atmospheres, animation system, transition standards | 2026-06-26 | Active |
+| RPT-022 | doctrine/WORLDBUILDING_STYLE_GUIDE.md | 010A | Worldbuilding Style Guide — color system, typography, symbols, imagery, layout, five tests | 2026-06-26 | Active |
+| RPT-023 | doctrine/VISITOR_JOURNEY_MAP.md | 010A | Visitor Journey Map — five archetypes, emotional arc, path architecture, return doctrine | 2026-06-26 | Active |
+| RPT-024 | doctrine/SERVICE_RENAMING_GUIDE.md | 010A | Service Renaming Guide — all service/product/page/CTA official names, artifact descriptions, forbidden language | 2026-06-26 | Active |
+| RPT-025 | doctrine/DISCOVERY_SYSTEM.md | 010A | Discovery System — hidden scrolls, clickable glyphs, lore fragments, environmental storytelling, discovery map | 2026-06-26 | Active |
+| RPT-026 | doctrine/ACTION_FREQUENCY.md | 010A | ACTION Frequency — Fifth Frequency doctrine, architecture, pillars, each one teach one / each one reach one protocols | 2026-06-26 | Active |
 
 ---
 

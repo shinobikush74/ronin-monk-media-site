@@ -133,6 +133,34 @@
 
 ---
 
+## TASK-022 | Sprint 010A — Doctrine of Remembrance + Eight Doctrine Documents
+**Date:** 2026-06-26
+**Trigger:** Creator directive — Sprint 010A Doctrine of Remembrance. Blueprint approved. Implementation authorized after doctrine documentation complete.
+**Key decisions:**
+- Headquarters is permanently designated a living world and place of remembrance — not a website, agency, or studio
+- Doctrine of Remembrance established as permanent canon (cannot be superseded by sprint briefs)
+- The Second Doctrine added: "Remember who you were. Imagine who you could become. Build what the world has forgotten."
+- Fifth Frequency (ACTION) added to the four-frequency system — WORD / SOUND / SYMBOL / STORY / ACTION
+- Pages formally renamed as sacred locations: The Threshold, The Order, The Archive, The Resonance Chamber, The Forge, The Living Mythology, The Council Chamber, The Marketplace of Relics, The Fifth Frequency
+- Services renamed as rituals: World Awakening, Signal Calibration, Voice Recovery, Temple Construction, The First Council
+- Discovery System established: six categories of hidden elements, full discovery map for Sprint 010
+- Every service reframed as transformation; every product reframed as artifact
+- Cinematic design standard established: filmmaker model, five principles of flow, eight animation types
+- Five visitor archetypes mapped: The Seeker, The Collaborator, The Listener, The Lore Reader, The Carrier
+**Files created:**
+- `documentation/doctrine/DOCTRINE_OF_REMEMBRANCE.md` — permanent canon
+- `documentation/doctrine/CREATIVE_ORDER_CHARTER.md`
+- `documentation/doctrine/IMMERSIVE_EXPERIENCE_GUIDE.md`
+- `documentation/doctrine/WORLDBUILDING_STYLE_GUIDE.md`
+- `documentation/doctrine/VISITOR_JOURNEY_MAP.md`
+- `documentation/doctrine/SERVICE_RENAMING_GUIDE.md`
+- `documentation/doctrine/DISCOVERY_SYSTEM.md`
+- `documentation/doctrine/ACTION_FREQUENCY.md`
+**Files updated:** `SPR_010_MASTER_BLUEPRINT.md` (status), `PROJECT_STATUS.md`, `CEO_DASHBOARD.md`, `REPORT_INDEX.md` (RPT-019 through RPT-026 added), `PROJECT_EXECUTION_LOG.md`
+**Status:** Complete — Sprint 010A implementation authorized and ready to begin
+
+---
+
 ## TASK-021 | Sprint 010 — Immersive Transformation Blueprint (Revised)
 **Date:** 2026-06-26
 **Scope:** Creative direction, information architecture, homepage wireframe, visual system, animation plan, user journey, asset map, connection web — for full site transformation
