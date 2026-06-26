@@ -42,6 +42,23 @@
 
 ---
 
+| RPT-031 | ../ros/RONIN_OPERATING_SYSTEM.md | 012 | ROS v1.0 — Master document. First Law, Five Objectives, Daily Builder Principle, Agent Principle, five-layer architecture | 2026-06-26 | **AWAITING CREATOR APPROVAL** |
+| RPT-032 | ../ros/ROS_ARCHITECTURE.md | 012 | ROS Architecture — five-layer diagram, data flows (Morning/Revenue/Publishing/Intelligence/Knowledge), agent interaction map, governance matrix | 2026-06-26 | Awaiting approval |
+| RPT-033 | ../ros/EXECUTIVE_COUNCIL.md | 012 | Executive Council — six councils (Revenue, Publishing, Creative, Operations, Intelligence, Archive) fully specified | 2026-06-26 | Awaiting approval |
+| RPT-034 | ../ros/AGENT_STANDARD.md | 012 | Agent Standard — universal 12-element specification governing all ROS agents present and future | 2026-06-26 | Awaiting approval |
+| RPT-035 | ../ros/DAILY_COUNCIL_PROTOCOL.md | 012 | Daily Council Protocol — 14-element Daily Council Brief, delivery protocol, cadence, 5–10 minute limit | 2026-06-26 | Awaiting approval |
+| RPT-036 | ../ros/NEXT_100_PROTOCOL.md | 012 | Next $100 Protocol — four paths to next $100, daily process format, milestone sequence, current active mission | 2026-06-26 | Awaiting approval |
+| RPT-037 | ../ros/LEVERAGE_FRAMEWORK.md | 012 | Leverage Framework — five leverage dimensions, metrics, quarterly review, current baseline 8/50 | 2026-06-26 | Awaiting approval |
+| RPT-038 | ../ros/agents/CRO_AGENT.md | 012 | CRO Agent — Chief Revenue Officer, 12-element spec, daily checklist, report format | 2026-06-26 | Awaiting approval |
+| RPT-039 | ../ros/agents/PROPOSAL_AGENT.md | 012 | Proposal Agent — Proposal Officer, 24-hour turnaround standard, 12-element spec | 2026-06-26 | Awaiting approval |
+| RPT-040 | ../ros/agents/PUBLISHING_AGENT.md | 012 | Publishing Agent — Publishing Officer, multi-platform adaptation standard, 12-element spec | 2026-06-26 | Awaiting approval |
+| RPT-041 | ../ros/agents/MARKET_INTELLIGENCE_AGENT.md | 012 | Market Intelligence Agent — one actionable signal per day standard, 12-element spec | 2026-06-26 | Awaiting approval |
+| RPT-042 | ../ros/agents/CRM_AGENT.md | 012 | CRM Agent — CRM Officer, no relationship lost to neglect standard, 12-element spec | 2026-06-26 | Awaiting approval |
+
+---
+
 *All release packets stored in: `documentation/reports/`*
 *All doctrine documents stored in: `documentation/doctrine/`*
+*ROS documents stored in: `documentation/ros/`*
+*Agent specifications stored in: `documentation/ros/agents/`*
 *Constitution and Brand Doctrine stored in: `documentation/`*

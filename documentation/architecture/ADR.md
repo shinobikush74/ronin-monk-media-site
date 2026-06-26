@@ -163,3 +163,27 @@
 **Decision:** Every page of the Headquarters contains at least one discovery element — hidden environmental copy, clickable glyphs, lore fragments in HTML source, hidden audio, or unlockable content. These are never advertised. They are found by curiosity.
 **Rationale:** A world has more in it than is immediately visible. The Discovery System is how the Headquarters communicates depth — it rewards the visitor who looks more carefully, creating return visits and the feeling that the Headquarters is alive. Discovery elements are catalogued in `documentation/doctrine/DISCOVERY_SYSTEM.md` and never load-bearing (critical information is never only hidden).
 **Status:** Active — Sprint 010 implementation per the discovery map in DISCOVERY_SYSTEM.md.
+
+---
+
+## ADR-021 | Ronin Operating System (ROS) — Manual-First Agent Architecture
+**Sprint:** 012 (Operation Forge)
+**Decision:** All ROS agents (CRO, Proposal, Publishing, Market Intelligence, CRM) operate at Manual Automation Level. Every output is advisory. No agent executes any external-facing action without Creator approval. Automation level increases incrementally per sprint with explicit Creator sign-off at each stage.
+**Rationale:** The Agent Principle (Constitutional Amendment v1.2) establishes that agents serve Creator judgment and may not move faster than the Creator can see. Starting at Manual level protects against automation drift — where systems act in ways the Creator didn't intend because boundaries were set too loose at the start. Automation earns trust before it earns authority.
+**Status:** Active — governs all five ROS v1.0 agents. Review at Sprint 014 for first automation upgrade candidates.
+
+---
+
+## ADR-022 | Daily Council Brief — 5–10 Minute Hard Limit
+**Sprint:** 012 (Operation Forge)
+**Decision:** The Daily Council Brief must be reviewable in 5–10 minutes. If reviewing takes longer, the brief is too long and must be condensed. The brief is not a status report — it is a decision-support tool. Its purpose is to surface the single highest-value action available to the Creator today.
+**Rationale:** A brief that takes 30 minutes to read will not be read. A Creative Order whose CEO starts the day overwhelmed by their own operating system has the wrong operating system. The Daily Builder Principle (Constitutional Amendment v1.2) requires the Creator to build every day — not to manage systems. The brief serves the build; it does not replace it.
+**Status:** Active — governs all Daily Council Protocol outputs (`documentation/ros/DAILY_COUNCIL_PROTOCOL.md`).
+
+---
+
+## ADR-023 | Five-Layer ROS Architecture — No Components Between Layers
+**Sprint:** 012 (Operation Forge)
+**Decision:** ROS v1.0 uses a strict five-layer architecture: Foundation (Documents) → Operations (Protocols) → Agents (Execution) → Councils (Oversight) → Constitution (Authority). Information flows up for reporting and down for direction. No agent may bypass its council to issue directives. No council may amend the Constitution.
+**Rationale:** A system that allows any component to act outside its layer creates governance failures — agents accumulating authority they were never granted, councils drifting from their scope. The layer architecture enforces the Creator's authority by making every path to action traceable through the hierarchy.
+**Status:** Active — enforced in all agent Authority sections and Executive Council definitions (`documentation/ros/ROS_ARCHITECTURE.md`).

@@ -1,5 +1,5 @@
 # CONSTITUTION OF RONIN MONK MEDIA
-## Version 1.0 — Permanent Constitutional Authority
+## Version 1.2 — Permanent Constitutional Authority
 **Established:** 2026-06-26
 **Established by:** LaRon Monte Adams (Creator / CEO)
 **Status:** HIGHEST GOVERNING DOCUMENT
@@ -202,6 +202,54 @@ The Headquarters now exists to support those missions.
 
 ---
 
+## THE DAILY BUILDER PRINCIPLE
+*(Constitutional Amendment — 2026-06-26)*
+
+The Creator builds every day.
+
+Not every day produces a finished work.
+
+Not every day produces revenue.
+
+But every day, something is made, moved, or advanced.
+
+A Creative Order that does not create is not an Order.
+
+It is an archive of intentions.
+
+The Daily Builder Principle overrides perfectionism, waiting, and drift.
+
+Build today. Ship when ready. Never stop building.
+
+---
+
+## THE AGENT PRINCIPLE
+*(Constitutional Amendment — 2026-06-26)*
+
+Agents exist to serve the Creator.
+
+Not to replace the Creator's judgment.
+
+Not to automate what requires wisdom.
+
+Not to move faster than the Creator can see.
+
+Every agent operates within a defined boundary.
+
+Every agent produces advisory output until the Creator approves execution.
+
+Every agent can be paused, redirected, or removed by Creator directive.
+
+The Creative Order is not a machine.
+
+It is a living organization led by a human being with a purpose.
+
+Agents amplify that purpose.
+
+They do not define it.
+
+---
+
 ## GOVERNING HIERARCHY
 
 | Rank | Document | Authority |
@@ -231,6 +279,8 @@ Each amendment increments the version number and records the date and nature of 
 | Version | Date | Change |
 |---------|------|--------|
 | 1.0 | 2026-06-26 | Original Constitution established |
+| 1.1 | 2026-06-26 | Amendment: Daily Builder Principle — Creator builds every day |
+| 1.2 | 2026-06-26 | Amendment: Agent Principle — agents serve Creator judgment; all output advisory until Creator approves |
 
 ---
 

@@ -133,6 +133,32 @@
 
 ---
 
+## TASK-026 | Sprint 012 — Operation Forge (Ronin Operating System v1.0)
+**Date:** 2026-06-26
+**Trigger:** Creator directive — Operation Forge. "Build the foundation that will allow the Creative Order to scale globally for decades."
+**Constitutional amendments added:**
+- Daily Builder Principle — Creator builds every day
+- Agent Principle — all agents serve Creator judgment; all output advisory
+**Constitution updated:** v1.0 → v1.2
+**Revenue Constitution updated:** v1.0 → v1.1 (ROS integration cross-reference added)
+**New documents created (12):**
+- `documentation/ros/RONIN_OPERATING_SYSTEM.md` — master document, First Law, Five Objectives
+- `documentation/ros/ROS_ARCHITECTURE.md` — five-layer architecture, data flows, governance matrix
+- `documentation/ros/EXECUTIVE_COUNCIL.md` — six councils fully specified
+- `documentation/ros/AGENT_STANDARD.md` — universal 12-element agent specification
+- `documentation/ros/DAILY_COUNCIL_PROTOCOL.md` — 14-element Daily Council Brief
+- `documentation/ros/NEXT_100_PROTOCOL.md` — four paths to next $100, daily process, milestone sequence
+- `documentation/ros/LEVERAGE_FRAMEWORK.md` — five leverage dimensions, quarterly review, baseline 8/50
+- `documentation/ros/agents/CRO_AGENT.md` — Chief Revenue Officer, 12-element spec
+- `documentation/ros/agents/PROPOSAL_AGENT.md` — Proposal Officer, 12-element spec
+- `documentation/ros/agents/PUBLISHING_AGENT.md` — Publishing Officer, 12-element spec
+- `documentation/ros/agents/MARKET_INTELLIGENCE_AGENT.md` — Market Intelligence Officer, 12-element spec
+- `documentation/ros/agents/CRM_AGENT.md` — CRM Officer, 12-element spec
+**Documents updated (7):** `CONSTITUTION_OF_RONIN_MONK_MEDIA.md`, `REVENUE_CONSTITUTION.md`, `CEO_DASHBOARD.md`, `PROJECT_STATUS.md`, `PROJECT_EXECUTION_LOG.md`, `ADR.md`, `REPORT_INDEX.md`
+**Status:** AWAITING CREATOR APPROVAL — architecture presented for review before implementation
+
+---
+
 ## TASK-025 | Sprint 011 — Revenue Command Center (Operation First Revenue)
 **Date:** 2026-06-26
 **Revenue Constitution questions answered:** Revenue (yes — daily dashboard + ROI actions) · Audience (yes — Collector Pipeline) · IP (yes — artifact framing) · Time savings (yes — replaces 5+ manual checks)

@@ -115,9 +115,25 @@ This Revenue Constitution may be updated by Creator directive to reflect changes
 | Version | Date | Change |
 |---------|------|--------|
 | 1.0 | 2026-06-26 | Established |
+| 1.1 | 2026-06-26 | Operation Forge — ROS v1.0 integrated. CRO Agent now governs daily revenue focus. Next $100 Protocol governs daily revenue action. Revenue Constitution Sprint Test unchanged. |
 
 ---
 
-*Revenue Constitution — Version 1.0*
+## ROS INTEGRATION
+
+The Ronin Operating System (ROS v1.0) operationalizes this Revenue Constitution through:
+
+- **CRO Agent** — daily revenue tracking, pipeline monitoring, Next $100 Mission
+- **Proposal Agent** — 24-hour proposal turnaround for all consulting services
+- **CRM Agent** — no relationship lost to neglect; all client stages tracked
+- **Next $100 Protocol** (`documentation/ros/NEXT_100_PROTOCOL.md`) — daily revenue focus standard
+
+All ROS agents operate under the authority of this Revenue Constitution. When an agent recommendation conflicts with the Revenue Priority Order, the Priority Order governs.
+
+Reference: `documentation/ros/RONIN_OPERATING_SYSTEM.md`
+
+---
+
+*Revenue Constitution — Version 1.1*
 *Permanent operational directive. Subordinate to CONSTITUTION_OF_RONIN_MONK_MEDIA.md.*
 *Governs all sprint prioritization and business development decisions.*

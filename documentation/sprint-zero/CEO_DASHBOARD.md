@@ -9,8 +9,9 @@
 
 | Document | Location | Authority |
 |----------|----------|-----------|
-| **Constitution of Ronin Monk Media** | `documentation/CONSTITUTION_OF_RONIN_MONK_MEDIA.md` | **SUPREME** — all decisions defer here |
-| **Revenue Constitution** | `documentation/REVENUE_CONSTITUTION.md` | **OPERATIONAL** — governs all sprint prioritization |
+| **Constitution of Ronin Monk Media** | `documentation/CONSTITUTION_OF_RONIN_MONK_MEDIA.md` | **SUPREME** — all decisions defer here (v1.2) |
+| **Revenue Constitution** | `documentation/REVENUE_CONSTITUTION.md` | **OPERATIONAL** — governs all sprint prioritization (v1.1) |
+| **Ronin Operating System** | `documentation/ros/RONIN_OPERATING_SYSTEM.md` | **SYSTEMS** — daily operating rhythm, agents, councils (v1.0) |
 | Brand Doctrine | `documentation/BRAND_DOCTRINE.md` | Applied doctrine reference |
 | Doctrine of Remembrance | `documentation/doctrine/DOCTRINE_OF_REMEMBRANCE.md` | Permanent canon |
 | Eight Doctrine Documents | `documentation/doctrine/` | Active governance |
@@ -227,4 +228,29 @@ Before any sprint — must answer YES to at least one:
 | Music embeds | 5 platforms live |
 | Email capture | Netlify Forms active (destination not configured) |
 | Social links | Needs Creator update in Settings |
-| Agent workforce | 9 agents specified · International growth roles added · All Manual Only |
+| Agent workforce | **ROS v1.0 — 5 agents specified (CRO, Proposal, Publishing, Market Intelligence, CRM) · All Manual-Advisory · Awaiting Creator approval** |
+
+---
+
+## RONIN OPERATING SYSTEM (ROS v1.0) — STATUS
+
+**Status:** AWAITING CREATOR APPROVAL
+
+| Component | File | Status |
+|-----------|------|--------|
+| ROS Master Document | `ros/RONIN_OPERATING_SYSTEM.md` | Complete |
+| Architecture | `ros/ROS_ARCHITECTURE.md` | Complete |
+| Executive Council (6 councils) | `ros/EXECUTIVE_COUNCIL.md` | Complete |
+| Agent Standard (12-element spec) | `ros/AGENT_STANDARD.md` | Complete |
+| Daily Council Protocol (14 elements) | `ros/DAILY_COUNCIL_PROTOCOL.md` | Complete |
+| Next $100 Protocol | `ros/NEXT_100_PROTOCOL.md` | Complete |
+| Leverage Framework | `ros/LEVERAGE_FRAMEWORK.md` | Complete |
+| CRO Agent | `ros/agents/CRO_AGENT.md` | Complete |
+| Proposal Agent | `ros/agents/PROPOSAL_AGENT.md` | Complete |
+| Publishing Agent | `ros/agents/PUBLISHING_AGENT.md` | Complete |
+| Market Intelligence Agent | `ros/agents/MARKET_INTELLIGENCE_AGENT.md` | Complete |
+| CRM Agent | `ros/agents/CRM_AGENT.md` | Complete |
+
+**Constitutional Amendments Added (v1.2):**
+- Daily Builder Principle — Creator builds every day
+- Agent Principle — agents serve Creator judgment; all output advisory until Creator approves execution
