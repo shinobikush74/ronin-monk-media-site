@@ -56,6 +56,7 @@
 | RPT-042 | ../ros/agents/CRM_AGENT.md | 012 | CRM Agent — CRM Officer, no relationship lost to neglect standard, 12-element spec | 2026-06-26 | Active |
 | RPT-043 | reports/SPR_012A_RELEASE_PACKET.md | 012A | Constitution v1.3 — Leverage Principle · Stewardship Principle · Daily Council Principle · Phase IV Execution declared | 2026-06-26 | Complete |
 | RPT-044 | — | 012B | Constitution v1.4 LOCKED — Compounding Principle added | 2026-06-26 | Complete |
+| RPT-045 | reports/SPR_012_RELEASE_PACKET.md | 012 | ROS v1.0 Release Packet — architecture diagram, full file registry, agent governance table, Phase IV mission priority | 2026-06-26 | **AWAITING CREATOR APPROVAL** |
 
 ---
 
