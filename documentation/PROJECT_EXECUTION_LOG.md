@@ -133,6 +133,28 @@
 
 ---
 
+## TASK-021 | Sprint 010 — Immersive Transformation Blueprint (Revised)
+**Date:** 2026-06-26
+**Scope:** Creative direction, information architecture, homepage wireframe, visual system, animation plan, user journey, asset map, connection web — for full site transformation
+**Key decisions:**
+- Four Frequencies (WORD / SOUND / SYMBOL / STORY) replace medium-based nav
+- Permanent brand mantra established: "Every story is a weapon against hopelessness. Every symbol is a reminder of forgotten greatness. Every song is a transmission."
+- Seven transformation principles documented: inner greatness, imagination, discipline, visualization, cooperation, each one teach one, each one reach one
+- Mantra placed in: homepage Zone 1 cascade, footer (all pages), The Order zone, each frequency page anchor
+- Pages reframed as sacred locations: The Archive, The Resonance Chamber, The Forge, The Living Mythology
+- Products reframed as artifacts: scrolls, transmissions, relics, protocols
+- Services reframed as transformation: World Awakening, Signal Calibration, Voice Recovery
+- CTA language doctrine established: "Enter," "Receive," "Carry this," "Begin the transmission"
+- Transmission Thread connection map built from 200+ music/visual/video assets
+- Homepage hero: `resonance gate short 1.mp4` muted loop video
+- Shinobi Kush transparent character as guide on SOUND page
+- Full asset copy plan: 24 files mapped from source paths to `assets/` destinations
+- Implementation: Sprint 010A (homepage) → 010B (4 frequency pages) → 010C (existing page upgrades)
+**Files created:** `SPR_010_MASTER_BLUEPRINT.md`, `SPR_010_MASTER_BLUEPRINT_REVISION.md`
+**Status:** Awaiting Creator approval before Sprint 010A begins
+
+---
+
 ## TASK-020 | Sprint 009G — Production Deployment Audit
 **Date:** 2026-06-26
 **Production URL:** https://www.roninmonkmediallc.com

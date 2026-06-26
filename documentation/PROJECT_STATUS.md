@@ -10,7 +10,7 @@
 | Field | Value |
 |-------|-------|
 | Platform Version | **Ronin Monk Media Creator OS v2.0 — Production Stable** |
-| Active Sprint | Sprint 009E/F/G Complete — DEPLOYED · Production audit passed · Awaiting Sprint 010 approval |
+| Active Sprint | Sprint 010 Blueprint — Revised · Permanent mantra integrated · Awaiting Creator approval before 010A |
 | Admin Pages | 23 pages (22 existing + audience.html new Sprint 009) |
 | Public Pages | index, about, services, shop, music, press, contact + redirects |
 | Deployment | Netlify (manual — do not deploy without Creator approval) |
@@ -37,6 +37,7 @@
 | 009D | Public Site CSS Hotfix | Complete | 2026-06-26 | All 15 public pages: root-relative → relative CSS/JS/asset paths. Same fix as 009A (admin). 0 root-relative paths remain platform-wide. |
 | 009E/F | GitHub Push — New Repo | Complete | 2026-06-26 | 81 files pushed to shinobikush74/ronin-monk-media-site. Protected IP excluded. Remote corrected from veil-codex-core. Creator OS v2.0 on GitHub. |
 | 009G | Production Deployment + Audit | Complete | 2026-06-26 | Netlify reconnected. All pages audited live. CSS/nav/products/blog/admin all verified. **v2.0 Production Stable.** |
+| 010 | Immersive Transformation — Blueprint | In Progress | 2026-06-26 | Master Blueprint approved in direction. Revision 1 adds permanent brand mantra, transformation doctrine, sacred location framing, artifact product language. Awaiting Creator approval before 010A. |
 
 ---
 

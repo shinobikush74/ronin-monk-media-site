@@ -22,6 +22,8 @@
 | RPT-014 | SPR_009D_PUBLIC_SITE_CSS_HOTFIX.md | 009D | Public Site CSS Hotfix — 15 pages fixed, 0 root-relative paths remain | 2026-06-26 | Complete |
 | RPT-015 | SPR_009E_009F_GITHUB_DEPLOYMENT_REPORT.md | 009E/F | GitHub Push — 81 files to ronin-monk-media-site, Creator OS v2.0 on GitHub | 2026-06-26 | Complete |
 | RPT-016 | DEPLOYMENT_VERIFICATION_REPORT.md | 009G | Production Audit — v2.0 Production Stable · All pages, nav, products, blog, admin verified | 2026-06-26 | Complete |
+| RPT-017 | SPR_010_MASTER_BLUEPRINT.md | 010 | Immersive Transformation Master Blueprint v1 — Four Frequencies, asset map, connection web, homepage wireframe | 2026-06-26 | Superseded by RPT-018 |
+| RPT-018 | SPR_010_MASTER_BLUEPRINT_REVISION.md | 010 | Blueprint Revision 1 — Permanent mantra integrated, transformation doctrine, sacred locations, artifact language, CTA standards | 2026-06-26 | Awaiting Approval |
 
 ---
 
