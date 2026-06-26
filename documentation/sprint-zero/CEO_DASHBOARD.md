@@ -9,25 +9,26 @@
 
 | Field | Value |
 |-------|-------|
-| Platform | **Ronin Monk Media Creator OS v2.0** |
-| Sprint | Sprint 009E/F COMPLETE — Code on GitHub |
+| Platform | **Ronin Monk Media Creator OS v2.0 — PRODUCTION STABLE** |
+| Sprint | Sprint 009G COMPLETE — Production audit passed |
 | Repository | https://github.com/shinobikush74/ronin-monk-media-site |
-| Commit | `0a17d44` — feat(v2): Mission Control, Audience Intelligence, Revenue Center… |
-| Admin Pages | 23 (all audited, all clean, all on GitHub) |
-| Revenue Status | Infrastructure complete · No confirmed paid sales yet |
-| Deployment | **PENDING — 1 Creator action: reconnect Netlify to new repo** |
+| Live URL | https://www.roninmonkmediallc.com |
+| Commit deployed | `0a17d44` — feat(v2): Mission Control, Audience Intelligence, Revenue Center… |
+| Admin Pages | 23 (all live, all noindexed, all behind robots.txt) |
+| Revenue Status | Infrastructure live · All products + services visible · No confirmed paid sales yet |
+| Deployment | **LIVE — Auto-deploy active on push to main** |
 
 ---
 
-## NETLIFY RECONNECT — CREATOR ACTION REQUIRED
+## CREATOR ACTIONS — POST-DEPLOY
 
 | # | Action | Where | Status |
 |---|--------|--------|--------|
-| C1 | Connect Netlify to new GitHub repo | Netlify → Site config → Build & deploy → Repository → Link to `shinobikush74/ronin-monk-media-site` · branch: `main` · publish dir: `.` · no build command | **Creator to complete** |
-| C2 | Configure Netlify Forms email notifications | Netlify → Site → Forms → codex-signup + contact → Notifications (after first deploy completes) | **Creator to complete post-deploy** |
-| C3 | Verify PayPal payment link | Open `paypal.com/ncp/payment/VNU3CJ7J34D5Q` and confirm it's your page | **Creator to complete** |
+| C1 | Netlify reconnected to correct repo | Complete | ✓ Done |
+| C2 | Configure Netlify Forms email notifications | Netlify → Site → Forms → codex-signup + contact → Notifications | **Pending — Creator action** |
+| C3 | Verify PayPal payment link | Open `paypal.com/ncp/payment/VNU3CJ7J34D5Q` in browser and confirm it's your page | **Pending — Creator action** |
 
-**After C1: Netlify auto-deploys. Claude performs production audit. Then Claude stops for Sprint 010 approval.**
+**Site is live. C2 and C3 are not blocking — they improve forms and payment flow but the site operates without them.**
 
 ---
 
