@@ -38,6 +38,28 @@ This law governs every decision within ROS. When any component of the system dri
 
 ---
 
+## THE FIRST LAW OF OPERATION FORGE
+
+Every component of the Ronin Operating System must create measurable value.
+
+Value is measured by one or more of the following:
+
+- Revenue Generated
+- Creator Hours Saved
+- Audience Growth
+- Collector Growth
+- Intellectual Property Strengthened
+- Relationships Strengthened
+- Systems Improved
+
+If a feature cannot demonstrate measurable value, it shall not become part of ROS.
+
+ROS exists to compound the effectiveness of the Creative Order.
+
+Not to increase complexity.
+
+---
+
 ## THE FIVE ROS OBJECTIVES
 
 Every component of ROS must satisfy at least one:
@@ -221,6 +243,7 @@ The goal is not globalization. The goal is meaningful participation across cultu
 | Version | Date | Amendment |
 |---------|------|-----------|
 | 1.0 | 2026-06-26 | ROS v1.0 established — Operation Forge |
+| 1.1 | 2026-06-26 | First Law of Operation Forge added — measurable value standard for all components |
 
 ---
 
