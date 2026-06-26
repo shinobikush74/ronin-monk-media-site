@@ -1,0 +1,342 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Settings — RMHQ · Ronin Monk Media LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body class="theme-obsidian admin-body">
+<div class="admin-shell">
+
+  <header class="admin-topbar">
+    <a class="admin-home-link" href="/">← Public Site</a>
+    <span class="admin-brand">RMHQ</span>
+    <span class="admin-badge">Private Workspace</span>
+    <span class="admin-topbar-right">Ronin Monk Media LLC</span>
+  </header>
+
+  <aside class="admin-sidebar" role="navigation" aria-label="RMHQ Navigation">
+    <p class="admin-nav-section">Command</p>
+    <a class="admin-nav-item" href="/admin/"><span class="admin-nav-icon">⬛</span> Mission Control</a>
+    <a class="admin-nav-item" href="/admin/crm.html"><span class="admin-nav-icon">👥</span> CRM</a>
+    <p class="admin-nav-section">Revenue</p>
+    <a class="admin-nav-item" href="/admin/revenue.html"><span class="admin-nav-icon">💰</span> Revenue Center</a>
+    <a class="admin-nav-item" href="/admin/proposals.html"><span class="admin-nav-icon">📄</span> Proposals &amp; Invoices</a>
+    <p class="admin-nav-section">Grow</p>
+    <a class="admin-nav-item" href="/admin/products.html"><span class="admin-nav-icon">📦</span> Product Center</a>
+    <a class="admin-nav-item" href="/admin/marketing.html"><span class="admin-nav-icon">📈</span> Marketing Center</a>
+    <a class="admin-nav-item" href="/admin/analytics.html"><span class="admin-nav-icon">📊</span> Analytics</a>
+    <a class="admin-nav-item" href="/admin/client-portal.html"><span class="admin-nav-icon">🤝</span> Client Portal</a>
+    <p class="admin-nav-section">Create</p>
+    <a class="admin-nav-item" href="/admin/publishing.html"><span class="admin-nav-icon">📚</span> Publishing Center</a>
+    <a class="admin-nav-item" href="/admin/music-center.html"><span class="admin-nav-icon">🎵</span> Music Center</a>
+    <a class="admin-nav-item" href="/admin/content.html"><span class="admin-nav-icon">✍️</span> Creator Studio</a>
+    <a class="admin-nav-item" href="/admin/lore.html"><span class="admin-nav-icon">📜</span> Lore Engine</a>
+    <p class="admin-nav-section">Scale</p>
+    <a class="admin-nav-item" href="/admin/calendar.html"><span class="admin-nav-icon">🗓️</span> Calendar</a>
+    <a class="admin-nav-item" href="/admin/game.html"><span class="admin-nav-icon">🎮</span> Game Center</a>
+    <a class="admin-nav-item" href="/admin/automation.html"><span class="admin-nav-icon">⚡</span> Automation Center</a>
+    <p class="admin-nav-section">Intelligence</p>
+    <a class="admin-nav-item" href="/admin/knowledge.html"><span class="admin-nav-icon">🧠</span> Knowledge Center</a>
+    <a class="admin-nav-item" href="/admin/queue.html"><span class="admin-nav-icon">🔄</span> Agent Queue</a>
+    <a class="admin-nav-item" href="/admin/audience.html"><span class="admin-nav-icon">🌍</span> Audience Intel</a>
+    <p class="admin-nav-section">System</p>
+    <a class="admin-nav-item" href="/admin/agents.html"><span class="admin-nav-icon">🤖</span> AI Workforce</a>
+    <a class="admin-nav-item" href="/admin/reports.html"><span class="admin-nav-icon">📋</span> Reports</a>
+    <a class="admin-nav-item active" href="/admin/settings.html"><span class="admin-nav-icon">⚙️</span> Settings</a>
+  </aside>
+
+  <main class="admin-main" id="main">
+
+    <div class="admin-page-header">
+      <p class="admin-page-eyebrow">Configuration</p>
+      <h1 class="admin-page-title">Settings</h1>
+      <p class="admin-page-sub">Platform status, integrations, brand config, and future credentials. No private keys or passwords stored here.</p>
+    </div>
+
+    <!-- BRAND ASSETS -->
+    <p class="admin-section-head">Brand Assets</p>
+    <div class="settings-section">
+      <h3 class="settings-section-title">Identity</h3>
+      <div class="settings-row">
+        <span class="settings-row-label">Business Name</span>
+        <span class="settings-row-value">Ronin Monk Media LLC</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Brand Voice</span>
+        <span class="settings-row-value">Afro-futurist · Independent · Precise · No hype</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Primary Font</span>
+        <span class="settings-row-value">Cinzel (display) · Cormorant Garamond (serif) · Inter (body)</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Color Palette</span>
+        <span class="settings-row-value">Obsidian background · Brass accent · Mist text</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Theme Class</span>
+        <span class="settings-row-value"><span class="config-path">theme-obsidian</span> — applied to &lt;body&gt;</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Images / Logo</span>
+        <div>
+          <span class="settings-row-value"><span class="config-path">assets/img/</span></span>
+          <span class="settings-row-note">Add logo file here when ready. Update favicon in site.webmanifest.</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Style Guide</span>
+        <div>
+          <span class="settings-row-value"><span class="config-path">css/styles.css</span></span>
+          <span class="settings-row-note">All design tokens (--obsidian-*, --brass-*, --mist-*) defined at :root</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAYMENTS -->
+    <p class="admin-section-head">Payments</p>
+    <div class="settings-section">
+      <h3 class="settings-section-title">Payment Configuration — <span class="config-path">config/payment-links.json</span></h3>
+      <div class="settings-row">
+        <span class="settings-row-label">PayPal</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--ok">Active</span> Test link live</span>
+          <span class="settings-row-note">Temporary. Replace with Stripe when account approved. Config key: paypal.url</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Stripe</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--alert">Pending Review</span></span>
+          <span class="settings-row-note">Check email for approval status. When approved, update stripe.url and stripe.publishable_key in config.</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Gumroad</span>
+        <div>
+          <span class="settings-row-value">roninmonkmedia.gumroad.com</span>
+          <span class="settings-row-note">Log in to verify 3 products are published and priced correctly.</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Bandcamp</span>
+        <div>
+          <span class="settings-row-value">shinobikush.bandcamp.com</span>
+          <span class="settings-row-note">Log in to verify album published. Grab embed code for music.html.</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Security Rule</span>
+        <div>
+          <span class="settings-row-value">Public config only</span>
+          <span class="settings-row-note">Never store secret keys, API secrets, passwords, or bank info in any project file.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEBSITE -->
+    <p class="admin-section-head">Website</p>
+    <div class="settings-section">
+      <h3 class="settings-section-title">Public Site</h3>
+      <div class="settings-row">
+        <span class="settings-row-label">Domain</span>
+        <span class="settings-row-value">roninmonkmediallc.com</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Hosting</span>
+        <span class="settings-row-value">Netlify</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Deploy Method</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--warn">Manual Upload</span></span>
+          <span class="settings-row-note">Git not yet initialized. Drag-and-drop deploy on Netlify. Git integration planned.</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Forms</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--ok">Active</span> 2 forms</span>
+          <span class="settings-row-note">codex-signup · contact-form — check Netlify → Forms tab for submissions</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Redirects</span>
+        <div>
+          <span class="settings-row-value"><span class="config-path">_redirects</span> — 10 routes active</span>
+          <span class="settings-row-note">/home /doctrines /sagas /music /codex /blog /shop /contact /services /admin</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Admin Area</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--warn">No Auth</span> /admin — open access</span>
+          <span class="settings-row-note">Not linked from public nav. Do not share URL publicly. Auth planned Sprint 010+.</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Structured Data</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--ok">Active</span> JSON-LD</span>
+          <span class="settings-row-note">Organization schema (index.html) · ProfessionalService schema (services.html)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI CONFIGURATION -->
+    <p class="admin-section-head">AI Configuration</p>
+    <div class="settings-section">
+      <h3 class="settings-section-title">Agent Runtime</h3>
+      <div class="settings-row">
+        <span class="settings-row-label">Current Mode</span>
+        <div>
+          <span class="settings-row-value">Manual — Human-in-the-loop</span>
+          <span class="settings-row-note">All agents run through Claude Code sessions. Creator approves all outputs before anything is used.</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Active Agents</span>
+        <span class="settings-row-value">9 specified · 0 automated</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Agent Specs</span>
+        <div>
+          <span class="settings-row-value"><span class="config-path">C:\Users\monte\RoninMonkMedia\agents\</span></span>
+          <span class="settings-row-note">9 AGENT_SPEC.md files — one per agent</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Lore Governance</span>
+        <div>
+          <span class="settings-row-value">Claude=Editor · Grok=Auditor · Creator=Approver</span>
+          <span class="settings-row-note">All lore is PROPOSAL_ONLY → proposed-new-canon/ folder until Creator approves</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Automation</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--planned">Sprint 010+</span></span>
+          <span class="settings-row-note">Full agent runtime to be built when platform foundation is stable</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BACKUPS -->
+    <p class="admin-section-head">Backups</p>
+    <div class="settings-section">
+      <h3 class="settings-section-title">Backup Status</h3>
+      <div class="settings-row">
+        <span class="settings-row-label">Website Backup</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--ok">Exists</span></span>
+          <span class="settings-row-note">ronin-monk-media-website_2026-05-28_0844.zip in RoninMonkMedia_Backups\</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Version Control</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--warn">Not Initialized</span></span>
+          <span class="settings-row-note">Git not yet set up. Create a new .zip backup before each major sprint.</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Documentation</span>
+        <div>
+          <span class="settings-row-value"><span class="config-path">C:\Users\monte\RoninMonkMedia\documentation\</span></span>
+          <span class="settings-row-note">Separate from website files — kept current with each sprint</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Git Plan</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--planned">Future Sprint</span></span>
+          <span class="settings-row-note">Initialize Git + connect to GitHub for automated version control</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- REPORTS -->
+    <p class="admin-section-head">Reports</p>
+    <div class="settings-section">
+      <h3 class="settings-section-title">Reporting System</h3>
+      <div class="settings-row">
+        <span class="settings-row-label">Reports Location</span>
+        <span class="settings-row-value"><span class="config-path">documentation/reports/</span></span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Naming Convention</span>
+        <span class="settings-row-value">SPR_00N_RELEASE_PACKET.md</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Report Index</span>
+        <span class="settings-row-value"><span class="config-path">documentation/reports/REPORT_INDEX.md</span></span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Delivery Rule</span>
+        <div>
+          <span class="settings-row-value">Save to disk + full print in chat</span>
+          <span class="settings-row-note">Every report is printed in full in the Claude session. Never "see the file."</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">CEO Dashboard</span>
+        <span class="settings-row-value"><span class="config-path">documentation/sprint-zero/CEO_DASHBOARD.md</span></span>
+      </div>
+    </div>
+
+    <!-- FUTURE INTEGRATIONS -->
+    <p class="admin-section-head">Future Integrations</p>
+    <div class="settings-section">
+      <h3 class="settings-section-title">Planned — Sprint 009+</h3>
+      <div class="settings-row">
+        <span class="settings-row-label">Email Platform</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--planned">Not Connected</span></span>
+          <span class="settings-row-note">Candidates: Beehiiv · Mailchimp · ConvertKit. Decide when email list is established.</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Analytics API</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--planned">Sprint 009</span></span>
+          <span class="settings-row-note">Currently: manual Netlify dashboard check. API integration will pull data into admin.</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Authentication</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--planned">Sprint 010+</span></span>
+          <span class="settings-row-note">Admin login gate. Options: Netlify Identity, Cloudflare Access, or custom. TBD.</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Gumroad API</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--planned">Sprint 006</span></span>
+          <span class="settings-row-note">Auto-sync product status and sales data into the Products dashboard.</span>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Agent Runtime</span>
+        <div>
+          <span class="settings-row-value"><span class="badge badge--planned">Sprint 010+</span></span>
+          <span class="settings-row-note">Automated agent scheduling, task queuing, and output review workflow.</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="../js/admin-utils.js" defer></script>
+</body>
+</html>
+
+
+

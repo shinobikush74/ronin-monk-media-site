@@ -1,0 +1,1415 @@
+/* ============================================================
+   RMHQ — Admin Shell Styles
+   Ronin Monk Media LLC — Private Dashboard
+   Inherits CSS variables from /css/styles.css
+   ============================================================ */
+
+/* ---------- admin layout shell ---------- */
+
+.admin-body {
+  overflow: hidden;
+}
+
+.admin-shell {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 52px 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ---------- topbar ---------- */
+
+.admin-topbar {
+  grid-column: 1 / -1;
+  background: var(--obsidian-0);
+  border-bottom: 1px solid rgba(196,160,98,.2);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1.4rem;
+}
+
+.admin-home-link {
+  color: var(--mist-3);
+  font-size: .82rem;
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+.admin-home-link:hover { color: var(--brass-2); }
+
+.admin-brand {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: .18em;
+  color: var(--brass-2);
+}
+
+.admin-badge {
+  font-size: .68rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--mist-3);
+  border: 1px solid rgba(196,160,98,.2);
+  padding: .2rem .65rem;
+  border-radius: 999px;
+}
+
+.admin-topbar-right {
+  margin-left: auto;
+  font-size: .82rem;
+  color: var(--mist-3);
+}
+
+/* ---------- sidebar ---------- */
+
+.admin-sidebar {
+  background: var(--obsidian-2);
+  border-right: 1px solid rgba(196,160,98,.12);
+  padding: 1.2rem 0;
+  overflow-y: auto;
+}
+
+.admin-nav-section {
+  font-size: .65rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--mist-3);
+  padding: 1rem 1.2rem .35rem;
+  margin: 0;
+}
+
+.admin-nav-item {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  padding: .6rem 1.2rem;
+  color: var(--mist-2);
+  font-size: .88rem;
+  letter-spacing: .01em;
+  border-left: 2px solid transparent;
+  transition: color .15s ease, background .15s ease, border-color .15s ease;
+  text-decoration: none;
+}
+
+.admin-nav-item:hover {
+  color: var(--brass-2);
+  background: rgba(212,175,55,.05);
+  border-left-color: var(--brass-3);
+}
+
+.admin-nav-item.active {
+  color: var(--brass-2);
+  background: rgba(212,175,55,.08);
+  border-left-color: var(--brass-2);
+  font-weight: 600;
+}
+
+.admin-nav-icon {
+  font-size: .9rem;
+  width: 1.1rem;
+  text-align: center;
+  flex-shrink: 0;
+  opacity: .7;
+}
+
+/* ---------- main content area ---------- */
+
+.admin-main {
+  background: var(--obsidian-1);
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.admin-page-header {
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(196,160,98,.12);
+}
+
+.admin-page-eyebrow {
+  font-size: .7rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--brass-1);
+  margin: 0 0 .4rem;
+}
+
+.admin-page-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--mist-1);
+  margin: 0 0 .3rem;
+}
+
+.admin-page-sub {
+  font-size: .88rem;
+  color: var(--mist-3);
+  margin: 0;
+}
+
+/* ---------- module placeholder ---------- */
+
+.module-placeholder {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(196,160,98,.15);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.module-status-chip {
+  display: inline-block;
+  background: rgba(212,175,55,.08);
+  border: 1px solid rgba(212,175,55,.22);
+  color: var(--brass-1);
+  font-size: .68rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  padding: .28rem .8rem;
+  border-radius: 999px;
+  margin-bottom: 1.2rem;
+}
+
+.module-placeholder h2 {
+  font-size: 1.4rem;
+  color: var(--mist-1);
+  margin: 0 0 .7rem;
+}
+
+.module-placeholder p {
+  color: var(--mist-2);
+  font-size: .95rem;
+  max-width: 44ch;
+  margin: 0 auto .5rem;
+}
+
+.module-sprint-tag {
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-size: .78rem;
+  color: var(--mist-3);
+  border: 1px dashed rgba(196,160,98,.2);
+  padding: .3rem .9rem;
+  border-radius: 999px;
+}
+
+/* ---------- dashboard cards ---------- */
+
+.admin-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 1.8rem;
+}
+
+.admin-card {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(196,160,98,.15);
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+}
+
+.admin-card-label {
+  font-size: .72rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--brass-1);
+  margin: 0 0 .4rem;
+}
+
+.admin-card-value {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--mist-1);
+  margin: 0 0 .2rem;
+}
+
+.admin-card-note {
+  font-size: .8rem;
+  color: var(--mist-3);
+  margin: 0;
+}
+
+.admin-card--alert .admin-card-value { color: var(--amber-1); }
+.admin-card--ok .admin-card-value { color: #6fcf97; }
+
+/* ---------- module map ---------- */
+
+.module-map {
+  display: grid;
+  gap: .85rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.module-chip {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(196,160,98,.12);
+  border-radius: 8px;
+  padding: .9rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+
+.module-chip-icon { font-size: 1.1rem; }
+
+.module-chip-text { display: grid; gap: .1rem; }
+
+.module-chip-name {
+  font-size: .88rem;
+  color: var(--mist-1);
+  font-weight: 600;
+}
+
+.module-chip-status {
+  font-size: .72rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.module-chip-status--live    { color: #6fcf97; }
+.module-chip-status--ready   { color: var(--brass-2); }
+.module-chip-status--planned { color: var(--mist-3); }
+.module-chip-status--future  { color: rgba(196,160,98,.4); }
+
+/* ---------- section heads ---------- */
+
+.admin-section-head {
+  font-size: .75rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--brass-1);
+  margin: 1.8rem 0 .8rem;
+  padding-bottom: .4rem;
+  border-bottom: 1px solid rgba(196,160,98,.12);
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 720px) {
+  .admin-shell {
+    grid-template-columns: 1fr;
+    grid-template-rows: 52px auto 1fr;
+    height: auto;
+    overflow: auto;
+  }
+  .admin-sidebar {
+    border-right: none;
+    border-bottom: 1px solid rgba(196,160,98,.12);
+    padding: .6rem 0;
+  }
+  .admin-nav-item { padding: .45rem 1rem; }
+  .admin-main { padding: 1.2rem; }
+  .admin-body { overflow: auto; }
+}
+
+/* ============================================================
+   RMHQ Dashboard V1 — Sprint 005 Additions
+   ============================================================ */
+
+/* ---------- sprint banner ---------- */
+
+.sprint-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(196,160,98,.06);
+  border: 1px solid rgba(196,160,98,.22);
+  border-radius: 10px;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1.4rem;
+  gap: 1rem;
+}
+
+.sprint-banner-left { display: flex; flex-direction: column; gap: .2rem; }
+
+.sprint-banner-label {
+  font-size: .65rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--brass-3);
+}
+
+.sprint-banner-title {
+  font-family: var(--font-display);
+  color: var(--brass-2);
+  font-size: .95rem;
+}
+
+.sprint-banner-status {
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  color: #6fcf97;
+  background: rgba(111,207,151,.1);
+  border: 1px solid rgba(111,207,151,.22);
+  border-radius: 4px;
+  padding: .3rem .75rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ---------- revenue goal ---------- */
+
+.revenue-goal-block {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(196,160,98,.15);
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.revenue-goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: .65rem;
+}
+
+.revenue-goal-amount {
+  font-family: var(--font-display);
+  color: var(--brass-2);
+  font-size: 1.1rem;
+}
+
+.revenue-bar-wrap {
+  background: rgba(196,160,98,.1);
+  border-radius: 4px;
+  height: 5px;
+  overflow: hidden;
+}
+
+.revenue-bar-fill {
+  background: linear-gradient(90deg, var(--brass-3), var(--brass-2));
+  height: 100%;
+  border-radius: 4px;
+  transition: width .4s ease;
+  min-width: 2px;
+}
+
+.revenue-goal-note {
+  font-size: .78rem;
+  color: var(--mist-3);
+  margin: .55rem 0 0;
+}
+
+/* ---------- two column ---------- */
+
+.admin-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+@media (max-width: 820px) { .admin-two-col { grid-template-columns: 1fr; } }
+
+/* ---------- priority list ---------- */
+
+.priority-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+}
+
+.priority-item {
+  font-size: .87rem;
+  padding: .45rem .8rem;
+  border-radius: 6px;
+  border-left: 3px solid transparent;
+  color: var(--mist-2);
+}
+
+.priority-item--urgent {
+  border-left-color: #eb5757;
+  background: rgba(235,87,87,.06);
+  color: var(--mist-0);
+}
+
+.priority-item--action {
+  border-left-color: var(--brass-2);
+  background: rgba(212,175,55,.05);
+  color: var(--mist-1);
+}
+
+.priority-item--normal {
+  border-left-color: rgba(196,160,98,.18);
+}
+
+/* ---------- notes textarea ---------- */
+
+.notes-area {
+  width: 100%;
+  background: var(--obsidian-1);
+  border: 1px solid rgba(196,160,98,.15);
+  border-radius: 6px;
+  color: var(--mist-1);
+  font-family: var(--font-sans);
+  font-size: .87rem;
+  line-height: 1.6;
+  padding: .8rem;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.notes-area:focus {
+  outline: none;
+  border-color: var(--brass-3);
+}
+
+.notes-area::placeholder { color: var(--mist-3); }
+
+/* ---------- agent status list ---------- */
+
+.agent-status-list {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.agent-status-row {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: .86rem;
+}
+
+.agent-status-name {
+  color: var(--mist-0);
+  flex: 1;
+}
+
+.agent-status-mode {
+  color: var(--mist-3);
+  font-size: .76rem;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-dot--live    { background: #6fcf97; box-shadow: 0 0 5px rgba(111,207,151,.5); }
+.status-dot--ready   { background: var(--brass-2); box-shadow: 0 0 5px rgba(212,175,55,.3); }
+.status-dot--planned { background: rgba(196,160,98,.3); }
+.status-dot--future  { background: rgba(196,160,98,.12); }
+
+/* ---------- report list ---------- */
+
+.report-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-list-item {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: .84rem;
+  padding: .45rem 0;
+  border-bottom: 1px solid rgba(196,160,98,.07);
+}
+
+.report-list-item:last-child { border-bottom: none; }
+
+.report-list-sprint {
+  font-family: var(--font-display);
+  font-size: .7rem;
+  color: var(--brass-3);
+  width: 42px;
+  flex-shrink: 0;
+}
+
+.report-list-title {
+  color: var(--mist-1);
+  flex: 1;
+}
+
+.report-list-status {
+  font-size: .68rem;
+  letter-spacing: .06em;
+  padding: .18rem .45rem;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.report-status--done   { color: #6fcf97; background: rgba(111,207,151,.1); }
+.report-status--active { color: var(--brass-2); background: rgba(212,175,55,.1); }
+
+/* ---------- admin table ---------- */
+
+.admin-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 1.6rem;
+  border-radius: 10px;
+  border: 1px solid rgba(196,160,98,.15);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .86rem;
+  background: var(--obsidian-2);
+}
+
+.admin-table th {
+  text-align: left;
+  padding: .6rem 1rem;
+  font-size: .68rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--mist-3);
+  border-bottom: 1px solid rgba(196,160,98,.18);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.admin-table td {
+  padding: .75rem 1rem;
+  border-bottom: 1px solid rgba(196,160,98,.07);
+  color: var(--mist-1);
+  vertical-align: top;
+}
+
+.admin-table tr:last-child td { border-bottom: none; }
+.admin-table tr:hover td { background: rgba(196,160,98,.03); }
+
+.td-title { color: var(--mist-0); font-weight: 500; }
+.td-price { color: var(--brass-2); font-family: var(--font-display); font-size: .9rem; white-space: nowrap; }
+.td-note  { color: var(--mist-3); font-size: .78rem; }
+.td-link  { color: var(--brass-3); font-size: .8rem; word-break: break-all; }
+
+/* ---------- status badges ---------- */
+
+.badge {
+  display: inline-block;
+  font-size: .67rem;
+  letter-spacing: .07em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: .18rem .52rem;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.badge--ok      { color: #6fcf97; background: rgba(111,207,151,.12); }
+.badge--warn    { color: #f2c94c; background: rgba(242,201,76,.12); }
+.badge--alert   { color: #eb5757; background: rgba(235,87,87,.12); }
+.badge--planned { color: var(--mist-3); background: rgba(196,160,98,.08); }
+.badge--active  { color: var(--brass-2); background: rgba(212,175,55,.1); }
+
+/* ---------- action card ---------- */
+
+.admin-card--action {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: border-color .15s, background .15s;
+}
+
+.admin-card--action:hover {
+  border-color: rgba(196,160,98,.35);
+  background: rgba(196,160,98,.04);
+}
+
+/* ---------- settings sections ---------- */
+
+.settings-section {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(196,160,98,.12);
+  border-radius: 10px;
+  padding: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.settings-section-title {
+  font-family: var(--font-display);
+  color: var(--brass-2);
+  font-size: .95rem;
+  margin: 0 0 .9rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid rgba(196,160,98,.12);
+}
+
+.settings-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: .55rem 0;
+  border-bottom: 1px solid rgba(196,160,98,.06);
+  font-size: .87rem;
+}
+
+.settings-row:last-child { border-bottom: none; }
+
+.settings-row-label {
+  color: var(--mist-2);
+  flex-shrink: 0;
+}
+
+.settings-row-value {
+  color: var(--mist-0);
+  text-align: right;
+}
+
+.settings-row-note {
+  color: var(--mist-3);
+  font-size: .77rem;
+  display: block;
+  text-align: right;
+  margin-top: .15rem;
+}
+
+.config-path {
+  font-family: 'Courier New', monospace;
+  font-size: .78rem;
+  color: var(--brass-1);
+  background: rgba(196,160,98,.08);
+  padding: .2rem .5rem;
+  border-radius: 3px;
+}
+
+/* ---------- reports page ---------- */
+
+.reports-list {
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+  margin-bottom: 1.6rem;
+}
+
+.report-card {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(196,160,98,.12);
+  border-radius: 8px;
+  padding: 1rem 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.report-card-sprint {
+  font-family: var(--font-display);
+  font-size: .8rem;
+  color: var(--brass-3);
+  width: 52px;
+  flex-shrink: 0;
+}
+
+.report-card-body { flex: 1; }
+
+.report-card-title {
+  color: var(--mist-0);
+  font-size: .92rem;
+  font-weight: 500;
+  margin: 0 0 .2rem;
+}
+
+.report-card-desc {
+  font-size: .78rem;
+  color: var(--mist-3);
+  margin: 0;
+}
+
+.report-card-date {
+  font-size: .75rem;
+  color: var(--mist-3);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ---------- mobile adjustments Sprint 005 ---------- */
+
+@media (max-width: 600px) {
+  .sprint-banner { flex-direction: column; align-items: flex-start; }
+  .admin-table th, .admin-table td { padding: .55rem .7rem; }
+  .report-card { flex-direction: column; align-items: flex-start; gap: .5rem; }
+}
+
+/* =====================================================================
+   SPRINT 007 — MISSION CONTROL
+   ===================================================================== */
+
+/* --- Status dot additions ------------------------------------------ */
+.status-dot--ready   { background: #6fcf97; }
+.status-dot--pending { background: #f2c94c; }
+
+/* --- Page Header ---------------------------------------------------- */
+.mc-page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.mc-system-status {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .75rem;
+  color: var(--mist-2);
+  letter-spacing: .04em;
+  padding-bottom: .3rem;
+}
+.mc-sprint-label {
+  background: rgba(212, 175, 55, .12);
+  color: var(--brass-2);
+  border: 1px solid rgba(212, 175, 55, .25);
+  border-radius: 3px;
+  font-size: .68rem;
+  font-weight: 600;
+  padding: .15rem .5rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+/* --- Metrics Strip -------------------------------------------------- */
+.mc-metrics {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: .75rem;
+  margin-bottom: 1.4rem;
+}
+.mc-metric {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 6px;
+  padding: .9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+.mc-metric-value {
+  font-family: var(--font-display, 'Cinzel', serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--mist-0);
+  line-height: 1;
+}
+.mc-metric-label {
+  font-size: .68rem;
+  font-weight: 600;
+  color: var(--mist-2);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.mc-metric-sub { font-size: .67rem; color: var(--mist-3); }
+.mc-metric--warn .mc-metric-value  { color: #f2c94c; }
+.mc-metric--ok .mc-metric-value    { color: #6fcf97; }
+.mc-metric--alert .mc-metric-value { color: #eb5757; }
+
+/* --- Today's Mission Card ------------------------------------------ */
+.mc-mission {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(212, 175, 55, .2);
+  border-left: 3px solid var(--brass-2);
+  border-radius: 6px;
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.4rem;
+}
+.mc-mission-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: start;
+}
+.mc-mission-task {
+  font-family: var(--font-display, 'Cinzel', serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--mist-0);
+  margin: .3rem 0 .6rem;
+  line-height: 1.3;
+}
+.mc-mission-desc { font-size: .87rem; color: var(--mist-2); line-height: 1.65; max-width: 58ch; }
+
+/* --- BV Score Panel ------------------------------------------------- */
+.mc-bv-panel {
+  min-width: 290px;
+  max-width: 330px;
+  background: rgba(0,0,0,.18);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 5px;
+  padding: 1rem 1.1rem;
+}
+.mc-bv-total {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+  margin-bottom: .75rem;
+  padding-bottom: .75rem;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+.mc-bv-total-score {
+  font-family: var(--font-display, 'Cinzel', serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--brass-2);
+  line-height: 1;
+}
+.mc-bv-total-label { font-size: .7rem; color: var(--mist-2); letter-spacing: .03em; }
+.mc-bv-grid { display: flex; flex-direction: column; gap: .38rem; }
+.mc-bv-row {
+  display: grid;
+  grid-template-columns: 1fr 76px 22px;
+  align-items: center;
+  gap: .45rem;
+}
+.mc-bv-label { font-size: .67rem; color: var(--mist-2); }
+.mc-bv-bar-wrap {
+  height: 4px;
+  background: rgba(255,255,255,.07);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.mc-bv-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #a07c28, var(--brass-2));
+  border-radius: 2px;
+}
+.mc-bv-score { font-size: .69rem; font-weight: 600; color: var(--mist-1); text-align: right; }
+.mc-bv-cta {
+  display: block;
+  margin-top: .85rem;
+  padding: .45rem .8rem;
+  text-align: center;
+  background: var(--brass-2);
+  color: var(--obsidian-0);
+  border-radius: 4px;
+  font-size: .77rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: .03em;
+  transition: opacity .15s;
+}
+.mc-bv-cta:hover { opacity: .85; }
+
+/* --- 3-Column Workspace -------------------------------------------- */
+.mc-workspace {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+  align-items: start;
+}
+.mc-col { display: flex; flex-direction: column; }
+
+/* --- Daily Focus List ---------------------------------------------- */
+.mc-focus-list { display: flex; flex-direction: column; }
+.mc-focus-item {
+  display: grid;
+  grid-template-columns: 26px 1fr 30px;
+  gap: .55rem;
+  align-items: center;
+  padding: .7rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,.04);
+}
+.mc-focus-item:last-child { border-bottom: none; }
+.mc-focus-rank {
+  font-family: var(--font-display, 'Cinzel', serif);
+  font-size: .72rem;
+  font-weight: 700;
+  color: var(--mist-3);
+}
+.mc-focus-item--1 .mc-focus-rank { color: var(--brass-2); }
+.mc-focus-item--2 .mc-focus-rank { color: var(--mist-1); }
+.mc-focus-item--3 .mc-focus-rank { color: var(--mist-2); }
+.mc-focus-body { display: flex; flex-direction: column; gap: .12rem; }
+.mc-focus-text { font-size: .8rem; color: var(--mist-1); line-height: 1.35; }
+.mc-focus-meta { font-size: .66rem; color: var(--mist-3); }
+.mc-focus-score { font-size: .69rem; font-weight: 700; color: var(--brass-2); text-align: right; }
+
+/* --- Mission Feed --------------------------------------------------- */
+.mc-feed { display: flex; flex-direction: column; }
+.mc-feed-item {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  gap: .65rem;
+  align-items: start;
+  padding: .65rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,.04);
+}
+.mc-feed-item:last-child { border-bottom: none; }
+.mc-feed-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: .28rem;
+  flex-shrink: 0;
+}
+.mc-feed-dot--sprint  { background: var(--brass-2); }
+.mc-feed-dot--revenue { background: #6fcf97; }
+.mc-feed-dot--system  { background: #9b85e0; }
+.mc-feed-dot--product { background: #56cce0; }
+.mc-feed-body { display: flex; flex-direction: column; gap: .18rem; }
+.mc-feed-text { font-size: .79rem; color: var(--mist-2); line-height: 1.45; }
+.mc-feed-time { font-size: .66rem; color: var(--mist-3); }
+.mc-feed-footer {
+  display: block;
+  padding: .6rem 1rem;
+  font-size: .72rem;
+  color: var(--brass-2);
+  text-decoration: none;
+  border-top: 1px solid rgba(255,255,255,.06);
+  transition: color .15s;
+}
+.mc-feed-footer:hover { color: var(--mist-0); }
+
+/* --- Notification Center ------------------------------------------- */
+.mc-notif-tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  background: rgba(0,0,0,.12);
+}
+.mc-notif-tab {
+  flex: 1;
+  padding: .5rem .35rem;
+  font-size: .69rem;
+  font-weight: 600;
+  color: var(--mist-3);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  transition: color .15s;
+}
+.mc-notif-tab:hover { color: var(--mist-1); }
+.mc-notif-tab--active { color: var(--brass-2); border-bottom-color: var(--brass-2); }
+.mc-notif-panel--hidden { display: none; }
+.mc-notif-item {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: .55rem;
+  align-items: start;
+  padding: .65rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,.04);
+  font-size: .77rem;
+  color: var(--mist-2);
+  line-height: 1.45;
+}
+.mc-notif-item:last-child { border-bottom: none; }
+.mc-notif-item--warn { background: rgba(242,201,76,.05); }
+.mc-notif-item--future { opacity: .5; }
+.mc-notif-icon { font-size: .78rem; margin-top: .06rem; }
+
+/* --- AI Workforce Panel -------------------------------------------- */
+.mc-agent-grid { display: flex; flex-direction: column; }
+.mc-agent {
+  padding: .6rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,.04);
+  display: flex;
+  flex-direction: column;
+  gap: .1rem;
+}
+.mc-agent:last-child { border-bottom: none; }
+.mc-agent--future { opacity: .42; }
+.mc-agent-top { display: flex; align-items: center; gap: .5rem; }
+.mc-agent-name { font-size: .79rem; font-weight: 600; color: var(--mist-1); }
+.mc-agent--ready .mc-agent-name { color: var(--mist-0); }
+.mc-agent-module { font-size: .65rem; color: var(--mist-3); }
+.mc-agent-state  { font-size: .65rem; color: var(--mist-3); font-style: italic; }
+
+/* --- Quick Actions Grid -------------------------------------------- */
+.mc-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .6rem;
+  margin-bottom: 1.6rem;
+}
+.mc-action-btn {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 6px;
+  padding: .85rem .65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .38rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color .15s, background .15s;
+}
+.mc-action-btn:hover {
+  border-color: rgba(212,175,55,.4);
+  background: rgba(212,175,55,.06);
+}
+.mc-action-icon { font-size: 1.25rem; line-height: 1; }
+.mc-action-label {
+  font-size: .68rem;
+  font-weight: 600;
+  color: var(--mist-2);
+  letter-spacing: .02em;
+  text-align: center;
+  line-height: 1.3;
+}
+.mc-action-btn:hover .mc-action-label { color: var(--mist-0); }
+
+/* --- Mission Control Responsive ------------------------------------ */
+@media (max-width: 1200px) {
+  .mc-metrics { grid-template-columns: repeat(3, 1fr); }
+  .mc-actions-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 1000px) {
+  .mc-workspace { grid-template-columns: 1fr 1fr; }
+  .mc-workspace .mc-col:last-child { grid-column: 1 / -1; }
+  .mc-agent-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .mc-mission-header { grid-template-columns: 1fr; }
+  .mc-bv-panel { min-width: 0; max-width: 100%; }
+}
+@media (max-width: 700px) {
+  .mc-metrics { grid-template-columns: repeat(2, 1fr); }
+  .mc-workspace { grid-template-columns: 1fr; }
+  .mc-workspace .mc-col:last-child { grid-column: auto; }
+  .mc-actions-grid { grid-template-columns: repeat(2, 1fr); }
+  .mc-agent-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* =====================================================================
+   SPRINT 008 — REVENUE COMMAND CENTER
+   ===================================================================== */
+
+/* --- Sprint 008 Tab System ----------------------------------------- */
+.s8-tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  gap: 0;
+}
+.s8-tab {
+  padding: .55rem 1.1rem;
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--mist-3);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  transition: color .15s;
+  white-space: nowrap;
+}
+.s8-tab:hover { color: var(--mist-1); }
+.s8-tab--active { color: var(--brass-2); border-bottom-color: var(--brass-2); }
+.s8-panel--hidden { display: none !important; }
+
+/* --- Sprint 008 Metric Grid --------------------------------------- */
+.s8-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .75rem;
+}
+.s8-metric-card {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+.s8-metric-card--highlight { border-color: rgba(212,175,55,.2); }
+.s8-metric-label {
+  font-size: .66rem;
+  font-weight: 600;
+  color: var(--mist-3);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.s8-metric-value {
+  font-family: var(--font-display,'Cinzel',serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--mist-0);
+  line-height: 1;
+}
+.s8-metric-value--ok   { color: #6fcf97; }
+.s8-metric-value--warn { color: #f2c94c; }
+.s8-metric-note { font-size: .68rem; color: var(--mist-3); }
+
+/* --- Goal Bar ----------------------------------------------------- */
+.s8-goal-bar {
+  height: 4px;
+  background: rgba(255,255,255,.07);
+  border-radius: 2px;
+  overflow: hidden;
+  margin: .3rem 0;
+}
+.s8-goal-fill {
+  height: 100%;
+  background: linear-gradient(90deg,#a07c28,var(--brass-2));
+  border-radius: 2px;
+}
+
+/* --- Status Summary Strip ----------------------------------------- */
+.s8-status-summary {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+.s8-status-card {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 6px;
+  padding: .9rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .2rem;
+  min-width: 90px;
+  flex: 1;
+}
+.s8-status-card--ok     { border-color: rgba(111,207,151,.2); }
+.s8-status-card--warn   { border-color: rgba(242,201,76,.2); }
+.s8-status-card--danger { border-color: rgba(235,87,87,.2); }
+.s8-status-count {
+  font-family: var(--font-display,'Cinzel',serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--mist-0);
+  line-height: 1;
+}
+.s8-status-card--ok     .s8-status-count { color: #6fcf97; }
+.s8-status-card--warn   .s8-status-count { color: #f2c94c; }
+.s8-status-card--danger .s8-status-count { color: #eb5757; }
+.s8-status-label {
+  font-size: .66rem;
+  font-weight: 600;
+  color: var(--mist-3);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* --- CRM Pipeline Strip ------------------------------------------- */
+.s8-pipeline {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+}
+.s8-pipeline-stages {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin-bottom: .8rem;
+  padding-bottom: .8rem;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.s8-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .15rem;
+  padding: .5rem .75rem;
+  background: rgba(0,0,0,.2);
+  border-radius: 4px;
+  min-width: 68px;
+}
+.s8-stage--won      { background: rgba(111,207,151,.08); }
+.s8-stage--lost     { background: rgba(235,87,87,.06); }
+.s8-stage--complete { background: rgba(212,175,55,.08); }
+.s8-stage-count {
+  font-family: var(--font-display,'Cinzel',serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--mist-1);
+  line-height: 1;
+}
+.s8-stage--won .s8-stage-count      { color: #6fcf97; }
+.s8-stage--lost .s8-stage-count     { color: #eb5757; }
+.s8-stage--complete .s8-stage-count { color: var(--brass-2); }
+.s8-stage-name {
+  font-size: .6rem;
+  color: var(--mist-3);
+  text-align: center;
+  white-space: nowrap;
+}
+.s8-stage-arrow { color: var(--mist-3); font-size: .9rem; }
+.s8-pipeline-stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.s8-pipe-stat { display: flex; flex-direction: column; gap: .1rem; }
+.s8-pipe-stat-label { font-size: .65rem; color: var(--mist-3); letter-spacing: .04em; text-transform: uppercase; }
+.s8-pipe-stat-val { font-size: .95rem; font-weight: 600; color: var(--mist-1); }
+
+/* --- AI Preparation Section --------------------------------------- */
+.s8-ai-prep {
+  background: rgba(155,133,224,.04);
+  border: 1px solid rgba(155,133,224,.12);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  margin-top: 1rem;
+}
+.s8-ai-prep-head {
+  font-size: .67rem;
+  font-weight: 700;
+  color: #9b85e0;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin-bottom: .6rem;
+}
+.s8-ai-prep-grid { display: flex; flex-direction: column; gap: .35rem; }
+.s8-ai-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: .75rem;
+  align-items: center;
+  font-size: .78rem;
+}
+.s8-ai-label { color: var(--mist-3); }
+.s8-ai-val   { color: var(--mist-1); }
+
+/* --- Approval Zone ------------------------------------------------- */
+.s8-approval-zone {
+  background: rgba(242,201,76,.04);
+  border: 1px solid rgba(242,201,76,.2);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+}
+
+/* --- Checklist ---------------------------------------------------- */
+.s8-checklist { display: flex; flex-direction: column; gap: .4rem; }
+.s8-check-item {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: .82rem;
+  color: var(--mist-2);
+  cursor: pointer;
+  padding: .15rem 0;
+}
+.s8-check-item input[type="checkbox"] { accent-color: var(--brass-2); }
+
+/* --- Sprint 008 Responsive ---------------------------------------- */
+@media (max-width: 1100px) {
+  .s8-metric-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 800px) {
+  .s8-metric-grid { grid-template-columns: repeat(2, 1fr); }
+  .s8-pipeline-stages { gap: .3rem; }
+  .s8-stage { min-width: 58px; padding: .4rem .5rem; }
+  .s8-ai-row { grid-template-columns: 1fr; gap: .15rem; }
+}
+@media (max-width: 500px) {
+  .s8-metric-grid { grid-template-columns: 1fr 1fr; }
+  .s8-tabs { flex-wrap: wrap; }
+}
+
+/* =====================================================================
+   SPRINT 009 — CEO REVENUE DASHBOARD + GLOBAL AUDIENCE INTELLIGENCE
+   ===================================================================== */
+
+/* --- Revenue Priority Rule ----------------------------------------- */
+.s9-revenue-rule {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  background: rgba(212,175,55,.06);
+  border: 1px solid rgba(212,175,55,.25);
+  border-left: 3px solid var(--brass-2);
+  border-radius: 6px;
+  padding: .85rem 1.1rem;
+}
+.s9-rule-icon {
+  font-size: 1.1rem;
+  color: var(--brass-2);
+  flex-shrink: 0;
+  margin-top: .05rem;
+}
+.s9-rule-text {
+  font-size: .82rem;
+  color: var(--mist-2);
+  line-height: 1.5;
+}
+.s9-rule-text strong { color: var(--brass-1); }
+
+/* --- Tier Badges (Audience Intel) ---------------------------------- */
+.s9-tier {
+  display: inline-block;
+  padding: .2rem .55rem;
+  border-radius: 3px;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.s9-tier--s    { background: rgba(212,175,55,.18); color: var(--brass-1); border: 1px solid rgba(212,175,55,.35); }
+.s9-tier--a    { background: rgba(111,207,151,.12); color: #6fcf97; border: 1px solid rgba(111,207,151,.25); }
+.s9-tier--b    { background: rgba(86,152,199,.12); color: #5698c7; border: 1px solid rgba(86,152,199,.25); }
+.s9-tier--test { background: rgba(255,255,255,.06); color: var(--mist-3); border: 1px solid rgba(255,255,255,.12); }
+
+/* --- Score / Fit Number -------------------------------------------- */
+.s9-score {
+  font-family: var(--font-display,'Cinzel',serif);
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--brass-2);
+}
+
+/* --- Intelligence Cards (Fan Segments / Market Details) ------------ */
+.s9-intel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: .75rem;
+  margin-bottom: 1.5rem;
+}
+.s9-intel-card {
+  background: var(--obsidian-2);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 6px;
+  padding: .85rem 1rem;
+}
+.s9-intel-card-title {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--mist-1);
+  margin-bottom: .35rem;
+}
+.s9-intel-card-desc {
+  font-size: .74rem;
+  color: var(--mist-3);
+  line-height: 1.5;
+}
+.s9-intel-card-action {
+  font-size: .72rem;
+  color: var(--brass-2);
+  margin-top: .5rem;
+  font-weight: 600;
+}
+
+/* --- Collector Philosophy Card ------------------------------------- */
+.s9-philosophy-card {
+  background: rgba(212,175,55,.04);
+  border: 1px solid rgba(212,175,55,.15);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: .84rem;
+  color: var(--mist-2);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* --- Sprint 009 Responsive ----------------------------------------- */
+@media (max-width: 900px) {
+  .s9-intel-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .s9-intel-grid { grid-template-columns: 1fr; }
+}

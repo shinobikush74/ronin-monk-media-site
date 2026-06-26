@@ -1,0 +1,71 @@
+{
+  "_comment": "Collector Strategy — Ronin Monk Media LLC. Treat customers as collectors, not casual listeners.",
+  "collector_segments": [
+    { "id": "music", "name": "Music Collectors", "status": "active", "note": "Bandcamp followers, vinyl mindset buyers, audiophiles" },
+    { "id": "books", "name": "Book Collectors", "status": "active", "note": "Limited edition PDFs, numbered runs, signed digital editions" },
+    { "id": "art", "name": "Art Collectors", "status": "future", "note": "Faction art prints, character illustrations, codex page art" },
+    { "id": "lore", "name": "Lore Collectors", "status": "active", "note": "Codex documents, canon transmissions, limited lore packs" },
+    { "id": "merch", "name": "Merch Collectors", "status": "future", "note": "Physical artifacts tied to lore — scrolls, patches, faction items" },
+    { "id": "game", "name": "Future Game Players", "status": "future", "note": "8-bit Sky Khan game; collector early-access tier" },
+    { "id": "members", "name": "Future Members", "status": "future", "note": "Collector membership with exclusive drops and behind-the-scroll content" }
+  ],
+  "product_ideas": [
+    {
+      "id": "digital-scroll-packs",
+      "name": "Digital Scroll Packs",
+      "description": "Bundled lore documents formatted as in-universe scrolls — PDF art objects",
+      "price_range": "$5–$15",
+      "status": "idea",
+      "segment": ["lore", "books"]
+    },
+    {
+      "id": "limited-pdf-editions",
+      "name": "Limited PDF Editions",
+      "description": "Numbered, dated digital editions of existing titles. Scarcity creates collector value.",
+      "price_range": "$10–$25",
+      "status": "idea",
+      "segment": ["books", "lore"]
+    },
+    {
+      "id": "lore-cards",
+      "name": "Lore Cards",
+      "description": "Faction reference cards — character stats, faction abilities, era timelines. Digital first.",
+      "price_range": "$3–$8 per pack",
+      "status": "idea",
+      "segment": ["lore", "art"]
+    },
+    {
+      "id": "music-story-bundles",
+      "name": "Music + Story Bundles",
+      "description": "Album or track paired with the canonical novella or lore document it scores.",
+      "price_range": "$12–$20",
+      "status": "idea",
+      "segment": ["music", "books", "lore"]
+    },
+    {
+      "id": "behind-scroll-commentary",
+      "name": "Behind-the-Scroll Commentary",
+      "description": "Creator notes on lore decisions, worldbuilding process, faction design. Collector-only.",
+      "price_range": "$5–$10 add-on",
+      "status": "idea",
+      "segment": ["lore", "members"]
+    },
+    {
+      "id": "collector-membership",
+      "name": "Collector Membership",
+      "description": "Monthly or annual access tier with early drops, exclusive lore, and discount on new releases.",
+      "price_range": "$5/mo or $49/yr",
+      "status": "future",
+      "segment": ["members"]
+    },
+    {
+      "id": "international-digital-box-set",
+      "name": "International Digital Box Set",
+      "description": "All current Gumroad products bundled at a discount. Targets international collectors who want the full universe.",
+      "price_range": "$25–$35",
+      "status": "idea",
+      "segment": ["books", "lore", "music"]
+    }
+  ],
+  "collector_philosophy": "Ronin Monk Media customers are not casual consumers. They are initiates into the Sky Khan universe. Every product should feel like an artifact — discovered, not purchased."
+}

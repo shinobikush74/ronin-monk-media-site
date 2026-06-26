@@ -1,0 +1,178 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Agent Queue — RMHQ · Ronin Monk Media LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body class="theme-obsidian admin-body">
+<div class="admin-shell">
+
+  <header class="admin-topbar">
+    <a class="admin-home-link" href="/">← Public Site</a>
+    <span class="admin-brand">RMHQ</span>
+    <span class="admin-badge">Creator OS · v3.0</span>
+    <span class="admin-topbar-right" id="mc-datetime">Ronin Monk Media LLC</span>
+  </header>
+
+  <aside class="admin-sidebar" role="navigation" aria-label="RMHQ Navigation">
+    <p class="admin-nav-section">Command</p>
+    <a class="admin-nav-item" href="/admin/"><span class="admin-nav-icon">⬛</span> Mission Control</a>
+    <a class="admin-nav-item" href="/admin/crm.html"><span class="admin-nav-icon">👥</span> CRM</a>
+    <p class="admin-nav-section">Revenue</p>
+    <a class="admin-nav-item" href="/admin/revenue.html"><span class="admin-nav-icon">💰</span> Revenue Center</a>
+    <a class="admin-nav-item" href="/admin/proposals.html"><span class="admin-nav-icon">📄</span> Proposals &amp; Invoices</a>
+    <p class="admin-nav-section">Grow</p>
+    <a class="admin-nav-item" href="/admin/products.html"><span class="admin-nav-icon">📦</span> Product Center</a>
+    <a class="admin-nav-item" href="/admin/marketing.html"><span class="admin-nav-icon">📈</span> Marketing Center</a>
+    <a class="admin-nav-item" href="/admin/analytics.html"><span class="admin-nav-icon">📊</span> Analytics</a>
+    <a class="admin-nav-item" href="/admin/client-portal.html"><span class="admin-nav-icon">🤝</span> Client Portal</a>
+    <p class="admin-nav-section">Create</p>
+    <a class="admin-nav-item" href="/admin/publishing.html"><span class="admin-nav-icon">📚</span> Publishing Center</a>
+    <a class="admin-nav-item" href="/admin/music-center.html"><span class="admin-nav-icon">🎵</span> Music Center</a>
+    <a class="admin-nav-item" href="/admin/content.html"><span class="admin-nav-icon">✍️</span> Creator Studio</a>
+    <a class="admin-nav-item" href="/admin/lore.html"><span class="admin-nav-icon">📜</span> Lore Engine</a>
+    <p class="admin-nav-section">Scale</p>
+    <a class="admin-nav-item" href="/admin/calendar.html"><span class="admin-nav-icon">🗓️</span> Calendar</a>
+    <a class="admin-nav-item" href="/admin/game.html"><span class="admin-nav-icon">🎮</span> Game Center</a>
+    <a class="admin-nav-item" href="/admin/automation.html"><span class="admin-nav-icon">⚡</span> Automation Center</a>
+    <p class="admin-nav-section">Intelligence</p>
+    <a class="admin-nav-item" href="/admin/knowledge.html"><span class="admin-nav-icon">🧠</span> Knowledge Center</a>
+    <a class="admin-nav-item active" href="/admin/queue.html"><span class="admin-nav-icon">🔄</span> Agent Queue</a>
+    <a class="admin-nav-item" href="/admin/audience.html"><span class="admin-nav-icon">🌍</span> Audience Intel</a>
+    <p class="admin-nav-section">System</p>
+    <a class="admin-nav-item" href="/admin/agents.html"><span class="admin-nav-icon">🤖</span> AI Workforce</a>
+    <a class="admin-nav-item" href="/admin/reports.html"><span class="admin-nav-icon">📋</span> Reports</a>
+    <a class="admin-nav-item" href="/admin/settings.html"><span class="admin-nav-icon">⚙️</span> Settings</a>
+  </aside>
+
+  <main class="admin-main" id="main">
+
+    <div class="mc-page-header">
+      <div>
+        <p class="admin-page-eyebrow">AI Operations</p>
+        <h1 class="admin-page-title">Agent Queue</h1>
+        <p class="admin-page-sub">All agent jobs — queued, running, completed, failed, and awaiting Creator approval.</p>
+      </div>
+      <span class="mc-sprint-label">Sprint 008</span>
+    </div>
+
+    <!-- STATUS STRIP -->
+    <div class="s8-status-summary" style="margin-bottom:1.5rem">
+      <div class="s8-status-card">
+        <p class="s8-status-count">0</p>
+        <p class="s8-status-label">Queued</p>
+      </div>
+      <div class="s8-status-card">
+        <p class="s8-status-count">0</p>
+        <p class="s8-status-label">Running</p>
+      </div>
+      <div class="s8-status-card s8-status-card--ok">
+        <p class="s8-status-count">0</p>
+        <p class="s8-status-label">Completed</p>
+      </div>
+      <div class="s8-status-card s8-status-card--danger">
+        <p class="s8-status-count">0</p>
+        <p class="s8-status-label">Failed</p>
+      </div>
+      <div class="s8-status-card s8-status-card--warn">
+        <p class="s8-status-count">0</p>
+        <p class="s8-status-label">Awaiting Approval</p>
+      </div>
+    </div>
+
+    <!-- AWAITING APPROVAL (highlighted section) -->
+    <div class="s8-approval-zone" style="margin-bottom:1.5rem">
+      <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem">
+        <span style="font-size:.8rem;font-weight:700;color:#f2c94c;letter-spacing:.05em;text-transform:uppercase">Creator Approval Required</span>
+        <span class="badge badge--warn">0 items</span>
+      </div>
+      <p style="font-size:.82rem;color:var(--mist-2)">No items currently require Creator review. When an agent completes a job that needs approval before action, it will appear here.</p>
+    </div>
+
+    <!-- JOB TABLE -->
+    <p class="admin-section-head">Job Log</p>
+    <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Job ID</th>
+            <th>Agent</th>
+            <th>Task Description</th>
+            <th>Status</th>
+            <th>Created</th>
+            <th>Duration</th>
+            <th>Output</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="7" style="text-align:center;color:var(--mist-2);padding:2rem">
+              No jobs logged. All agents currently operate through manual Claude sessions.<br>
+              <span style="font-size:.75rem;color:var(--mist-3)">Automated job queue activates Sprint 013+</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- MANUAL OPERATION NOTE -->
+    <div class="admin-card" style="border-left:3px solid var(--brass-2);margin-bottom:1.5rem">
+      <p class="admin-card-label">Current Operation Mode: Manual</p>
+      <p class="admin-card-note">All 12 agents operate through Claude Code sessions with the Creator in the loop. Jobs are initiated by the Creator, executed in the session, and reviewed before any action is taken. The queue becomes active in Sprint 013+ when automation is wired to the platform.</p>
+    </div>
+
+    <!-- AGENT READINESS -->
+    <p class="admin-section-head">Agent Queue Readiness</p>
+    <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+      <table class="admin-table">
+        <thead>
+          <tr><th>Agent</th><th>Queue Ready</th><th>Current Mode</th><th>Automation Sprint</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="td-title">Website Agent</td><td><span class="badge badge--warn">Manual Only</span></td><td>Claude session</td><td>Sprint 013</td></tr>
+          <tr><td class="td-title">Marketing Agent</td><td><span class="badge badge--warn">Manual Only</span></td><td>Claude session</td><td>Sprint 013</td></tr>
+          <tr><td class="td-title">Sales Agent</td><td><span class="badge badge--warn">Manual Only</span></td><td>Claude session</td><td>Sprint 013</td></tr>
+          <tr><td class="td-title">Lore Agent</td><td><span class="badge badge--warn">Manual Only</span></td><td>Claude session — PROPOSAL_ONLY</td><td>Sprint 014</td></tr>
+          <tr><td class="td-title">Publishing Agent</td><td><span class="badge badge--warn">Manual Only</span></td><td>Claude session</td><td>Sprint 013</td></tr>
+          <tr><td class="td-title">Research Agent</td><td><span class="badge badge--warn">Manual Only</span></td><td>Claude session</td><td>Sprint 013</td></tr>
+          <tr><td class="td-title">Automation Agent</td><td><span class="badge badge--warn">Manual Only</span></td><td>Claude session</td><td>Sprint 013</td></tr>
+          <tr><td class="td-title">Brand Agent</td><td><span class="badge badge--warn">Manual Only</span></td><td>Claude session</td><td>Sprint 014</td></tr>
+          <tr><td class="td-title">Content Agent</td><td><span class="badge badge--warn">Manual Only</span></td><td>Claude session</td><td>Sprint 013</td></tr>
+          <tr><td class="td-title">Revenue Intelligence Agent</td><td><span class="mc-agent--future"><span class="badge badge--active">Blueprinted</span></span></td><td>Not yet active</td><td>Sprint 015</td></tr>
+          <tr><td class="td-title">Client Success Agent</td><td><span class="mc-agent--future"><span class="badge badge--active">Blueprinted</span></span></td><td>Not yet active</td><td>Sprint 016</td></tr>
+          <tr><td class="td-title">Game Narrative Agent</td><td><span class="mc-agent--future"><span class="badge badge--active">Blueprinted</span></span></td><td>Not yet active</td><td>Phase 4</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-placeholder">
+      <span class="module-status-chip">Sprint 013+</span>
+      <h2>Automated Agent Queue</h2>
+      <p>Route tasks to agents automatically. Monitor job progress in real time. Receive completion notifications. Review and approve outputs before any action is taken outside RMHQ. Human in the loop — always.</p>
+      <span class="module-sprint-tag">Automation: Sprint 013</span>
+    </div>
+
+    <div class="s8-ai-prep">
+      <p class="s8-ai-prep-head">AI Governance — Permanent Rule</p>
+      <div class="s8-ai-prep-grid">
+        <div class="s8-ai-row"><span class="s8-ai-label">ADR-008</span><span class="s8-ai-val">AI Workforce governance — manual operation, no automated actions without Creator approval</span></div>
+        <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">ALL agent outputs before action — permanent</span></div>
+        <div class="s8-ai-row"><span class="s8-ai-label">No Automated Deploys</span><span class="s8-ai-val">Agents propose only — Creator deploys</span></div>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="../js/admin-utils.js" defer></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,200 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Proposals &amp; Invoices — RMHQ · Ronin Monk Media LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body class="theme-obsidian admin-body">
+<div class="admin-shell">
+
+  <header class="admin-topbar">
+    <a class="admin-home-link" href="/">← Public Site</a>
+    <span class="admin-brand">RMHQ</span>
+    <span class="admin-badge">Creator OS · v3.0</span>
+    <span class="admin-topbar-right" id="mc-datetime">Ronin Monk Media LLC</span>
+  </header>
+
+  <aside class="admin-sidebar" role="navigation" aria-label="RMHQ Navigation">
+    <p class="admin-nav-section">Command</p>
+    <a class="admin-nav-item" href="/admin/"><span class="admin-nav-icon">⬛</span> Mission Control</a>
+    <a class="admin-nav-item" href="/admin/crm.html"><span class="admin-nav-icon">👥</span> CRM</a>
+    <p class="admin-nav-section">Revenue</p>
+    <a class="admin-nav-item" href="/admin/revenue.html"><span class="admin-nav-icon">💰</span> Revenue Center</a>
+    <a class="admin-nav-item active" href="/admin/proposals.html"><span class="admin-nav-icon">📄</span> Proposals &amp; Invoices</a>
+    <p class="admin-nav-section">Grow</p>
+    <a class="admin-nav-item" href="/admin/products.html"><span class="admin-nav-icon">📦</span> Product Center</a>
+    <a class="admin-nav-item" href="/admin/marketing.html"><span class="admin-nav-icon">📈</span> Marketing Center</a>
+    <a class="admin-nav-item" href="/admin/analytics.html"><span class="admin-nav-icon">📊</span> Analytics</a>
+    <a class="admin-nav-item" href="/admin/client-portal.html"><span class="admin-nav-icon">🤝</span> Client Portal</a>
+    <p class="admin-nav-section">Create</p>
+    <a class="admin-nav-item" href="/admin/publishing.html"><span class="admin-nav-icon">📚</span> Publishing Center</a>
+    <a class="admin-nav-item" href="/admin/music-center.html"><span class="admin-nav-icon">🎵</span> Music Center</a>
+    <a class="admin-nav-item" href="/admin/content.html"><span class="admin-nav-icon">✍️</span> Creator Studio</a>
+    <a class="admin-nav-item" href="/admin/lore.html"><span class="admin-nav-icon">📜</span> Lore Engine</a>
+    <p class="admin-nav-section">Scale</p>
+    <a class="admin-nav-item" href="/admin/calendar.html"><span class="admin-nav-icon">🗓️</span> Calendar</a>
+    <a class="admin-nav-item" href="/admin/game.html"><span class="admin-nav-icon">🎮</span> Game Center</a>
+    <a class="admin-nav-item" href="/admin/automation.html"><span class="admin-nav-icon">⚡</span> Automation Center</a>
+    <p class="admin-nav-section">Intelligence</p>
+    <a class="admin-nav-item" href="/admin/knowledge.html"><span class="admin-nav-icon">🧠</span> Knowledge Center</a>
+    <a class="admin-nav-item" href="/admin/queue.html"><span class="admin-nav-icon">🔄</span> Agent Queue</a>
+    <a class="admin-nav-item" href="/admin/audience.html"><span class="admin-nav-icon">🌍</span> Audience Intel</a>
+    <p class="admin-nav-section">System</p>
+    <a class="admin-nav-item" href="/admin/agents.html"><span class="admin-nav-icon">🤖</span> AI Workforce</a>
+    <a class="admin-nav-item" href="/admin/reports.html"><span class="admin-nav-icon">📋</span> Reports</a>
+    <a class="admin-nav-item" href="/admin/settings.html"><span class="admin-nav-icon">⚙️</span> Settings</a>
+  </aside>
+
+  <main class="admin-main" id="main">
+
+    <div class="mc-page-header">
+      <div>
+        <p class="admin-page-eyebrow">Client Financials</p>
+        <h1 class="admin-page-title">Proposals &amp; Invoices</h1>
+        <p class="admin-page-sub">Manage service proposals, track invoices, and prepare payment integrations.</p>
+      </div>
+      <span class="mc-sprint-label">Sprint 008</span>
+    </div>
+
+    <!-- TAB NAV -->
+    <nav class="s8-tabs" style="margin-bottom:1.5rem">
+      <button class="s8-tab s8-tab--active" data-tg="pi" onclick="s8Tab('pi',0)">Proposals</button>
+      <button class="s8-tab" data-tg="pi" onclick="s8Tab('pi',1)">Invoices</button>
+    </nav>
+
+    <!-- PANEL: PROPOSALS -->
+    <div data-pg="pi">
+
+      <!-- Status Summary -->
+      <div class="s8-status-summary" style="margin-bottom:1.5rem">
+        <div class="s8-status-card"><p class="s8-status-count">0</p><p class="s8-status-label">Draft</p></div>
+        <div class="s8-status-card"><p class="s8-status-count">0</p><p class="s8-status-label">Sent</p></div>
+        <div class="s8-status-card s8-status-card--ok"><p class="s8-status-count">0</p><p class="s8-status-label">Accepted</p></div>
+        <div class="s8-status-card s8-status-card--warn"><p class="s8-status-count">0</p><p class="s8-status-label">Declined</p></div>
+        <div class="s8-status-card s8-status-card--warn"><p class="s8-status-count">0</p><p class="s8-status-label">Expired</p></div>
+      </div>
+
+      <p class="admin-section-head">Proposal Register</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Proposal #</th>
+              <th>Client</th>
+              <th>Service</th>
+              <th>Value</th>
+              <th>Status</th>
+              <th>Created</th>
+              <th>Expires</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="7" style="text-align:center;color:var(--mist-2);padding:2rem">No proposals yet. First proposal created after first client inquiry.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="module-placeholder">
+        <span class="module-status-chip">Sprint 014+</span>
+        <h2>PDF Proposal Generator</h2>
+        <p>Generate branded PDF proposals from service templates. Send via email. Track opens and acceptance. Automated follow-up reminders via Sales Agent.</p>
+        <span class="module-sprint-tag">PDF Generation: Sprint 014</span>
+      </div>
+
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Responsible Agent</span><span class="s8-ai-val">Sales Agent (Active — manual)</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Automation Level</span><span class="s8-ai-val">0% — Creator writes all proposals</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">Before any proposal is sent</span></div>
+        </div>
+      </div>
+
+    </div><!-- /panel proposals -->
+
+    <!-- PANEL: INVOICES -->
+    <div data-pg="pi" class="s8-panel--hidden">
+
+      <!-- Status Summary -->
+      <div class="s8-status-summary" style="margin-bottom:1.5rem">
+        <div class="s8-status-card"><p class="s8-status-count">0</p><p class="s8-status-label">Draft</p></div>
+        <div class="s8-status-card"><p class="s8-status-count">0</p><p class="s8-status-label">Sent</p></div>
+        <div class="s8-status-card s8-status-card--ok"><p class="s8-status-count">0</p><p class="s8-status-label">Paid</p></div>
+        <div class="s8-status-card s8-status-card--warn"><p class="s8-status-count">0</p><p class="s8-status-label">Outstanding</p></div>
+        <div class="s8-status-card s8-status-card--danger"><p class="s8-status-count">0</p><p class="s8-status-label">Overdue</p></div>
+      </div>
+
+      <p class="admin-section-head">Invoice Register</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Invoice #</th>
+              <th>Client</th>
+              <th>Service</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Date</th>
+              <th>Due</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="7" style="text-align:center;color:var(--mist-2);padding:2rem">No invoices yet. First invoice generated on first service completion.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="admin-section-head">Payment Integration Hooks</p>
+      <div class="admin-grid" style="margin-bottom:1.5rem">
+        <div class="admin-card">
+          <p class="admin-card-label">PayPal</p>
+          <p class="admin-card-value" style="color:var(--brass-2);font-size:.95rem">Active — test link</p>
+          <p class="admin-card-note">Invoices can be paid via PayPal checkout now</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Stripe</p>
+          <p class="admin-card-value" style="color:#f2c94c;font-size:.95rem">Pending Approval</p>
+          <p class="admin-card-note">Check email for Stripe status. Update config/payment-links.json when approved.</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">QuickBooks</p>
+          <p class="admin-card-value" style="color:var(--mist-2);font-size:.95rem">Future Integration</p>
+          <p class="admin-card-note">Sprint 016+ — automatic invoice sync and accounting</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Auto-Invoicing</p>
+          <p class="admin-card-value" style="color:var(--mist-2);font-size:.95rem">Future — Sprint 013+</p>
+          <p class="admin-card-note">Sales Agent will draft invoices for Creator approval before sending</p>
+        </div>
+      </div>
+
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Responsible Agent</span><span class="s8-ai-val">Sales Agent (Active — manual drafting)</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Invoice Automation</span><span class="s8-ai-val">Sprint 013+</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">Before sending any invoice</span></div>
+        </div>
+      </div>
+
+    </div><!-- /panel invoices -->
+
+  </main>
+</div>
+<script src="../js/admin-utils.js" defer></script>
+</body>
+</html>
+
+
+

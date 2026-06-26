@@ -1,0 +1,684 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Audience Intelligence — RMHQ · Ronin Monk Media LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body class="theme-obsidian admin-body">
+<div class="admin-shell">
+
+  <header class="admin-topbar">
+    <a class="admin-home-link" href="/">← Public Site</a>
+    <span class="admin-brand">RMHQ</span>
+    <span class="admin-badge">Creator OS · v4.0</span>
+    <span class="admin-topbar-right" id="mc-datetime">Ronin Monk Media LLC</span>
+  </header>
+
+  <aside class="admin-sidebar" role="navigation" aria-label="RMHQ Navigation">
+    <p class="admin-nav-section">Command</p>
+    <a class="admin-nav-item" href="/admin/"><span class="admin-nav-icon">⬛</span> Mission Control</a>
+    <a class="admin-nav-item" href="/admin/crm.html"><span class="admin-nav-icon">👥</span> CRM</a>
+    <p class="admin-nav-section">Revenue</p>
+    <a class="admin-nav-item" href="/admin/revenue.html"><span class="admin-nav-icon">💰</span> Revenue Center</a>
+    <a class="admin-nav-item" href="/admin/proposals.html"><span class="admin-nav-icon">📄</span> Proposals &amp; Invoices</a>
+    <p class="admin-nav-section">Grow</p>
+    <a class="admin-nav-item" href="/admin/products.html"><span class="admin-nav-icon">📦</span> Product Center</a>
+    <a class="admin-nav-item" href="/admin/marketing.html"><span class="admin-nav-icon">📈</span> Marketing Center</a>
+    <a class="admin-nav-item" href="/admin/analytics.html"><span class="admin-nav-icon">📊</span> Analytics</a>
+    <a class="admin-nav-item" href="/admin/client-portal.html"><span class="admin-nav-icon">🤝</span> Client Portal</a>
+    <p class="admin-nav-section">Create</p>
+    <a class="admin-nav-item" href="/admin/publishing.html"><span class="admin-nav-icon">📚</span> Publishing Center</a>
+    <a class="admin-nav-item" href="/admin/music-center.html"><span class="admin-nav-icon">🎵</span> Music Center</a>
+    <a class="admin-nav-item" href="/admin/content.html"><span class="admin-nav-icon">✍️</span> Creator Studio</a>
+    <a class="admin-nav-item" href="/admin/lore.html"><span class="admin-nav-icon">📜</span> Lore Engine</a>
+    <p class="admin-nav-section">Scale</p>
+    <a class="admin-nav-item" href="/admin/calendar.html"><span class="admin-nav-icon">🗓️</span> Calendar</a>
+    <a class="admin-nav-item" href="/admin/game.html"><span class="admin-nav-icon">🎮</span> Game Center</a>
+    <a class="admin-nav-item" href="/admin/automation.html"><span class="admin-nav-icon">⚡</span> Automation Center</a>
+    <p class="admin-nav-section">Intelligence</p>
+    <a class="admin-nav-item" href="/admin/knowledge.html"><span class="admin-nav-icon">🧠</span> Knowledge Center</a>
+    <a class="admin-nav-item" href="/admin/queue.html"><span class="admin-nav-icon">🔄</span> Agent Queue</a>
+    <a class="admin-nav-item active" href="/admin/audience.html"><span class="admin-nav-icon">🌍</span> Audience Intel</a>
+    <p class="admin-nav-section">System</p>
+    <a class="admin-nav-item" href="/admin/agents.html"><span class="admin-nav-icon">🤖</span> AI Workforce</a>
+    <a class="admin-nav-item" href="/admin/reports.html"><span class="admin-nav-icon">📋</span> Reports</a>
+    <a class="admin-nav-item" href="/admin/settings.html"><span class="admin-nav-icon">⚙️</span> Settings</a>
+  </aside>
+
+  <main class="admin-main" id="main">
+
+    <div class="mc-page-header">
+      <div>
+        <p class="admin-page-eyebrow">Global Audience &amp; Market Intelligence</p>
+        <h1 class="admin-page-title">Audience Intelligence</h1>
+        <p class="admin-page-sub">Who should I target? Which country? Which segment? What do I promote today? Source of truth: <span class="config-path">config/audience-markets.json</span> · <span class="config-path">config/collector-products.json</span></p>
+      </div>
+      <span class="mc-sprint-label">Sprint 009</span>
+    </div>
+
+    <!-- REVENUE RULE -->
+    <div class="s9-revenue-rule">
+      <span class="s9-rule-icon">⚡</span>
+      <span class="s9-rule-text"><strong>Revenue Rule:</strong> Every market action must answer — <em>What is most likely to move Ronin Monk Media toward its next $100?</em></span>
+    </div>
+
+    <!-- TAB NAV -->
+    <nav class="s8-tabs" style="margin-bottom:1.5rem">
+      <button class="s8-tab s8-tab--active" data-tg="aud" onclick="s8Tab('aud',0)">Global Markets</button>
+      <button class="s8-tab" data-tg="aud" onclick="s8Tab('aud',1)">Fan Segments</button>
+      <button class="s8-tab" data-tg="aud" onclick="s8Tab('aud',2)">Collector Strategy</button>
+      <button class="s8-tab" data-tg="aud" onclick="s8Tab('aud',3)">Intl Content Strategy</button>
+      <button class="s8-tab" data-tg="aud" onclick="s8Tab('aud',4)">Site Audit</button>
+    </nav>
+
+    <!-- PANEL: GLOBAL MARKETS -->
+    <div data-pg="aud">
+
+      <p class="admin-section-head">Market Tier Summary</p>
+      <div class="s8-status-summary" style="margin-bottom:1.5rem">
+        <div class="s8-status-card s8-status-card--ok">
+          <span class="s8-status-count">3</span>
+          <span class="s8-status-label">S Tier</span>
+        </div>
+        <div class="s8-status-card s8-status-card--warn">
+          <span class="s8-status-count">7</span>
+          <span class="s8-status-label">A Tier</span>
+        </div>
+        <div class="s8-status-card">
+          <span class="s8-status-count">3</span>
+          <span class="s8-status-label">B Tier</span>
+        </div>
+        <div class="s8-status-card">
+          <span class="s8-status-count">2</span>
+          <span class="s8-status-label">Test Market</span>
+        </div>
+        <div class="s8-status-card s8-status-card--ok">
+          <span class="s8-status-count">15</span>
+          <span class="s8-status-label">Total Markets</span>
+        </div>
+      </div>
+
+      <p class="admin-section-head">Global Market Rankings — <span style="font-weight:400;color:var(--mist-3)">Source: config/audience-markets.json</span></p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Market</th>
+              <th>Tier</th>
+              <th>Audience Fit</th>
+              <th>Boom Bap</th>
+              <th>Afrofuturism</th>
+              <th>Fantasy/Gaming</th>
+              <th>Collector</th>
+              <th>Language</th>
+              <th>Best Platform</th>
+              <th>Revenue Potential</th>
+              <th>Next Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-title">🇺🇸 United States</td>
+              <td><span class="s9-tier s9-tier--s">S</span></td>
+              <td class="s9-score">10</td><td class="s9-score">10</td><td class="s9-score">10</td><td class="s9-score">9</td><td class="s9-score">9</td>
+              <td>English</td>
+              <td class="td-note">Gumroad · YouTube · Bandcamp</td>
+              <td style="color:#6fcf97;font-weight:600">High</td>
+              <td class="td-note">Personal outreach to Boom Bap &amp; Afrofuturist communities</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇬🇧 United Kingdom</td>
+              <td><span class="s9-tier s9-tier--s">S</span></td>
+              <td class="s9-score">9</td><td class="s9-score">9</td><td class="s9-score">9</td><td class="s9-score">8</td><td class="s9-score">8</td>
+              <td>English</td>
+              <td class="td-note">Bandcamp · YouTube · Gumroad</td>
+              <td style="color:#6fcf97;font-weight:600">High</td>
+              <td class="td-note">Bandcamp promo targeting UK underground hip-hop</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇳🇬 Nigeria</td>
+              <td><span class="s9-tier s9-tier--s">S</span></td>
+              <td class="s9-score">10</td><td class="s9-score">8</td><td class="s9-score">10</td><td class="s9-score">8</td><td class="s9-score">7</td>
+              <td>English</td>
+              <td class="td-note">YouTube · Social · Gumroad</td>
+              <td style="color:#6fcf97;font-weight:600">Med-High</td>
+              <td class="td-note">YouTube outreach to Afrofuturist creators</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇨🇦 Canada</td>
+              <td><span class="s9-tier s9-tier--a">A</span></td>
+              <td class="s9-score">9</td><td class="s9-score">9</td><td class="s9-score">8</td><td class="s9-score">8</td><td class="s9-score">8</td>
+              <td>English / French</td>
+              <td class="td-note">Bandcamp · Gumroad · YouTube</td>
+              <td style="color:#6fcf97;font-weight:600">High</td>
+              <td class="td-note">English first; French later for Quebec</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇫🇷 France</td>
+              <td><span class="s9-tier s9-tier--a">A</span></td>
+              <td class="s9-score">8</td><td class="s9-score">9</td><td class="s9-score">8</td><td class="s9-score">9</td><td class="s9-score">9</td>
+              <td>French</td>
+              <td class="td-note">Bandcamp · YouTube · Mixcloud</td>
+              <td style="color:#6fcf97;font-weight:600">High</td>
+              <td class="td-note">French captions on YouTube; Bandcamp FR description</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇯🇵 Japan</td>
+              <td><span class="s9-tier s9-tier--a">A</span></td>
+              <td class="s9-score">8</td><td class="s9-score">7</td><td class="s9-score">7</td><td class="s9-score">10</td><td class="s9-score">10</td>
+              <td>Japanese</td>
+              <td class="td-note">Bandcamp · YouTube</td>
+              <td style="color:#6fcf97;font-weight:600">High</td>
+              <td class="td-note">Limited Codex editions as collector artifacts</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇩🇪 Germany</td>
+              <td><span class="s9-tier s9-tier--a">A</span></td>
+              <td class="s9-score">7</td><td class="s9-score">8</td><td class="s9-score">7</td><td class="s9-score">8</td><td class="s9-score">9</td>
+              <td>German</td>
+              <td class="td-note">Bandcamp · YouTube</td>
+              <td style="color:#f2c94c;font-weight:600">Med-High</td>
+              <td class="td-note">German Bandcamp description; hip-hop collector communities</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇰🇷 South Korea</td>
+              <td><span class="s9-tier s9-tier--a">A</span></td>
+              <td class="s9-score">7</td><td class="s9-score">7</td><td class="s9-score">7</td><td class="s9-score">10</td><td class="s9-score">9</td>
+              <td>Korean</td>
+              <td class="td-note">YouTube · Bandcamp</td>
+              <td style="color:#f2c94c;font-weight:600">Med-High</td>
+              <td class="td-note">Faction art + gaming-adjacent lore content</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇬🇭 Ghana</td>
+              <td><span class="s9-tier s9-tier--a">A</span></td>
+              <td class="s9-score">9</td><td class="s9-score">7</td><td class="s9-score">10</td><td class="s9-score">7</td><td class="s9-score">7</td>
+              <td>English</td>
+              <td class="td-note">YouTube · Social</td>
+              <td style="color:#f2c94c;font-weight:600">Medium</td>
+              <td class="td-note">Afrofuturist worldbuilding lore excerpts on social</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇿🇦 South Africa</td>
+              <td><span class="s9-tier s9-tier--a">A</span></td>
+              <td class="s9-score">8</td><td class="s9-score">7</td><td class="s9-score">9</td><td class="s9-score">8</td><td class="s9-score">7</td>
+              <td>English</td>
+              <td class="td-note">Bandcamp · YouTube</td>
+              <td style="color:#f2c94c;font-weight:600">Medium</td>
+              <td class="td-note">Bandcamp + YouTube cross-promotion</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇳🇱 Netherlands</td>
+              <td><span class="s9-tier s9-tier--b">B</span></td>
+              <td class="s9-score">7</td><td class="s9-score">8</td><td class="s9-score">6</td><td class="s9-score">7</td><td class="s9-score">8</td>
+              <td>Dutch / English</td>
+              <td class="td-note">Bandcamp · YouTube</td>
+              <td style="color:#f2c94c;font-weight:600">Medium</td>
+              <td class="td-note">Monitor; English content reaches this market already</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇧🇪 Belgium</td>
+              <td><span class="s9-tier s9-tier--b">B</span></td>
+              <td class="s9-score">7</td><td class="s9-score">7</td><td class="s9-score">6</td><td class="s9-score">7</td><td class="s9-score">7</td>
+              <td>French / Dutch</td>
+              <td class="td-note">Bandcamp · YouTube</td>
+              <td style="color:#f2c94c;font-weight:600">Medium</td>
+              <td class="td-note">French content covers alongside France campaign</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇧🇷 Brazil</td>
+              <td><span class="s9-tier s9-tier--b">B</span></td>
+              <td class="s9-score">7</td><td class="s9-score">7</td><td class="s9-score">8</td><td class="s9-score">9</td><td class="s9-score">6</td>
+              <td>Portuguese</td>
+              <td class="td-note">YouTube · Social</td>
+              <td style="color:#f2c94c;font-weight:600">Medium</td>
+              <td class="td-note">Portuguese captions on YouTube; Afrofuturist content</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇲🇽 Mexico</td>
+              <td><span class="s9-tier s9-tier--test">Test</span></td>
+              <td class="s9-score">7</td><td class="s9-score">7</td><td class="s9-score">7</td><td class="s9-score">8</td><td class="s9-score">6</td>
+              <td>Spanish</td>
+              <td class="td-note">YouTube · Social</td>
+              <td style="color:var(--mist-3)">Low-Med</td>
+              <td class="td-note">Spanish captions; bundle with Colombia</td>
+            </tr>
+            <tr>
+              <td class="td-title">🇨🇴 Colombia</td>
+              <td><span class="s9-tier s9-tier--test">Test</span></td>
+              <td class="s9-score">6</td><td class="s9-score">6</td><td class="s9-score">6</td><td class="s9-score">7</td><td class="s9-score">5</td>
+              <td>Spanish</td>
+              <td class="td-note">YouTube · Social</td>
+              <td style="color:var(--mist-3)">Low-Med</td>
+              <td class="td-note">Test alongside Mexico Spanish campaign</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="admin-section-head">Tier Definitions</p>
+      <div class="admin-grid" style="margin-bottom:1.5rem">
+        <div class="admin-card" style="border-color:rgba(111,207,151,.2)">
+          <p class="admin-card-label" style="color:#6fcf97">S Tier</p>
+          <p class="admin-card-note">Highest priority. Active promotion now. Real revenue potential in near term. US, UK, Nigeria.</p>
+        </div>
+        <div class="admin-card" style="border-color:rgba(212,175,55,.2)">
+          <p class="admin-card-label" style="color:var(--brass-2)">A Tier</p>
+          <p class="admin-card-note">High priority. Targeted content within 90 days. Strong audience alignment.</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">B Tier</p>
+          <p class="admin-card-note">Moderate priority. Passive reach through English or shared-language content.</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label" style="color:var(--mist-3)">Test Market</p>
+          <p class="admin-card-note">Low priority. Monitor engagement before investing content effort.</p>
+        </div>
+      </div>
+
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Responsible Agent</span><span class="s8-ai-val">Research Agent (Active — manual) · Marketing Agent (Active — manual)</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Data Source</span><span class="s8-ai-val">config/audience-markets.json — update this file to reflect new intelligence</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Automation Level</span><span class="s8-ai-val">0% — All manual research</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">All market campaigns and targeting decisions</span></div>
+        </div>
+      </div>
+
+    </div><!-- /panel global markets -->
+
+    <!-- PANEL: FAN SEGMENTS -->
+    <div data-pg="aud" class="s8-panel--hidden">
+
+      <p class="admin-section-head">Marketing Intelligence</p>
+      <div class="admin-grid" style="margin-bottom:1.5rem">
+        <div class="admin-card s9-intel-card">
+          <p class="admin-card-label">Top Market</p>
+          <p class="admin-card-value" style="font-size:1rem">United States</p>
+          <p class="admin-card-note">S Tier · English · All platforms · Highest revenue potential</p>
+        </div>
+        <div class="admin-card s9-intel-card">
+          <p class="admin-card-label">Fastest Growing Market</p>
+          <p class="admin-card-value" style="font-size:1rem">TBD</p>
+          <p class="admin-card-note">Monitor analytics after 30 days of promotion</p>
+        </div>
+        <div class="admin-card s9-intel-card">
+          <p class="admin-card-label">Best Platform</p>
+          <p class="admin-card-value" style="font-size:1rem">Gumroad + YouTube</p>
+          <p class="admin-card-note">Gumroad converts · YouTube builds audience that converts</p>
+        </div>
+        <div class="admin-card s9-intel-card">
+          <p class="admin-card-label">Best Content Type</p>
+          <p class="admin-card-value" style="font-size:1rem">Lore drops + Music</p>
+          <p class="admin-card-note">Universe building drives collector purchases</p>
+        </div>
+        <div class="admin-card s9-intel-card">
+          <p class="admin-card-label">Best Offer</p>
+          <p class="admin-card-value" style="font-size:1rem">Codex of the Waste-Born $5</p>
+          <p class="admin-card-note">Low price + limited qty (20 remaining) = urgency + easy first purchase</p>
+        </div>
+        <div class="admin-card s9-intel-card">
+          <p class="admin-card-label">Best Outreach Channel</p>
+          <p class="admin-card-value" style="font-size:1rem">Personal DM / Email</p>
+          <p class="admin-card-note">Direct outreach to past contacts converts faster than cold social</p>
+        </div>
+        <div class="admin-card s9-intel-card">
+          <p class="admin-card-label">Highest Potential Segment</p>
+          <p class="admin-card-value" style="font-size:1rem">Afrofuturist Art Fans</p>
+          <p class="admin-card-note">Overlaps with music, fiction, gaming, and collector segments</p>
+        </div>
+        <div class="admin-card s9-intel-card">
+          <p class="admin-card-label">Language Priority Order</p>
+          <p class="admin-card-value" style="font-size:.85rem">EN → FR → DE → JA → KO → PT → ES</p>
+          <p class="admin-card-note">English content first; French unlocks France + Canada + Belgium</p>
+        </div>
+      </div>
+
+      <p class="admin-section-head">Fan Segments</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Segment</th><th>Best Market</th><th>Best Platform</th><th>Best Offer</th><th>Priority</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-title">Underground Boom Bap Listeners</td>
+              <td>US · UK · France</td>
+              <td>Bandcamp · Mixcloud · YouTube</td>
+              <td>Dee Lite track → Frequency Wars $15</td>
+              <td><span class="badge badge--ok">S Priority</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Afrofuturist Art Fans</td>
+              <td>US · Nigeria · Ghana · SA</td>
+              <td>YouTube · Social · Gumroad</td>
+              <td>Entry Signal (free) → Codex $5 or $10</td>
+              <td><span class="badge badge--ok">S Priority</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Anime / Fantasy Fans</td>
+              <td>US · Japan · South Korea</td>
+              <td>YouTube · Gumroad</td>
+              <td>Faction art → Codex editions</td>
+              <td><span class="badge badge--warn">A Priority</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Black Speculative Fiction Readers</td>
+              <td>US · UK · Canada</td>
+              <td>Gumroad · Social</td>
+              <td>Frequency Wars $15 · Codex of Waste-Born $5</td>
+              <td><span class="badge badge--warn">A Priority</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Tabletop / RPG Worldbuilding Fans</td>
+              <td>US · UK · Germany</td>
+              <td>YouTube · Gumroad</td>
+              <td>Lore documents · Collector editions</td>
+              <td><span class="badge badge--warn">A Priority</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Collectors</td>
+              <td>US · Japan · France · Germany</td>
+              <td>Bandcamp · Gumroad</td>
+              <td>Limited Codex editions · Digital box set</td>
+              <td><span class="badge badge--warn">A Priority</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Independent Music Supporters</td>
+              <td>US · UK · Netherlands</td>
+              <td>Bandcamp · Mixcloud</td>
+              <td>Dee Lite → Static Before Sound album</td>
+              <td><span class="badge">B Priority</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Creator Economy Supporters</td>
+              <td>US · Canada · UK</td>
+              <td>YouTube · Social · Email</td>
+              <td>Worldbuilding services · Brand Audit $275</td>
+              <td><span class="badge">B Priority</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Responsible Agent</span><span class="s8-ai-val">Marketing Agent · Research Agent</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Agent Responsibilities</span><span class="s8-ai-val">Track market opportunities · Recommend regions · Draft region-specific campaigns</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">All campaigns before execution</span></div>
+        </div>
+      </div>
+
+    </div><!-- /panel fan segments -->
+
+    <!-- PANEL: COLLECTOR STRATEGY -->
+    <div data-pg="aud" class="s8-panel--hidden">
+
+      <p class="admin-section-head">Collector Philosophy</p>
+      <div class="s9-philosophy-card" style="margin-bottom:1.5rem">
+        <p style="font-size:.95rem;color:var(--mist-1);line-height:1.7;margin:0"><em>"Ronin Monk Media customers are not casual consumers. They are initiates into the Sky Khan universe. Every product should feel like an artifact — discovered, not purchased."</em></p>
+      </div>
+
+      <p class="admin-section-head">Collector Segments</p>
+      <div class="admin-grid" style="margin-bottom:1.5rem">
+        <div class="admin-card admin-card--ok">
+          <p class="admin-card-label">Music Collectors</p>
+          <p class="admin-card-value" style="font-size:.9rem;color:#6fcf97">Active</p>
+          <p class="admin-card-note">Bandcamp followers · vinyl-mindset buyers · audiophiles</p>
+        </div>
+        <div class="admin-card admin-card--ok">
+          <p class="admin-card-label">Book Collectors</p>
+          <p class="admin-card-value" style="font-size:.9rem;color:#6fcf97">Active</p>
+          <p class="admin-card-note">Limited PDFs · numbered runs · signed digital editions</p>
+        </div>
+        <div class="admin-card admin-card--ok">
+          <p class="admin-card-label">Lore Collectors</p>
+          <p class="admin-card-value" style="font-size:.9rem;color:#6fcf97">Active</p>
+          <p class="admin-card-note">Codex documents · canon transmissions · limited lore packs</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Art Collectors</p>
+          <p class="admin-card-value" style="font-size:.9rem;color:var(--mist-3)">Future</p>
+          <p class="admin-card-note">Faction art prints · character illustrations · codex page art</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Merch Collectors</p>
+          <p class="admin-card-value" style="font-size:.9rem;color:var(--mist-3)">Future</p>
+          <p class="admin-card-note">Physical artifacts tied to lore — scrolls, patches, faction items</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Future Game Players</p>
+          <p class="admin-card-value" style="font-size:.9rem;color:var(--mist-3)">Future</p>
+          <p class="admin-card-note">Sky Khan 8-bit game · collector early-access tier</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Future Members</p>
+          <p class="admin-card-value" style="font-size:.9rem;color:var(--mist-3)">Future</p>
+          <p class="admin-card-note">Exclusive drops · behind-the-scroll access · collector membership</p>
+        </div>
+      </div>
+
+      <p class="admin-section-head">Collector Product Ideas — <span style="font-weight:400;color:var(--mist-3)">Source: config/collector-products.json</span></p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Product Idea</th><th>Description</th><th>Price Range</th><th>Segments</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-title">Digital Scroll Packs</td>
+              <td class="td-note">Bundled lore documents formatted as in-universe scrolls — PDF art objects</td>
+              <td class="td-price">$5–$15</td>
+              <td class="td-note">Lore · Books</td>
+              <td><span class="badge badge--warn">Idea</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Limited PDF Editions</td>
+              <td class="td-note">Numbered, dated digital editions of existing titles — scarcity creates collector value</td>
+              <td class="td-price">$10–$25</td>
+              <td class="td-note">Books · Lore</td>
+              <td><span class="badge badge--warn">Idea</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Lore Cards</td>
+              <td class="td-note">Faction reference cards — character stats, faction abilities, era timelines. Digital first.</td>
+              <td class="td-price">$3–$8 / pack</td>
+              <td class="td-note">Lore · Art</td>
+              <td><span class="badge badge--warn">Idea</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Music + Story Bundles</td>
+              <td class="td-note">Album or track paired with the canonical novella or lore document it scores</td>
+              <td class="td-price">$12–$20</td>
+              <td class="td-note">Music · Books · Lore</td>
+              <td><span class="badge badge--warn">Idea</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Behind-the-Scroll Commentary</td>
+              <td class="td-note">Creator notes on lore decisions, worldbuilding process, faction design. Collector-only.</td>
+              <td class="td-price">$5–$10 add-on</td>
+              <td class="td-note">Lore · Members</td>
+              <td><span class="badge badge--warn">Idea</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">International Digital Box Set</td>
+              <td class="td-note">All current Gumroad products bundled at a discount — targets international collectors</td>
+              <td class="td-price">$25–$35</td>
+              <td class="td-note">Books · Lore · Music</td>
+              <td><span class="badge badge--warn">Idea</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Collector Membership</td>
+              <td class="td-note">Monthly or annual access tier with early drops, exclusive lore, and discount on new releases</td>
+              <td class="td-price">$5/mo · $49/yr</td>
+              <td class="td-note">Members</td>
+              <td><span class="badge">Future</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Responsible Agent</span><span class="s8-ai-val">Brand Agent · Publishing Agent · Sales Agent</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Data Source</span><span class="s8-ai-val">config/collector-products.json — update status when ideas become active products</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">All new product launches</span></div>
+        </div>
+      </div>
+
+    </div><!-- /panel collector strategy -->
+
+    <!-- PANEL: INTERNATIONAL CONTENT STRATEGY -->
+    <div data-pg="aud" class="s8-panel--hidden">
+
+      <p class="admin-section-head">Language Priority Order</p>
+      <div class="s8-status-summary" style="margin-bottom:1.5rem">
+        <div class="s8-status-card s8-status-card--ok"><span class="s8-status-count" style="font-size:1.1rem">EN</span><span class="s8-status-label">Now</span></div>
+        <div class="s8-status-card s8-status-card--warn"><span class="s8-status-count" style="font-size:1.1rem">FR</span><span class="s8-status-label">Next</span></div>
+        <div class="s8-status-card s8-status-card--warn"><span class="s8-status-count" style="font-size:1.1rem">DE</span><span class="s8-status-label">Phase 2</span></div>
+        <div class="s8-status-card"><span class="s8-status-count" style="font-size:1.1rem">JA</span><span class="s8-status-label">Phase 3</span></div>
+        <div class="s8-status-card"><span class="s8-status-count" style="font-size:1.1rem">KO</span><span class="s8-status-label">Phase 3</span></div>
+        <div class="s8-status-card"><span class="s8-status-count" style="font-size:1.1rem">PT</span><span class="s8-status-label">Phase 3</span></div>
+        <div class="s8-status-card"><span class="s8-status-count" style="font-size:1.1rem">ES</span><span class="s8-status-label">Phase 4</span></div>
+      </div>
+
+      <p class="admin-section-head">Content Localization Checklist — Structure Only (No Translations Yet)</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Content Type</th><th>Platform</th><th>Languages</th><th>Priority</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="td-title">Video Captions</td><td>YouTube</td><td>FR · DE · JA · KO · PT · ES</td><td>High</td><td><span class="badge badge--warn">Structure Ready</span></td></tr>
+            <tr><td class="td-title">Video Descriptions</td><td>YouTube</td><td>FR · DE</td><td>High</td><td><span class="badge badge--warn">Structure Ready</span></td></tr>
+            <tr><td class="td-title">Product Descriptions</td><td>Gumroad</td><td>FR · DE · JA</td><td>High</td><td><span class="badge badge--warn">Structure Ready</span></td></tr>
+            <tr><td class="td-title">Album Descriptions</td><td>Bandcamp</td><td>FR · DE · JA</td><td>Medium</td><td><span class="badge badge--warn">Structure Ready</span></td></tr>
+            <tr><td class="td-title">Social Posts</td><td>All</td><td>FR · PT · ES</td><td>Medium</td><td><span class="badge badge--warn">Structure Ready</span></td></tr>
+            <tr><td class="td-title">Subtitles (SRT)</td><td>YouTube · Vimeo</td><td>FR · DE · JA · KO</td><td>Medium</td><td><span class="badge">Future</span></td></tr>
+            <tr><td class="td-title">Region Landing Pages</td><td>Website</td><td>FR · DE · JA</td><td>Low</td><td><span class="badge">Future Sprint</span></td></tr>
+            <tr><td class="td-title">Translation Priority</td><td>All</td><td>French first — unlocks FR + CA + BE markets</td><td>Highest</td><td><span class="badge badge--warn">Awaiting Creator</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="admin-section-head">Platform-Specific Notes</p>
+      <div class="admin-grid" style="margin-bottom:1.5rem">
+        <div class="admin-card">
+          <p class="admin-card-label">YouTube</p>
+          <p class="admin-card-note">Add French captions first — covers France, Canada, Belgium simultaneously. Auto-caption then edit. Descriptions: add language-specific paragraph below English original.</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Bandcamp</p>
+          <p class="admin-card-note">Album bio supports HTML. Add French / German paragraph below English bio. Japan market: emphasize collector and limited-run language.</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Gumroad</p>
+          <p class="admin-card-note">Product descriptions support rich text. Add French + German versions below English. Position limited products (Codex of the Waste-Born) with scarcity language per market.</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Social / Short-Form</p>
+          <p class="admin-card-note">Post same content in English + French on same post. Portuguese for Brazil outreach. Spanish for Mexico + Colombia test campaign.</p>
+        </div>
+      </div>
+
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Responsible Agent</span><span class="s8-ai-val">Publishing Agent · Marketing Agent · Brand Agent</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Publishing Agent Scope</span><span class="s8-ai-val">Platform-specific posts · Captions and descriptions · Translation preparation</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Brand Agent Scope</span><span class="s8-ai-val">Protect Sky Khan / Ronin Monk tone while adapting messaging by region</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">All translated content before publishing</span></div>
+        </div>
+      </div>
+
+    </div><!-- /panel intl content -->
+
+    <!-- PANEL: SITE AUDIT -->
+    <div data-pg="aud" class="s8-panel--hidden">
+
+      <p class="admin-section-head">Public Website Audit — Global Readiness</p>
+      <div class="admin-card" style="max-width:100%;margin-bottom:1.5rem;padding:1.4rem">
+        <p style="font-size:.8rem;font-weight:700;color:var(--brass-2);letter-spacing:.05em;text-transform:uppercase;margin:0 0 .6rem">Audit Rule</p>
+        <p style="font-size:.87rem;color:var(--mist-2);margin:0">No public pages redesigned or built in this sprint. Documentation only. Build public pages only if trivial and safe.</p>
+      </div>
+
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Feature</th><th>Benefit</th><th>Complexity</th><th>Recommendation</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-title">International Landing Pages</td>
+              <td class="td-note">Localized entry points for FR / DE / JP / KO markets</td>
+              <td>Medium</td>
+              <td>Build after first international sales confirm demand</td>
+              <td><span class="badge">Future Sprint 015+</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Collector Page</td>
+              <td class="td-note">Dedicated page for collector products, limited editions, membership</td>
+              <td>Low</td>
+              <td>Build when first collector product is launched — high value, low effort</td>
+              <td><span class="badge badge--warn">Recommended Sprint 010</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Audience-Specific Entry Points</td>
+              <td class="td-note">e.g. /for-boom-bap-fans, /for-afrofuturists</td>
+              <td>Medium</td>
+              <td>Build after audience data confirms which segments convert</td>
+              <td><span class="badge">Future Sprint 012+</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Music Universe Page</td>
+              <td class="td-note">Dedicated page for all music platforms, tracks, lore connections</td>
+              <td>Low</td>
+              <td>music.html already covers this — consider expanding rather than new page</td>
+              <td><span class="badge badge--warn">Expand music.html</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Sky Khan Starter Guide</td>
+              <td class="td-note">Entry point for new audience members unfamiliar with the universe</td>
+              <td>Low</td>
+              <td>High value — converts curious visitors into buyers. Recommend Sprint 010.</td>
+              <td><span class="badge badge--warn">Recommended Sprint 010</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Buyer Path for Collectors</td>
+              <td class="td-note">Curated funnel: free entry → low-cost → premium product</td>
+              <td>Low</td>
+              <td>Entry Signal (free) → Codex $5 → Frequency Wars $15 path exists. Surface it on shop.html.</td>
+              <td><span class="badge badge--warn">Update shop.html</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Responsible Agent</span><span class="s8-ai-val">Research Agent · Brand Agent</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Research Agent Scope</span><span class="s8-ai-val">Identify countries, communities, blogs, podcasts, playlists, forums, and creators aligned with Ronin Monk Media</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">All new public pages before build</span></div>
+        </div>
+      </div>
+
+    </div><!-- /panel site audit -->
+
+  </main>
+</div>
+<script src="../js/admin-utils.js" defer></script>
+</body>
+</html>
+
+

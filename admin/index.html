@@ -1,0 +1,513 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Mission Control — RMHQ · Ronin Monk Media LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body class="theme-obsidian admin-body">
+<div class="admin-shell">
+
+  <header class="admin-topbar">
+    <a class="admin-home-link" href="/">← Public Site</a>
+    <span class="admin-brand">RMHQ</span>
+    <span class="admin-badge">Creator OS · v3.0</span>
+    <span class="admin-topbar-right" id="mc-datetime">Ronin Monk Media LLC</span>
+  </header>
+
+  <aside class="admin-sidebar" role="navigation" aria-label="RMHQ Navigation">
+    <p class="admin-nav-section">Command</p>
+    <a class="admin-nav-item active" href="/admin/"><span class="admin-nav-icon">⬛</span> Mission Control</a>
+    <a class="admin-nav-item" href="/admin/crm.html"><span class="admin-nav-icon">👥</span> CRM</a>
+    <p class="admin-nav-section">Revenue</p>
+    <a class="admin-nav-item" href="/admin/revenue.html"><span class="admin-nav-icon">💰</span> Revenue Center</a>
+    <a class="admin-nav-item" href="/admin/proposals.html"><span class="admin-nav-icon">📄</span> Proposals &amp; Invoices</a>
+    <p class="admin-nav-section">Grow</p>
+    <a class="admin-nav-item" href="/admin/products.html"><span class="admin-nav-icon">📦</span> Product Center</a>
+    <a class="admin-nav-item" href="/admin/marketing.html"><span class="admin-nav-icon">📈</span> Marketing Center</a>
+    <a class="admin-nav-item" href="/admin/analytics.html"><span class="admin-nav-icon">📊</span> Analytics</a>
+    <a class="admin-nav-item" href="/admin/client-portal.html"><span class="admin-nav-icon">🤝</span> Client Portal</a>
+    <p class="admin-nav-section">Create</p>
+    <a class="admin-nav-item" href="/admin/publishing.html"><span class="admin-nav-icon">📚</span> Publishing Center</a>
+    <a class="admin-nav-item" href="/admin/music-center.html"><span class="admin-nav-icon">🎵</span> Music Center</a>
+    <a class="admin-nav-item" href="/admin/content.html"><span class="admin-nav-icon">✍️</span> Creator Studio</a>
+    <a class="admin-nav-item" href="/admin/lore.html"><span class="admin-nav-icon">📜</span> Lore Engine</a>
+    <p class="admin-nav-section">Scale</p>
+    <a class="admin-nav-item" href="/admin/calendar.html"><span class="admin-nav-icon">🗓️</span> Calendar</a>
+    <a class="admin-nav-item" href="/admin/game.html"><span class="admin-nav-icon">🎮</span> Game Center</a>
+    <a class="admin-nav-item" href="/admin/automation.html"><span class="admin-nav-icon">⚡</span> Automation Center</a>
+    <p class="admin-nav-section">Intelligence</p>
+    <a class="admin-nav-item" href="/admin/knowledge.html"><span class="admin-nav-icon">🧠</span> Knowledge Center</a>
+    <a class="admin-nav-item" href="/admin/queue.html"><span class="admin-nav-icon">🔄</span> Agent Queue</a>
+    <a class="admin-nav-item" href="/admin/audience.html"><span class="admin-nav-icon">🌍</span> Audience Intel</a>
+    <p class="admin-nav-section">System</p>
+    <a class="admin-nav-item" href="/admin/agents.html"><span class="admin-nav-icon">🤖</span> AI Workforce</a>
+    <a class="admin-nav-item" href="/admin/reports.html"><span class="admin-nav-icon">📋</span> Reports</a>
+    <a class="admin-nav-item" href="/admin/settings.html"><span class="admin-nav-icon">⚙️</span> Settings</a>
+  </aside>
+
+  <main class="admin-main" id="main">
+
+    <!-- Page Header -->
+    <div class="mc-page-header">
+      <div>
+        <p class="admin-page-eyebrow">Creator Operating System</p>
+        <h1 class="admin-page-title">Mission Control</h1>
+      </div>
+      <div class="mc-system-status">
+        <span class="status-dot status-dot--live"></span>
+        System Operational
+        <span class="mc-sprint-label">Sprint 009</span>
+      </div>
+    </div>
+
+    <!-- Metrics Strip -->
+    <div class="mc-metrics">
+      <div class="mc-metric">
+        <span class="mc-metric-value">$0</span>
+        <span class="mc-metric-label">Revenue Today</span>
+        <span class="mc-metric-sub">Update manually</span>
+      </div>
+      <div class="mc-metric mc-metric--warn">
+        <span class="mc-metric-value">0%</span>
+        <span class="mc-metric-label">Monthly Goal</span>
+        <span class="mc-metric-sub">$0 / $500 target</span>
+      </div>
+      <div class="mc-metric">
+        <span class="mc-metric-value">0</span>
+        <span class="mc-metric-label">Active Clients</span>
+        <span class="mc-metric-sub">CRM — Sprint 014</span>
+      </div>
+      <div class="mc-metric mc-metric--ok">
+        <span class="mc-metric-value">4</span>
+        <span class="mc-metric-label">Products Live</span>
+        <span class="mc-metric-sub">Gumroad verified</span>
+      </div>
+      <div class="mc-metric">
+        <span class="mc-metric-value">—</span>
+        <span class="mc-metric-label">Leads Waiting</span>
+        <span class="mc-metric-sub">CRM not active</span>
+      </div>
+      <div class="mc-metric mc-metric--ok">
+        <span class="mc-metric-value">3</span>
+        <span class="mc-metric-label">Services Live</span>
+        <span class="mc-metric-sub">PayPal active</span>
+      </div>
+    </div>
+
+    <!-- Today's Mission -->
+    <div class="mc-mission">
+      <div class="mc-mission-header">
+        <div>
+          <p class="admin-page-eyebrow">Today's Revenue Move</p>
+          <h2 class="mc-mission-task">Send 5 Personal Outreach Messages</h2>
+          <p class="mc-mission-desc">Infrastructure is done. PayPal verified. Gumroad live (4 products). Music live (5 platforms). The only thing between you and first revenue is getting the message in front of someone. Send 5 personal DMs or emails today — former clients, collaborators, or anyone who knows your work. Share the Codex of the Waste-Born ($5, limited 20) or offer a Worldbuilding Consultation ($125).</p>
+          <p class="mc-mission-desc" style="margin-top:.5rem"><strong style="color:var(--mist-1)">Time required:</strong> 45–60 min &nbsp;·&nbsp; <strong style="color:var(--mist-1)">Fastest path to first $100</strong></p>
+        </div>
+        <div class="mc-bv-panel">
+          <div class="mc-bv-total">
+            <span class="mc-bv-total-score">43</span>
+            <span class="mc-bv-total-label">Business Value Score / 70</span>
+          </div>
+          <div class="mc-bv-grid">
+            <div class="mc-bv-row">
+              <span class="mc-bv-label">Revenue Impact</span>
+              <div class="mc-bv-bar-wrap"><div class="mc-bv-bar-fill" style="width:100%"></div></div>
+              <span class="mc-bv-score">10</span>
+            </div>
+            <div class="mc-bv-row">
+              <span class="mc-bv-label">Creator Time Saved</span>
+              <div class="mc-bv-bar-wrap"><div class="mc-bv-bar-fill" style="width:20%"></div></div>
+              <span class="mc-bv-score">2</span>
+            </div>
+            <div class="mc-bv-row">
+              <span class="mc-bv-label">Customer Trust</span>
+              <div class="mc-bv-bar-wrap"><div class="mc-bv-bar-fill" style="width:80%"></div></div>
+              <span class="mc-bv-score">8</span>
+            </div>
+            <div class="mc-bv-row">
+              <span class="mc-bv-label">Automation Potential</span>
+              <div class="mc-bv-bar-wrap"><div class="mc-bv-bar-fill" style="width:10%"></div></div>
+              <span class="mc-bv-score">1</span>
+            </div>
+            <div class="mc-bv-row">
+              <span class="mc-bv-label">Strategic Importance</span>
+              <div class="mc-bv-bar-wrap"><div class="mc-bv-bar-fill" style="width:90%"></div></div>
+              <span class="mc-bv-score">9</span>
+            </div>
+            <div class="mc-bv-row">
+              <span class="mc-bv-label">Foundation Value</span>
+              <div class="mc-bv-bar-wrap"><div class="mc-bv-bar-fill" style="width:80%"></div></div>
+              <span class="mc-bv-score">8</span>
+            </div>
+            <div class="mc-bv-row">
+              <span class="mc-bv-label">Ease of Expansion</span>
+              <div class="mc-bv-bar-wrap"><div class="mc-bv-bar-fill" style="width:50%"></div></div>
+              <span class="mc-bv-score">5</span>
+            </div>
+          </div>
+          <a href="https://gumroad.com/dashboard" target="_blank" rel="noopener noreferrer" class="mc-bv-cta">Open Gumroad Dashboard →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3-Column Workspace -->
+    <div class="mc-workspace">
+
+      <!-- LEFT: Daily Focus -->
+      <div class="mc-col">
+        <p class="admin-section-head">Daily Focus</p>
+        <div class="admin-card" style="padding:0;overflow:hidden">
+          <div class="mc-focus-list">
+            <div class="mc-focus-item mc-focus-item--1">
+              <span class="mc-focus-rank">01</span>
+              <div class="mc-focus-body">
+                <span class="mc-focus-text">Send 5 personal outreach messages</span>
+                <span class="mc-focus-meta">45–60 min · Fastest path to first $100</span>
+              </div>
+              <span class="mc-focus-score">52</span>
+            </div>
+            <div class="mc-focus-item mc-focus-item--2">
+              <span class="mc-focus-rank">02</span>
+              <div class="mc-focus-body">
+                <span class="mc-focus-text">Post Codex of the Waste-Born on social ($5 · limited 20)</span>
+                <span class="mc-focus-meta">15 min · Urgency + low price = easiest first sale</span>
+              </div>
+              <span class="mc-focus-score">46</span>
+            </div>
+            <div class="mc-focus-item mc-focus-item--3">
+              <span class="mc-focus-rank">03</span>
+              <div class="mc-focus-body">
+                <span class="mc-focus-text">Check Stripe approval email</span>
+                <span class="mc-focus-meta">5 min · Unlocks second payment processor</span>
+              </div>
+              <span class="mc-focus-score">38</span>
+            </div>
+            <div class="mc-focus-item mc-focus-item--4">
+              <span class="mc-focus-rank">04</span>
+              <div class="mc-focus-body">
+                <span class="mc-focus-text">Share Entry Signal (free) as lead magnet</span>
+                <span class="mc-focus-meta">10 min · Builds audience → upsell to $10/$15</span>
+              </div>
+              <span class="mc-focus-score">35</span>
+            </div>
+            <div class="mc-focus-item mc-focus-item--5">
+              <span class="mc-focus-rank">05</span>
+              <div class="mc-focus-body">
+                <span class="mc-focus-text">Post a YouTube short from Grim Lore Raps</span>
+                <span class="mc-focus-meta">30 min · Drives traffic to Gumroad + music.html</span>
+              </div>
+              <span class="mc-focus-score">31</span>
+            </div>
+          </div>
+        </div>
+        <p class="admin-section-head" style="margin-top:1.2rem">Creator Notes</p>
+        <div class="admin-card" style="padding:.85rem">
+          <textarea class="notes-area" rows="5" placeholder="Scratch pad — not saved automatically. Paste into a document to keep." aria-label="Creator notes"></textarea>
+        </div>
+      </div>
+
+      <!-- CENTER: Mission Feed + Notifications -->
+      <div class="mc-col">
+        <p class="admin-section-head">Mission Feed</p>
+        <div class="admin-card" style="padding:0;overflow:hidden;margin-bottom:1rem">
+          <div class="mc-feed">
+            <div class="mc-feed-item">
+              <span class="mc-feed-dot mc-feed-dot--sprint"></span>
+              <div class="mc-feed-body">
+                <span class="mc-feed-text"><strong>Sprint 009 Complete</strong> — CEO Revenue Dashboard, Global Audience Intelligence (15 markets), Collector Strategy, Intl Content Strategy, Today's Revenue Move panel. 3 config data files. audience.html live.</span>
+                <span class="mc-feed-time">2026-06-26</span>
+              </div>
+            </div>
+            <div class="mc-feed-item">
+              <span class="mc-feed-dot mc-feed-dot--revenue"></span>
+              <div class="mc-feed-body">
+                <span class="mc-feed-text"><strong>Revenue Infrastructure Complete</strong> — PayPal verified &amp; live. Gumroad 4 products confirmed. Shop page rebuilt with real links. Music.html 5 platforms live (Bandcamp, SoundCloud, YouTube, Mixcloud, Vimeo).</span>
+                <span class="mc-feed-time">2026-06-26</span>
+              </div>
+            </div>
+            <div class="mc-feed-item">
+              <span class="mc-feed-dot mc-feed-dot--sprint"></span>
+              <div class="mc-feed-body">
+                <span class="mc-feed-text"><strong>Sprint 008 Complete</strong> — Revenue Command Center. 7 new modules. 21-item sidebar across all 22 admin pages. CRM V1 rebuilt. AI Prep on every module.</span>
+                <span class="mc-feed-time">2026-06-25</span>
+              </div>
+            </div>
+            <div class="mc-feed-item">
+              <span class="mc-feed-dot mc-feed-dot--sprint"></span>
+              <div class="mc-feed-body">
+                <span class="mc-feed-text"><strong>Sprint 007 Complete</strong> — Mission Control rebuilt. 12-module nav live across all admin pages. ADR.md created.</span>
+                <span class="mc-feed-time">2026-06-25</span>
+              </div>
+            </div>
+            <div class="mc-feed-item">
+              <span class="mc-feed-dot mc-feed-dot--product"></span>
+              <div class="mc-feed-body">
+                <span class="mc-feed-text"><strong>Sprint 003 Complete</strong> — Services page live. 3 services with pricing. PayPal CTAs active.</span>
+                <span class="mc-feed-time">2026-06-25</span>
+              </div>
+            </div>
+          </div>
+          <a href="/admin/reports.html" class="mc-feed-footer">View all sprint reports →</a>
+        </div>
+
+        <p class="admin-section-head">Notification Center</p>
+        <div class="admin-card" style="padding:0;overflow:hidden">
+          <div class="mc-notif-tabs" role="tablist">
+            <button class="mc-notif-tab mc-notif-tab--active" data-tab="revenue" role="tab">Revenue</button>
+            <button class="mc-notif-tab" data-tab="clients" role="tab">Clients</button>
+            <button class="mc-notif-tab" data-tab="products" role="tab">Products</button>
+            <button class="mc-notif-tab" data-tab="system" role="tab">System</button>
+          </div>
+          <div id="tab-revenue" class="mc-notif-panel">
+            <div class="mc-notif-item mc-notif-item--warn">
+              <span class="mc-notif-icon">⚠</span>
+              <span>No revenue recorded yet. Infrastructure complete. Fastest path to first $100: personal outreach + Codex of the Waste-Born ($5, limited 20 remaining).</span>
+            </div>
+            <div class="mc-notif-item">
+              <span class="mc-notif-icon">✓</span>
+              <span>PayPal verified &amp; live. Services page transacts today. Share with a potential client now.</span>
+            </div>
+            <div class="mc-notif-item">
+              <span class="mc-notif-icon">✓</span>
+              <span>Gumroad: 4 products live — Entry Signal (free), Codex $5, Violet Oath $10, Frequency Wars $15.</span>
+            </div>
+            <div class="mc-notif-item mc-notif-item--future">
+              <span class="mc-notif-icon">○</span>
+              <span>Stripe account pending approval. Check email to activate.</span>
+            </div>
+          </div>
+          <div id="tab-clients" class="mc-notif-panel mc-notif-panel--hidden">
+            <div class="mc-notif-item mc-notif-item--warn">
+              <span class="mc-notif-icon">⚠</span>
+              <span>CRM not active. No client records are being kept. Build: Sprint 014.</span>
+            </div>
+            <div class="mc-notif-item mc-notif-item--future">
+              <span class="mc-notif-icon">○</span>
+              <span>New lead alerts — available Sprint 014.</span>
+            </div>
+            <div class="mc-notif-item mc-notif-item--future">
+              <span class="mc-notif-icon">○</span>
+              <span>Client portal status — available Sprint 019.</span>
+            </div>
+          </div>
+          <div id="tab-products" class="mc-notif-panel mc-notif-panel--hidden">
+            <div class="mc-notif-item">
+              <span class="mc-notif-icon">✓</span>
+              <span>Gumroad: 4 products live with direct slugs. Entry Signal · Codex Waste-Born $5 · Violet Oath $10 · Frequency Wars $15.</span>
+            </div>
+            <div class="mc-notif-item">
+              <span class="mc-notif-icon">✓</span>
+              <span>Music.html: 5 platforms live — Bandcamp (Dee Lite), SoundCloud, YouTube (Grim Lore Raps), Mixcloud, Vimeo.</span>
+            </div>
+            <div class="mc-notif-item">
+              <span class="mc-notif-icon">✓</span>
+              <span>Shop page rebuilt with real product links and prices. No more placeholder cards.</span>
+            </div>
+            <div class="mc-notif-item mc-notif-item--warn">
+              <span class="mc-notif-icon">💡</span>
+              <span>Codex of the Waste-Born has only 20 units remaining. Promote urgency in outreach.</span>
+            </div>
+          </div>
+          <div id="tab-system" class="mc-notif-panel mc-notif-panel--hidden">
+            <div class="mc-notif-item">
+              <span class="mc-notif-icon">✓</span>
+              <span>Website live at roninmonkmediallc.com. Netlify hosting active.</span>
+            </div>
+            <div class="mc-notif-item mc-notif-item--warn">
+              <span class="mc-notif-icon">⚠</span>
+              <span>Git not initialized. No version control. No rollback available. Sprint 010.</span>
+            </div>
+            <div class="mc-notif-item mc-notif-item--warn">
+              <span class="mc-notif-icon">⚠</span>
+              <span>Admin area has no password protection. Build authentication: Sprint 011.</span>
+            </div>
+            <div class="mc-notif-item">
+              <span class="mc-notif-icon">✓</span>
+              <span>Payment config centralized. All buttons read from config/payment-links.json.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: AI Workforce -->
+      <div class="mc-col">
+        <p class="admin-section-head">AI Workforce <span style="font-weight:400;color:var(--mist-3)">(12)</span></p>
+        <div class="admin-card" style="padding:0;overflow:hidden">
+          <div class="mc-agent-grid">
+            <div class="mc-agent mc-agent--ready">
+              <div class="mc-agent-top">
+                <span class="mc-agent-name">Website Agent</span>
+                <span class="status-dot status-dot--live" style="margin-left:auto"></span>
+              </div>
+              <span class="mc-agent-module">Module 1 — Public Website</span>
+              <span class="mc-agent-state">Manual · Ready</span>
+            </div>
+            <div class="mc-agent mc-agent--ready">
+              <div class="mc-agent-top">
+                <span class="mc-agent-name">Marketing Agent</span>
+                <span class="status-dot status-dot--live" style="margin-left:auto"></span>
+              </div>
+              <span class="mc-agent-module">Cross-module — Campaigns</span>
+              <span class="mc-agent-state">Manual · Ready</span>
+            </div>
+            <div class="mc-agent mc-agent--ready">
+              <div class="mc-agent-top">
+                <span class="mc-agent-name">Sales Agent</span>
+                <span class="status-dot status-dot--live" style="margin-left:auto"></span>
+              </div>
+              <span class="mc-agent-module">Revenue Layer</span>
+              <span class="mc-agent-state">Manual · Ready</span>
+            </div>
+            <div class="mc-agent mc-agent--ready">
+              <div class="mc-agent-top">
+                <span class="mc-agent-name">Lore Agent</span>
+                <span class="status-dot status-dot--live" style="margin-left:auto"></span>
+              </div>
+              <span class="mc-agent-module">Module 6 — Lore Engine</span>
+              <span class="mc-agent-state">Manual · Ready</span>
+            </div>
+            <div class="mc-agent mc-agent--ready">
+              <div class="mc-agent-top">
+                <span class="mc-agent-name">Publishing Agent</span>
+                <span class="status-dot status-dot--live" style="margin-left:auto"></span>
+              </div>
+              <span class="mc-agent-module">Module 3 — Publishing Center</span>
+              <span class="mc-agent-state">Manual · Ready</span>
+            </div>
+            <div class="mc-agent mc-agent--ready">
+              <div class="mc-agent-top">
+                <span class="mc-agent-name">Research Agent</span>
+                <span class="status-dot status-dot--live" style="margin-left:auto"></span>
+              </div>
+              <span class="mc-agent-module">Cross-module — Intel</span>
+              <span class="mc-agent-state">Manual · Ready</span>
+            </div>
+            <div class="mc-agent mc-agent--ready">
+              <div class="mc-agent-top">
+                <span class="mc-agent-name">Automation Agent</span>
+                <span class="status-dot status-dot--live" style="margin-left:auto"></span>
+              </div>
+              <span class="mc-agent-module">Module 11 — Automation Center</span>
+              <span class="mc-agent-state">Manual · Ready</span>
+            </div>
+            <div class="mc-agent mc-agent--ready">
+              <div class="mc-agent-top">
+                <span class="mc-agent-name">Brand Agent</span>
+                <span class="status-dot status-dot--live" style="margin-left:auto"></span>
+              </div>
+              <span class="mc-agent-module">Cross-module — Visual Identity</span>
+              <span class="mc-agent-state">Manual · Ready</span>
+            </div>
+            <div class="mc-agent mc-agent--ready">
+              <div class="mc-agent-top">
+                <span class="mc-agent-name">Content Agent</span>
+                <span class="status-dot status-dot--live" style="margin-left:auto"></span>
+              </div>
+              <span class="mc-agent-module">Module 5 — Creator Studio</span>
+              <span class="mc-agent-state">Manual · Ready</span>
+            </div>
+            <div class="mc-agent mc-agent--future">
+              <div class="mc-agent-top">
+                <span class="mc-agent-name">Analytics Agent</span>
+                <span class="status-dot status-dot--pending" style="margin-left:auto"></span>
+              </div>
+              <span class="mc-agent-module">Module 8 — Analytics</span>
+              <span class="mc-agent-state">Blueprint · Sprint 013</span>
+            </div>
+            <div class="mc-agent mc-agent--future">
+              <div class="mc-agent-top">
+                <span class="mc-agent-name">Client Success Agent</span>
+                <span class="status-dot status-dot--pending" style="margin-left:auto"></span>
+              </div>
+              <span class="mc-agent-module">Module 9 — Client Portal</span>
+              <span class="mc-agent-state">Blueprint · Sprint 019</span>
+            </div>
+            <div class="mc-agent mc-agent--future">
+              <div class="mc-agent-top">
+                <span class="mc-agent-name">Revenue Agent</span>
+                <span class="status-dot status-dot--pending" style="margin-left:auto"></span>
+              </div>
+              <span class="mc-agent-module">Executive Layer</span>
+              <span class="mc-agent-state">Blueprint · Immediate (manual)</span>
+            </div>
+          </div>
+          <a href="/admin/agents.html" class="mc-feed-footer">View full agent specifications →</a>
+        </div>
+      </div>
+
+    </div><!-- /.mc-workspace -->
+
+    <!-- Quick Actions -->
+    <p class="admin-section-head">Quick Actions</p>
+    <div class="mc-actions-grid">
+      <a class="mc-action-btn" href="/admin/crm.html">
+        <span class="mc-action-icon">👤</span>
+        <span class="mc-action-label">New Client</span>
+      </a>
+      <a class="mc-action-btn" href="/admin/crm.html">
+        <span class="mc-action-icon">📋</span>
+        <span class="mc-action-label">New Proposal</span>
+      </a>
+      <a class="mc-action-btn" href="/admin/products.html">
+        <span class="mc-action-icon">📦</span>
+        <span class="mc-action-label">New Product</span>
+      </a>
+      <a class="mc-action-btn" href="/admin/products.html">
+        <span class="mc-action-icon">💼</span>
+        <span class="mc-action-label">New Service</span>
+      </a>
+      <a class="mc-action-btn" href="/admin/publishing.html">
+        <span class="mc-action-icon">📖</span>
+        <span class="mc-action-label">New Book</span>
+      </a>
+      <a class="mc-action-btn" href="/admin/music-center.html">
+        <span class="mc-action-icon">🎵</span>
+        <span class="mc-action-label">New Track</span>
+      </a>
+      <a class="mc-action-btn" href="/admin/content.html">
+        <span class="mc-action-icon">✍️</span>
+        <span class="mc-action-label">Write Content</span>
+      </a>
+      <a class="mc-action-btn" href="/admin/crm.html">
+        <span class="mc-action-icon">📄</span>
+        <span class="mc-action-label">Generate Invoice</span>
+      </a>
+      <a class="mc-action-btn" href="/admin/crm.html">
+        <span class="mc-action-icon">👥</span>
+        <span class="mc-action-label">Open CRM</span>
+      </a>
+      <a class="mc-action-btn" href="/admin/publishing.html">
+        <span class="mc-action-icon">📚</span>
+        <span class="mc-action-label">Publishing Center</span>
+      </a>
+      <a class="mc-action-btn" href="/admin/products.html">
+        <span class="mc-action-icon">🛒</span>
+        <span class="mc-action-label">Product Center</span>
+      </a>
+      <a class="mc-action-btn" href="/admin/lore.html">
+        <span class="mc-action-icon">📜</span>
+        <span class="mc-action-label">Lore Engine</span>
+      </a>
+      <a class="mc-action-btn" href="/admin/reports.html">
+        <span class="mc-action-icon">📊</span>
+        <span class="mc-action-label">View Reports</span>
+      </a>
+    </div>
+
+  </main>
+</div>
+
+<script src="/js/admin-payment-config.js"></script>
+<script src="../js/admin-utils.js" defer></script>
+</body>
+</html>
+
+
+

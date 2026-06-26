@@ -1,0 +1,57 @@
+# Ronin Monk Media LLC — Netlify configuration
+
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/doctrines"
+  to = "/pages/sky-khan-doctrines.html"
+  status = 301
+
+[[redirects]]
+  from = "/sagas"
+  to = "/pages/ronin-monk-sagas.html"
+  status = 301
+
+[[redirects]]
+  from = "/music/*"
+  to = "/pages/music.html"
+  status = 301
+
+# SPA-ish fallback only if you adopt a router later. Leave commented for static site.
+# [[redirects]]
+#   from = "/*"
+#   to = "/404.html"
+#   status = 404
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; frame-src https://bandcamp.com https://open.spotify.com https://www.youtube.com https://w.soundcloud.com https://player.vimeo.com https://player-widget.mixcloud.com; connect-src 'self'"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Netlify Forms: form 'codex-signup' is detected from the HTML attribute data-netlify="true"

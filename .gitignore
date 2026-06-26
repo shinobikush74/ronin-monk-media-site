@@ -1,0 +1,27 @@
+# Development scaffolding — do not publish
+pages/blog/_TEMPLATE.html
+
+# Protected IP — never commit or deploy these
+codex-primer-drafts/
+midjourney-prompts/
+twine-adventure/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment / secrets — should never exist here but guard anyway
+.env
+.env.*
+*.key
+*.pem
+*.secret
+secrets.*
+credentials.*

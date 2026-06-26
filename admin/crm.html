@@ -1,0 +1,285 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>CRM — RMHQ · Ronin Monk Media LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body class="theme-obsidian admin-body">
+<div class="admin-shell">
+
+  <header class="admin-topbar">
+    <a class="admin-home-link" href="/">← Public Site</a>
+    <span class="admin-brand">RMHQ</span>
+    <span class="admin-badge">Creator OS · v3.0</span>
+    <span class="admin-topbar-right" id="mc-datetime">Ronin Monk Media LLC</span>
+  </header>
+
+  <aside class="admin-sidebar" role="navigation" aria-label="RMHQ Navigation">
+    <p class="admin-nav-section">Command</p>
+    <a class="admin-nav-item" href="/admin/"><span class="admin-nav-icon">⬛</span> Mission Control</a>
+    <a class="admin-nav-item active" href="/admin/crm.html"><span class="admin-nav-icon">👥</span> CRM</a>
+    <p class="admin-nav-section">Revenue</p>
+    <a class="admin-nav-item" href="/admin/revenue.html"><span class="admin-nav-icon">💰</span> Revenue Center</a>
+    <a class="admin-nav-item" href="/admin/proposals.html"><span class="admin-nav-icon">📄</span> Proposals &amp; Invoices</a>
+    <p class="admin-nav-section">Grow</p>
+    <a class="admin-nav-item" href="/admin/products.html"><span class="admin-nav-icon">📦</span> Product Center</a>
+    <a class="admin-nav-item" href="/admin/marketing.html"><span class="admin-nav-icon">📈</span> Marketing Center</a>
+    <a class="admin-nav-item" href="/admin/analytics.html"><span class="admin-nav-icon">📊</span> Analytics</a>
+    <a class="admin-nav-item" href="/admin/client-portal.html"><span class="admin-nav-icon">🤝</span> Client Portal</a>
+    <p class="admin-nav-section">Create</p>
+    <a class="admin-nav-item" href="/admin/publishing.html"><span class="admin-nav-icon">📚</span> Publishing Center</a>
+    <a class="admin-nav-item" href="/admin/music-center.html"><span class="admin-nav-icon">🎵</span> Music Center</a>
+    <a class="admin-nav-item" href="/admin/content.html"><span class="admin-nav-icon">✍️</span> Creator Studio</a>
+    <a class="admin-nav-item" href="/admin/lore.html"><span class="admin-nav-icon">📜</span> Lore Engine</a>
+    <p class="admin-nav-section">Scale</p>
+    <a class="admin-nav-item" href="/admin/calendar.html"><span class="admin-nav-icon">🗓️</span> Calendar</a>
+    <a class="admin-nav-item" href="/admin/game.html"><span class="admin-nav-icon">🎮</span> Game Center</a>
+    <a class="admin-nav-item" href="/admin/automation.html"><span class="admin-nav-icon">⚡</span> Automation Center</a>
+    <p class="admin-nav-section">Intelligence</p>
+    <a class="admin-nav-item" href="/admin/knowledge.html"><span class="admin-nav-icon">🧠</span> Knowledge Center</a>
+    <a class="admin-nav-item" href="/admin/queue.html"><span class="admin-nav-icon">🔄</span> Agent Queue</a>
+    <a class="admin-nav-item" href="/admin/audience.html"><span class="admin-nav-icon">🌍</span> Audience Intel</a>
+    <p class="admin-nav-section">System</p>
+    <a class="admin-nav-item" href="/admin/agents.html"><span class="admin-nav-icon">🤖</span> AI Workforce</a>
+    <a class="admin-nav-item" href="/admin/reports.html"><span class="admin-nav-icon">📋</span> Reports</a>
+    <a class="admin-nav-item" href="/admin/settings.html"><span class="admin-nav-icon">⚙️</span> Settings</a>
+  </aside>
+
+  <main class="admin-main" id="main">
+
+    <div class="mc-page-header">
+      <div>
+        <p class="admin-page-eyebrow">Client Operations</p>
+        <h1 class="admin-page-title">CRM V1</h1>
+        <p class="admin-page-sub">Lead pipeline, client records, deal tracking, and contact history. Architecture supports future database integration.</p>
+      </div>
+      <span class="mc-sprint-label">Sprint 008</span>
+    </div>
+
+    <!-- PIPELINE STRIP — always visible -->
+    <div class="s8-pipeline" style="margin-bottom:1.5rem">
+      <div class="s8-pipeline-stages">
+        <div class="s8-stage">
+          <span class="s8-stage-count">0</span>
+          <span class="s8-stage-name">New Lead</span>
+        </div>
+        <div class="s8-stage-arrow">›</div>
+        <div class="s8-stage">
+          <span class="s8-stage-count">0</span>
+          <span class="s8-stage-name">Qualified</span>
+        </div>
+        <div class="s8-stage-arrow">›</div>
+        <div class="s8-stage">
+          <span class="s8-stage-count">0</span>
+          <span class="s8-stage-name">Proposal Sent</span>
+        </div>
+        <div class="s8-stage-arrow">›</div>
+        <div class="s8-stage">
+          <span class="s8-stage-count">0</span>
+          <span class="s8-stage-name">Negotiating</span>
+        </div>
+        <div class="s8-stage-arrow">›</div>
+        <div class="s8-stage s8-stage--won">
+          <span class="s8-stage-count">0</span>
+          <span class="s8-stage-name">Won</span>
+        </div>
+        <div class="s8-stage-arrow">›</div>
+        <div class="s8-stage s8-stage--lost">
+          <span class="s8-stage-count">0</span>
+          <span class="s8-stage-name">Lost</span>
+        </div>
+        <div class="s8-stage-arrow">›</div>
+        <div class="s8-stage s8-stage--complete">
+          <span class="s8-stage-count">0</span>
+          <span class="s8-stage-name">Completed</span>
+        </div>
+      </div>
+      <div class="s8-pipeline-stats">
+        <div class="s8-pipe-stat"><span class="s8-pipe-stat-label">Pipeline Value</span><span class="s8-pipe-stat-val">$0</span></div>
+        <div class="s8-pipe-stat"><span class="s8-pipe-stat-label">Close Rate</span><span class="s8-pipe-stat-val">—</span></div>
+        <div class="s8-pipe-stat"><span class="s8-pipe-stat-label">Avg Deal Size</span><span class="s8-pipe-stat-val">—</span></div>
+        <div class="s8-pipe-stat"><span class="s8-pipe-stat-label">Proj. Monthly</span><span class="s8-pipe-stat-val">$0</span></div>
+      </div>
+    </div>
+
+    <!-- TAB NAV -->
+    <nav class="s8-tabs" style="margin-bottom:1.5rem">
+      <button class="s8-tab s8-tab--active" data-tg="crm" onclick="s8Tab('crm',0)">Leads</button>
+      <button class="s8-tab" data-tg="crm" onclick="s8Tab('crm',1)">Active Clients</button>
+      <button class="s8-tab" data-tg="crm" onclick="s8Tab('crm',2)">Completed</button>
+      <button class="s8-tab" data-tg="crm" onclick="s8Tab('crm',3)">Lost / Inactive</button>
+    </nav>
+
+    <!-- PANEL: LEADS -->
+    <div data-pg="crm">
+      <p class="admin-section-head">Lead Register</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Service Interest</th>
+              <th>Lead Score</th>
+              <th>Stage</th>
+              <th>Last Contact</th>
+              <th>Next Follow-up</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="7" style="text-align:center;color:var(--mist-2);padding:2rem">
+                No leads yet. Leads enter from: personal outreach · Netlify contact form · service page inquiries.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="admin-section-head">Lead Scoring Key</p>
+      <div class="admin-grid" style="margin-bottom:1.5rem">
+        <div class="admin-card">
+          <p class="admin-card-label">Hot Lead (8–10)</p>
+          <p class="admin-card-note">Responded to outreach · Clear budget · Specific ask · Timeline defined</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Warm Lead (5–7)</p>
+          <p class="admin-card-note">Engaged with content · Asked questions · No timeline yet</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Cold Lead (1–4)</p>
+          <p class="admin-card-note">Initial contact only · No response to follow-up · Vague interest</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Fastest Path to First Lead</p>
+          <p class="admin-card-note">Send 10 personal messages to people who already know your work. No platform needed.</p>
+          <span class="badge badge--warn" style="margin-top:.4rem">Creator Action</span>
+        </div>
+      </div>
+
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Responsible Agent</span><span class="s8-ai-val">Sales Agent (Active — manual)</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Lead Scoring</span><span class="s8-ai-val">Manual — Sales Agent assists with scoring logic</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">CRM Automation</span><span class="s8-ai-val">Sprint 014+ — database integration required</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">All client communications</span></div>
+        </div>
+      </div>
+    </div><!-- /panel leads -->
+
+    <!-- PANEL: ACTIVE CLIENTS -->
+    <div data-pg="crm" class="s8-panel--hidden">
+      <p class="admin-section-head">Active Client Register</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Client</th>
+              <th>Service</th>
+              <th>Status</th>
+              <th>Value</th>
+              <th>Start Date</th>
+              <th>Next Action</th>
+              <th>Agent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="7" style="text-align:center;color:var(--mist-2);padding:2rem">No active clients. Active clients appear here after first booking is confirmed.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="admin-section-head">Contact Timeline</p>
+      <div class="admin-card" style="margin-bottom:1.5rem">
+        <p class="admin-card-note" style="color:var(--mist-3)">Contact timeline will populate here for each active client — showing all touchpoints, emails, meetings, deliveries, and payments in chronological order. Requires first active client.</p>
+      </div>
+
+      <p class="admin-section-head">Service Delivery Status</p>
+      <div class="admin-grid">
+        <div class="admin-card">
+          <p class="admin-card-label">Worldbuilding Consultation</p>
+          <p class="admin-card-value" style="font-size:.9rem">$125 / $175</p>
+          <p class="admin-card-note">PayPal active · 0 bookings · 60 or 90 min sessions</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Narrative Brand Audit</p>
+          <p class="admin-card-value" style="font-size:.9rem">$275 flat</p>
+          <p class="admin-card-note">PayPal active · 0 bookings · Turnaround: 5–7 business days</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Ghostwriting</p>
+          <p class="admin-card-value" style="font-size:.9rem">$0.12–$0.15/word</p>
+          <p class="admin-card-note">PayPal active · 0 bookings · Min $240 engagement</p>
+        </div>
+      </div>
+    </div><!-- /panel active clients -->
+
+    <!-- PANEL: COMPLETED -->
+    <div data-pg="crm" class="s8-panel--hidden">
+      <p class="admin-section-head">Completed Client Archive</p>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Client</th>
+              <th>Service</th>
+              <th>Value</th>
+              <th>Completed</th>
+              <th>Outcome</th>
+              <th>Repeat?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="6" style="text-align:center;color:var(--mist-2);padding:2rem">No completed clients yet. This archive builds over time.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div><!-- /panel completed -->
+
+    <!-- PANEL: LOST / INACTIVE -->
+    <div data-pg="crm" class="s8-panel--hidden">
+      <p class="admin-section-head">Lost Opportunities</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Contact</th>
+              <th>Service Interest</th>
+              <th>Lost Reason</th>
+              <th>Date</th>
+              <th>Re-engage?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5" style="text-align:center;color:var(--mist-2);padding:2rem">No lost opportunities logged. Lost deals are tracked here to improve conversion over time.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="admin-card">
+        <p class="admin-card-label">Loss Analysis (future)</p>
+        <p class="admin-card-note">When enough deals are logged, Research Agent will analyze lost patterns: price objections, timing, service fit, competition. This data informs pricing and positioning decisions.</p>
+      </div>
+    </div><!-- /panel lost -->
+
+  </main>
+</div>
+<script src="../js/admin-utils.js" defer></script>
+</body>
+</html>
+
+
+

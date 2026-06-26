@@ -1,0 +1,294 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Calendar — RMHQ · Ronin Monk Media LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body class="theme-obsidian admin-body">
+<div class="admin-shell">
+
+  <header class="admin-topbar">
+    <a class="admin-home-link" href="/">← Public Site</a>
+    <span class="admin-brand">RMHQ</span>
+    <span class="admin-badge">Creator OS · v3.0</span>
+    <span class="admin-topbar-right" id="mc-datetime">Ronin Monk Media LLC</span>
+  </header>
+
+  <aside class="admin-sidebar" role="navigation" aria-label="RMHQ Navigation">
+    <p class="admin-nav-section">Command</p>
+    <a class="admin-nav-item" href="/admin/"><span class="admin-nav-icon">⬛</span> Mission Control</a>
+    <a class="admin-nav-item" href="/admin/crm.html"><span class="admin-nav-icon">👥</span> CRM</a>
+    <p class="admin-nav-section">Revenue</p>
+    <a class="admin-nav-item" href="/admin/revenue.html"><span class="admin-nav-icon">💰</span> Revenue Center</a>
+    <a class="admin-nav-item" href="/admin/proposals.html"><span class="admin-nav-icon">📄</span> Proposals &amp; Invoices</a>
+    <p class="admin-nav-section">Grow</p>
+    <a class="admin-nav-item" href="/admin/products.html"><span class="admin-nav-icon">📦</span> Product Center</a>
+    <a class="admin-nav-item" href="/admin/marketing.html"><span class="admin-nav-icon">📈</span> Marketing Center</a>
+    <a class="admin-nav-item" href="/admin/analytics.html"><span class="admin-nav-icon">📊</span> Analytics</a>
+    <a class="admin-nav-item" href="/admin/client-portal.html"><span class="admin-nav-icon">🤝</span> Client Portal</a>
+    <p class="admin-nav-section">Create</p>
+    <a class="admin-nav-item" href="/admin/publishing.html"><span class="admin-nav-icon">📚</span> Publishing Center</a>
+    <a class="admin-nav-item" href="/admin/music-center.html"><span class="admin-nav-icon">🎵</span> Music Center</a>
+    <a class="admin-nav-item" href="/admin/content.html"><span class="admin-nav-icon">✍️</span> Creator Studio</a>
+    <a class="admin-nav-item" href="/admin/lore.html"><span class="admin-nav-icon">📜</span> Lore Engine</a>
+    <p class="admin-nav-section">Scale</p>
+    <a class="admin-nav-item active" href="/admin/calendar.html"><span class="admin-nav-icon">🗓️</span> Calendar</a>
+    <a class="admin-nav-item" href="/admin/game.html"><span class="admin-nav-icon">🎮</span> Game Center</a>
+    <a class="admin-nav-item" href="/admin/automation.html"><span class="admin-nav-icon">⚡</span> Automation Center</a>
+    <p class="admin-nav-section">Intelligence</p>
+    <a class="admin-nav-item" href="/admin/knowledge.html"><span class="admin-nav-icon">🧠</span> Knowledge Center</a>
+    <a class="admin-nav-item" href="/admin/queue.html"><span class="admin-nav-icon">🔄</span> Agent Queue</a>
+    <a class="admin-nav-item" href="/admin/audience.html"><span class="admin-nav-icon">🌍</span> Audience Intel</a>
+    <p class="admin-nav-section">System</p>
+    <a class="admin-nav-item" href="/admin/agents.html"><span class="admin-nav-icon">🤖</span> AI Workforce</a>
+    <a class="admin-nav-item" href="/admin/reports.html"><span class="admin-nav-icon">📋</span> Reports</a>
+    <a class="admin-nav-item" href="/admin/settings.html"><span class="admin-nav-icon">⚙️</span> Settings</a>
+  </aside>
+
+  <main class="admin-main" id="main">
+
+    <div class="mc-page-header">
+      <div>
+        <p class="admin-page-eyebrow">Scheduling</p>
+        <h1 class="admin-page-title">Creator Calendar</h1>
+        <p class="admin-page-sub">Content schedule, client meetings, product launches, releases, and deadlines in one view.</p>
+      </div>
+      <span class="mc-sprint-label">Sprint 008</span>
+    </div>
+
+    <!-- TAB NAV -->
+    <nav class="s8-tabs" style="margin-bottom:1.5rem">
+      <button class="s8-tab s8-tab--active" data-tg="cal" onclick="s8Tab('cal',0)">Overview</button>
+      <button class="s8-tab" data-tg="cal" onclick="s8Tab('cal',1)">Content</button>
+      <button class="s8-tab" data-tg="cal" onclick="s8Tab('cal',2)">Client Meetings</button>
+      <button class="s8-tab" data-tg="cal" onclick="s8Tab('cal',3)">Launches</button>
+      <button class="s8-tab" data-tg="cal" onclick="s8Tab('cal',4)">Deadlines</button>
+    </nav>
+
+    <!-- PANEL: OVERVIEW -->
+    <div data-pg="cal">
+      <div class="s8-cal-header" style="margin-bottom:1.5rem">
+        <div class="admin-grid">
+          <div class="admin-card">
+            <p class="admin-card-label">This Week</p>
+            <p class="admin-card-value" style="font-size:.95rem">No scheduled items</p>
+            <p class="admin-card-note">Add first items to populate</p>
+          </div>
+          <div class="admin-card">
+            <p class="admin-card-label">Upcoming Launches</p>
+            <p class="admin-card-value" style="font-size:.95rem">0 scheduled</p>
+            <p class="admin-card-note">Next: Gumroad verification (Creator action)</p>
+          </div>
+          <div class="admin-card">
+            <p class="admin-card-label">Client Meetings</p>
+            <p class="admin-card-value" style="font-size:.95rem">0 scheduled</p>
+            <p class="admin-card-note">Calendly not yet set up</p>
+          </div>
+          <div class="admin-card">
+            <p class="admin-card-label">Content Due</p>
+            <p class="admin-card-value" style="font-size:.95rem">0 items</p>
+            <p class="admin-card-note">Content calendar not yet populated</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="admin-section-head">Upcoming — Next 30 Days</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Date</th><th>Event</th><th>Type</th><th>Agent</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ASAP</td>
+              <td class="td-title">Verify Gumroad Products</td>
+              <td>Revenue</td>
+              <td>Creator</td>
+              <td><span class="badge badge--warn">Blocking</span></td>
+            </tr>
+            <tr>
+              <td>ASAP</td>
+              <td class="td-title">Test PayPal Checkout End-to-End</td>
+              <td>Revenue</td>
+              <td>Creator</td>
+              <td><span class="badge badge--warn">Blocking</span></td>
+            </tr>
+            <tr>
+              <td>ASAP</td>
+              <td class="td-title">Send 10 Personal Outreach Messages</td>
+              <td>Marketing</td>
+              <td>Creator</td>
+              <td><span class="badge badge--active">In Progress</span></td>
+            </tr>
+            <tr>
+              <td>Sprint 008</td>
+              <td class="td-title">Music Page — Collect Embed Codes</td>
+              <td>Content</td>
+              <td>Creator</td>
+              <td><span class="badge badge--warn">Pending</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="module-placeholder">
+        <span class="module-status-chip">Sprint 011+</span>
+        <h2>Google Calendar Integration</h2>
+        <p>Two-way sync with Google Calendar. Schedule client meetings with Calendly. Auto-populate content deadlines from the Publishing Center. View everything in one place without leaving RMHQ.</p>
+        <span class="module-sprint-tag">Integration: Sprint 011</span>
+      </div>
+
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Responsible Agent</span><span class="s8-ai-val">Marketing Agent (scheduling) + Sales Agent (client meetings)</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Calendar Automation</span><span class="s8-ai-val">Sprint 013+</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">All scheduled events</span></div>
+        </div>
+      </div>
+    </div><!-- /panel overview -->
+
+    <!-- PANEL: CONTENT -->
+    <div data-pg="cal" class="s8-panel--hidden">
+      <p class="admin-section-head">Content Schedule</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Date</th><th>Title</th><th>Type</th><th>Platform</th><th>Agent</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="6" style="text-align:center;color:var(--mist-2);padding:2rem">Content calendar empty. Populate after first revenue sprint is active.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="admin-section-head">Content Categories</p>
+      <div class="admin-grid">
+        <div class="admin-card"><p class="admin-card-label">Blog / Written</p><p class="admin-card-value" style="font-size:.9rem">0 scheduled</p><p class="admin-card-note">Creator Studio → Publishing Center</p></div>
+        <div class="admin-card"><p class="admin-card-label">Video / YouTube</p><p class="admin-card-value" style="font-size:.9rem">0 scheduled</p><p class="admin-card-note">GrimLoreRaps channel</p></div>
+        <div class="admin-card"><p class="admin-card-label">Music Releases</p><p class="admin-card-value" style="font-size:.9rem">0 scheduled</p><p class="admin-card-note">Music Center → Bandcamp / Wavlake</p></div>
+        <div class="admin-card"><p class="admin-card-label">Social Posts</p><p class="admin-card-value" style="font-size:.9rem">0 scheduled</p><p class="admin-card-note">Fix dead social links first (Sprint 009)</p></div>
+      </div>
+    </div><!-- /panel content -->
+
+    <!-- PANEL: CLIENT MEETINGS -->
+    <div data-pg="cal" class="s8-panel--hidden">
+      <div class="admin-card" style="border-left:3px solid #f2c94c;margin-bottom:1.5rem">
+        <p class="admin-card-label">Calendly Not Set Up</p>
+        <p class="admin-card-note">Booking link required for client meetings. Create a free Calendly account, set up a 30-min intro call and a 90-min consultation slot. Paste the link into config/payment-links.json. All booking buttons will update automatically.</p>
+        <span class="badge badge--warn" style="margin-top:.5rem">Creator Action Required</span>
+      </div>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Date</th><th>Time</th><th>Client</th><th>Service</th><th>Type</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="6" style="text-align:center;color:var(--mist-2);padding:2rem">No meetings scheduled. Set up Calendly to enable bookings.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div><!-- /panel client meetings -->
+
+    <!-- PANEL: LAUNCHES -->
+    <div data-pg="cal" class="s8-panel--hidden">
+      <p class="admin-section-head">Planned Launches</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Launch</th><th>Type</th><th>Target Date</th><th>Platform</th><th>Revenue Est.</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-title">Ronin Monk Sagas</td>
+              <td>Book</td>
+              <td>Verify now</td>
+              <td>Gumroad</td>
+              <td>$8.99/sale</td>
+              <td><span class="badge badge--warn">Unverified</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Tablets of Lutz</td>
+              <td>Book</td>
+              <td>Verify now</td>
+              <td>Gumroad</td>
+              <td>$11.99/sale</td>
+              <td><span class="badge badge--warn">Unverified</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Neo Mycelium</td>
+              <td>Book</td>
+              <td>Verify now</td>
+              <td>Gumroad</td>
+              <td>$7.99/sale</td>
+              <td><span class="badge badge--warn">Unverified</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Sky Khan Codex Primer PDF</td>
+              <td>Lead Magnet / Product</td>
+              <td>TBD — needs Canva layout</td>
+              <td>Gumroad / Direct</td>
+              <td>$0 (lead gen)</td>
+              <td><span class="badge badge--warn">Not Created</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div><!-- /panel launches -->
+
+    <!-- PANEL: DEADLINES -->
+    <div data-pg="cal" class="s8-panel--hidden">
+      <p class="admin-section-head">Active Deadlines</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Deadline</th><th>Item</th><th>Owner</th><th>Blocking What</th><th>Priority</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge badge--warn">ASAP</span></td>
+              <td class="td-title">Verify Gumroad products</td>
+              <td>Creator</td>
+              <td>All product revenue</td>
+              <td>BV: 43/70</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge--warn">ASAP</span></td>
+              <td class="td-title">Collect embed codes (Bandcamp, YouTube)</td>
+              <td>Creator</td>
+              <td>Sprint 008 Music Page</td>
+              <td>BV: 38/70</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge--active">Sprint 008</span></td>
+              <td class="td-title">Revenue Command Center build</td>
+              <td>Claude (CTO)</td>
+              <td>Full platform visibility</td>
+              <td>BV: 52/70</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Deadline Tracking Agent</span><span class="s8-ai-val">Blueprinted — Sprint 013+</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">All deadline changes</span></div>
+        </div>
+      </div>
+    </div><!-- /panel deadlines -->
+
+  </main>
+</div>
+<script src="../js/admin-utils.js" defer></script>
+</body>
+</html>
+
+
+

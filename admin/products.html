@@ -1,0 +1,231 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Products — RMHQ · Ronin Monk Media LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body class="theme-obsidian admin-body">
+<div class="admin-shell">
+
+  <header class="admin-topbar">
+    <a class="admin-home-link" href="/">← Public Site</a>
+    <span class="admin-brand">RMHQ</span>
+    <span class="admin-badge">Private Workspace</span>
+    <span class="admin-topbar-right">Ronin Monk Media LLC</span>
+  </header>
+
+  <aside class="admin-sidebar" role="navigation" aria-label="RMHQ Navigation">
+    <p class="admin-nav-section">Command</p>
+    <a class="admin-nav-item" href="/admin/"><span class="admin-nav-icon">⬛</span> Mission Control</a>
+    <a class="admin-nav-item" href="/admin/crm.html"><span class="admin-nav-icon">👥</span> CRM</a>
+    <p class="admin-nav-section">Revenue</p>
+    <a class="admin-nav-item" href="/admin/revenue.html"><span class="admin-nav-icon">💰</span> Revenue Center</a>
+    <a class="admin-nav-item" href="/admin/proposals.html"><span class="admin-nav-icon">📄</span> Proposals &amp; Invoices</a>
+    <p class="admin-nav-section">Grow</p>
+    <a class="admin-nav-item active" href="/admin/products.html"><span class="admin-nav-icon">📦</span> Product Center</a>
+    <a class="admin-nav-item" href="/admin/marketing.html"><span class="admin-nav-icon">📈</span> Marketing Center</a>
+    <a class="admin-nav-item" href="/admin/analytics.html"><span class="admin-nav-icon">📊</span> Analytics</a>
+    <a class="admin-nav-item" href="/admin/client-portal.html"><span class="admin-nav-icon">🤝</span> Client Portal</a>
+    <p class="admin-nav-section">Create</p>
+    <a class="admin-nav-item" href="/admin/publishing.html"><span class="admin-nav-icon">📚</span> Publishing Center</a>
+    <a class="admin-nav-item" href="/admin/music-center.html"><span class="admin-nav-icon">🎵</span> Music Center</a>
+    <a class="admin-nav-item" href="/admin/content.html"><span class="admin-nav-icon">✍️</span> Creator Studio</a>
+    <a class="admin-nav-item" href="/admin/lore.html"><span class="admin-nav-icon">📜</span> Lore Engine</a>
+    <p class="admin-nav-section">Scale</p>
+    <a class="admin-nav-item" href="/admin/calendar.html"><span class="admin-nav-icon">🗓️</span> Calendar</a>
+    <a class="admin-nav-item" href="/admin/game.html"><span class="admin-nav-icon">🎮</span> Game Center</a>
+    <a class="admin-nav-item" href="/admin/automation.html"><span class="admin-nav-icon">⚡</span> Automation Center</a>
+    <p class="admin-nav-section">Intelligence</p>
+    <a class="admin-nav-item" href="/admin/knowledge.html"><span class="admin-nav-icon">🧠</span> Knowledge Center</a>
+    <a class="admin-nav-item" href="/admin/queue.html"><span class="admin-nav-icon">🔄</span> Agent Queue</a>
+    <a class="admin-nav-item" href="/admin/audience.html"><span class="admin-nav-icon">🌍</span> Audience Intel</a>
+    <p class="admin-nav-section">System</p>
+    <a class="admin-nav-item" href="/admin/agents.html"><span class="admin-nav-icon">🤖</span> AI Workforce</a>
+    <a class="admin-nav-item" href="/admin/reports.html"><span class="admin-nav-icon">📋</span> Reports</a>
+    <a class="admin-nav-item" href="/admin/settings.html"><span class="admin-nav-icon">⚙️</span> Settings</a>
+  </aside>
+
+  <main class="admin-main" id="main">
+
+    <div class="admin-page-header">
+      <p class="admin-page-eyebrow">Product Management</p>
+      <h1 class="admin-page-title">Products</h1>
+      <p class="admin-page-sub">All products, services, and payment links. Source of truth for pricing. Config file: <span class="config-path">/config/payment-links.json</span></p>
+    </div>
+
+    <!-- PAYMENT CONFIG STATUS -->
+    <p class="admin-section-head">Payment Providers</p>
+    <div class="admin-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-bottom:1.8rem">
+      <div class="admin-card admin-card--ok">
+        <p class="admin-card-label">PayPal</p>
+        <p class="admin-card-value" style="font-size:1rem">Verified &amp; Live</p>
+        <p class="admin-card-note">Link: paypal.com/ncp/payment/VNU3CJ7J34D5Q</p>
+        <p class="admin-card-note" style="margin-top:.4rem">Config key: <span class="config-path" style="font-size:.72rem">paypal.url</span></p>
+      </div>
+      <div class="admin-card admin-card--alert">
+        <p class="admin-card-label">Stripe</p>
+        <p class="admin-card-value" style="font-size:1rem">Pending Approval</p>
+        <p class="admin-card-note">Check email. When approved, update <span class="config-path" style="font-size:.72rem">stripe.url</span> and <span class="config-path" style="font-size:.72rem">stripe.publishable_key</span></p>
+      </div>
+      <div class="admin-card">
+        <p class="admin-card-label">Gumroad</p>
+        <p class="admin-card-value" style="font-size:1rem">Active Store</p>
+        <p class="admin-card-note">roninmonkmedia.gumroad.com — verify products below</p>
+      </div>
+      <div class="admin-card">
+        <p class="admin-card-label">Bandcamp</p>
+        <p class="admin-card-value" style="font-size:1rem">Active Store</p>
+        <p class="admin-card-note">shinobikush.bandcamp.com — verify album below</p>
+      </div>
+    </div>
+
+    <!-- DIGITAL PRODUCTS — GUMROAD -->
+    <p class="admin-section-head">Digital Products — Gumroad <span style="font-size:.75rem;color:var(--mist-3);font-weight:400;margin-left:.5rem">roninmonkmedia.gumroad.com · 4 products · 1 sale · $0 revenue</span></p>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Sales</th>
+            <th>Status</th>
+            <th>Direct Link</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-title">Sky Khan Transmission: Entry Signal</td>
+            <td class="td-price">$0+ (free/PWYW)</td>
+            <td style="color:#6fcf97;font-weight:600">1</td>
+            <td><span class="badge badge--ok">Published</span></td>
+            <td class="td-link"><a href="https://roninmonkmedia.gumroad.com/l/kemzf" target="_blank" rel="noopener" style="color:var(--brass-3)">/l/kemzf</a></td>
+            <td class="td-note">Entry-level lead magnet. 1 sale at $0. Consider adding a minimum price.</td>
+          </tr>
+          <tr>
+            <td class="td-title">The Sky Khan Codex: The Fracture of the Violet Oath Initiate Edition</td>
+            <td class="td-price">$10</td>
+            <td style="color:var(--mist-3)">0</td>
+            <td><span class="badge badge--ok">Published</span></td>
+            <td class="td-link"><a href="https://roninmonkmedia.gumroad.com/l/fractureofthevioletoath" target="_blank" rel="noopener" style="color:var(--brass-3)">/l/fractureofthevioletoath</a></td>
+            <td class="td-note">Codex initiate edition. No sales yet. Needs promotion.</td>
+          </tr>
+          <tr>
+            <td class="td-title">The Frequency Wars: Initiation Protocol</td>
+            <td class="td-price">$15</td>
+            <td style="color:var(--mist-3)">0</td>
+            <td><span class="badge badge--ok">Published</span></td>
+            <td class="td-link"><a href="https://roninmonkmedia.gumroad.com/l/jhoct" target="_blank" rel="noopener" style="color:var(--brass-3)">/l/jhoct</a></td>
+            <td class="td-note">Top-priced product. No sales yet. Needs promotion.</td>
+          </tr>
+          <tr>
+            <td class="td-title">The Codex of the Waste-Born — Complete Lore Transmission</td>
+            <td class="td-price">$5</td>
+            <td style="color:var(--mist-3)">0</td>
+            <td><span class="badge badge--ok">Published</span></td>
+            <td class="td-link"><a href="https://roninmonkmedia.gumroad.com/l/jkowu" target="_blank" rel="noopener" style="color:var(--brass-3)">/l/jkowu</a></td>
+            <td class="td-note">Limited — 20 remaining. Low price, good entry point for lore buyers.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- MUSIC — BANDCAMP -->
+    <p class="admin-section-head">Music — Bandcamp</p>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th>Platform Link</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-title">Static Before Sound</td>
+            <td>Music</td>
+            <td class="td-price">PWYW min $5</td>
+            <td><span class="badge badge--warn">Unverified</span></td>
+            <td class="td-link"><a href="https://shinobikush.bandcamp.com" target="_blank" rel="noopener" style="color:var(--brass-3)">shinobikush.bandcamp.com</a></td>
+            <td class="td-note">Log into Bandcamp. Verify published + minimum set. Grab embed code for music.html.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SERVICES — PAYPAL / STRIPE -->
+    <p class="admin-section-head">Services — PayPal Active · Stripe Pending</p>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Price</th>
+            <th>Payment</th>
+            <th>Status</th>
+            <th>CTA Destination</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-title">Worldbuilding Consultation</td>
+            <td class="td-price">$125 / $175</td>
+            <td>PayPal → Stripe</td>
+            <td><span class="badge badge--active">Active</span></td>
+            <td class="td-link"><a href="/pages/contact.html" style="color:var(--brass-3)">/pages/contact.html</a></td>
+            <td class="td-note">90-min at $175. PayPal test link available. Move to Stripe when approved. Config: <span class="config-path" style="font-size:.68rem">services.worldbuilding-consultation</span></td>
+          </tr>
+          <tr>
+            <td class="td-title">Narrative Brand Audit</td>
+            <td class="td-price">$275 flat</td>
+            <td>PayPal → Stripe</td>
+            <td><span class="badge badge--active">Active</span></td>
+            <td class="td-link"><a href="/pages/contact.html" style="color:var(--brass-3)">/pages/contact.html</a></td>
+            <td class="td-note">5-business-day delivery. Config: <span class="config-path" style="font-size:.68rem">services.narrative-brand-audit</span></td>
+          </tr>
+          <tr>
+            <td class="td-title">Ghostwriting</td>
+            <td class="td-price">$0.12/word · $0.15 brand</td>
+            <td>PayPal → Stripe</td>
+            <td><span class="badge badge--active">Active</span></td>
+            <td class="td-link"><a href="/pages/contact.html" style="color:var(--brass-3)">/pages/contact.html</a></td>
+            <td class="td-note">Min 2,000 words ($240). 50% deposit req. Config: <span class="config-path" style="font-size:.68rem">services.ghostwriting</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- STRIPE ACTIVATION CHECKLIST -->
+    <p class="admin-section-head">Stripe Activation Checklist (When Approved)</p>
+    <div class="admin-card" style="max-width:640px;padding:1.3rem">
+      <p style="font-size:.87rem;color:var(--mist-2);margin:0 0 .8rem">When Stripe account is approved, complete these steps in order:</p>
+      <ul class="priority-list">
+        <li class="priority-item priority-item--normal">1. Update <span class="config-path" style="font-size:.75rem">stripe.status</span> to "active" in payment-links.json</li>
+        <li class="priority-item priority-item--normal">2. Add publishable key to <span class="config-path" style="font-size:.75rem">stripe.publishable_key</span> (public key only — never secret key in files)</li>
+        <li class="priority-item priority-item--normal">3. Create Stripe price IDs for each service, add to each service entry</li>
+        <li class="priority-item priority-item--normal">4. Update all 11 CTA buttons on services.html and index.html to Stripe checkout URLs</li>
+        <li class="priority-item priority-item--normal">5. Update <span class="config-path" style="font-size:.75rem">paypal.status</span> to "retired" and keep PayPal as backup</li>
+      </ul>
+    </div>
+
+  </main>
+</div>
+<script src="/js/admin-payment-config.js"></script>
+<script src="../js/admin-utils.js" defer></script>
+</body>
+</html>
+
+
+

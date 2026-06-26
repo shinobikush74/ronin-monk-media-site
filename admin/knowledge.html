@@ -1,0 +1,317 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Knowledge Center — RMHQ · Ronin Monk Media LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body class="theme-obsidian admin-body">
+<div class="admin-shell">
+
+  <header class="admin-topbar">
+    <a class="admin-home-link" href="/">← Public Site</a>
+    <span class="admin-brand">RMHQ</span>
+    <span class="admin-badge">Creator OS · v3.0</span>
+    <span class="admin-topbar-right" id="mc-datetime">Ronin Monk Media LLC</span>
+  </header>
+
+  <aside class="admin-sidebar" role="navigation" aria-label="RMHQ Navigation">
+    <p class="admin-nav-section">Command</p>
+    <a class="admin-nav-item" href="/admin/"><span class="admin-nav-icon">⬛</span> Mission Control</a>
+    <a class="admin-nav-item" href="/admin/crm.html"><span class="admin-nav-icon">👥</span> CRM</a>
+    <p class="admin-nav-section">Revenue</p>
+    <a class="admin-nav-item" href="/admin/revenue.html"><span class="admin-nav-icon">💰</span> Revenue Center</a>
+    <a class="admin-nav-item" href="/admin/proposals.html"><span class="admin-nav-icon">📄</span> Proposals &amp; Invoices</a>
+    <p class="admin-nav-section">Grow</p>
+    <a class="admin-nav-item" href="/admin/products.html"><span class="admin-nav-icon">📦</span> Product Center</a>
+    <a class="admin-nav-item" href="/admin/marketing.html"><span class="admin-nav-icon">📈</span> Marketing Center</a>
+    <a class="admin-nav-item" href="/admin/analytics.html"><span class="admin-nav-icon">📊</span> Analytics</a>
+    <a class="admin-nav-item" href="/admin/client-portal.html"><span class="admin-nav-icon">🤝</span> Client Portal</a>
+    <p class="admin-nav-section">Create</p>
+    <a class="admin-nav-item" href="/admin/publishing.html"><span class="admin-nav-icon">📚</span> Publishing Center</a>
+    <a class="admin-nav-item" href="/admin/music-center.html"><span class="admin-nav-icon">🎵</span> Music Center</a>
+    <a class="admin-nav-item" href="/admin/content.html"><span class="admin-nav-icon">✍️</span> Creator Studio</a>
+    <a class="admin-nav-item" href="/admin/lore.html"><span class="admin-nav-icon">📜</span> Lore Engine</a>
+    <p class="admin-nav-section">Scale</p>
+    <a class="admin-nav-item" href="/admin/calendar.html"><span class="admin-nav-icon">🗓️</span> Calendar</a>
+    <a class="admin-nav-item" href="/admin/game.html"><span class="admin-nav-icon">🎮</span> Game Center</a>
+    <a class="admin-nav-item" href="/admin/automation.html"><span class="admin-nav-icon">⚡</span> Automation Center</a>
+    <p class="admin-nav-section">Intelligence</p>
+    <a class="admin-nav-item active" href="/admin/knowledge.html"><span class="admin-nav-icon">🧠</span> Knowledge Center</a>
+    <a class="admin-nav-item" href="/admin/queue.html"><span class="admin-nav-icon">🔄</span> Agent Queue</a>
+    <a class="admin-nav-item" href="/admin/audience.html"><span class="admin-nav-icon">🌍</span> Audience Intel</a>
+    <p class="admin-nav-section">System</p>
+    <a class="admin-nav-item" href="/admin/agents.html"><span class="admin-nav-icon">🤖</span> AI Workforce</a>
+    <a class="admin-nav-item" href="/admin/reports.html"><span class="admin-nav-icon">📋</span> Reports</a>
+    <a class="admin-nav-item" href="/admin/settings.html"><span class="admin-nav-icon">⚙️</span> Settings</a>
+  </aside>
+
+  <main class="admin-main" id="main">
+
+    <div class="mc-page-header">
+      <div>
+        <p class="admin-page-eyebrow">Intelligence Layer</p>
+        <h1 class="admin-page-title">Knowledge Center</h1>
+        <p class="admin-page-sub">Prompt library, templates, SOPs, brand standards, and checklists — the operating brain of RMHQ.</p>
+      </div>
+      <span class="mc-sprint-label">Sprint 008</span>
+    </div>
+
+    <!-- TAB NAV -->
+    <nav class="s8-tabs" style="margin-bottom:1.5rem">
+      <button class="s8-tab s8-tab--active" data-tg="know" onclick="s8Tab('know',0)">Prompt Library</button>
+      <button class="s8-tab" data-tg="know" onclick="s8Tab('know',1)">Templates</button>
+      <button class="s8-tab" data-tg="know" onclick="s8Tab('know',2)">SOPs</button>
+      <button class="s8-tab" data-tg="know" onclick="s8Tab('know',3)">Brand Standards</button>
+      <button class="s8-tab" data-tg="know" onclick="s8Tab('know',4)">Checklists</button>
+    </nav>
+
+    <!-- PANEL: PROMPTS -->
+    <div data-pg="know">
+      <p class="admin-section-head">Active Prompts by Agent</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Category</th><th>Prompt Name</th><th>Agent</th><th>Usage</th><th>Last Used</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lore</td>
+              <td class="td-title">Canon Consistency Check</td>
+              <td>Lore Agent</td>
+              <td>Verify new lore against existing canon</td>
+              <td>Ongoing</td>
+            </tr>
+            <tr>
+              <td>Sales</td>
+              <td class="td-title">Client Inquiry Response</td>
+              <td>Sales Agent</td>
+              <td>First-response template for service inquiries</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Marketing</td>
+              <td class="td-title">Product Description Generator</td>
+              <td>Marketing Agent</td>
+              <td>Generate Gumroad product descriptions from manuscript</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Content</td>
+              <td class="td-title">Blog Post Outline</td>
+              <td>Content Agent</td>
+              <td>Generate SEO-optimized blog post structure from topic</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Brand</td>
+              <td class="td-title">Brand Voice Audit</td>
+              <td>Brand Agent</td>
+              <td>Check copy against Sky Khan aesthetic and RMHQ voice</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="module-placeholder">
+        <span class="module-status-chip">Sprint 013+</span>
+        <h2>AI Knowledge Base</h2>
+        <p>Agents will reference this prompt library automatically. As you add prompts, agents get smarter. No re-explaining context — the Knowledge Center is their persistent memory.</p>
+        <span class="module-sprint-tag">AI Integration: Sprint 013</span>
+      </div>
+    </div><!-- /panel prompts -->
+
+    <!-- PANEL: TEMPLATES -->
+    <div data-pg="know" class="s8-panel--hidden">
+      <p class="admin-section-head">Template Registry</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Category</th><th>Template Name</th><th>Format</th><th>Agent</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sales</td>
+              <td class="td-title">Service Proposal</td>
+              <td>Markdown / PDF</td>
+              <td>Sales Agent</td>
+              <td><span class="badge badge--active">Draft in Use</span></td>
+            </tr>
+            <tr>
+              <td>Sales</td>
+              <td class="td-title">Invoice</td>
+              <td>Markdown / PDF</td>
+              <td>Sales Agent</td>
+              <td><span class="badge badge--active">Draft in Use</span></td>
+            </tr>
+            <tr>
+              <td>Marketing</td>
+              <td class="td-title">Product Launch Email</td>
+              <td>HTML Email</td>
+              <td>Marketing Agent</td>
+              <td><span class="module-sprint-tag">Sprint 011</span></td>
+            </tr>
+            <tr>
+              <td>Content</td>
+              <td class="td-title">Blog Article</td>
+              <td>Markdown</td>
+              <td>Content Agent</td>
+              <td><span class="module-sprint-tag">Sprint 010</span></td>
+            </tr>
+            <tr>
+              <td>Lore</td>
+              <td class="td-title">Canon Proposal</td>
+              <td>Markdown</td>
+              <td>Lore Agent</td>
+              <td><span class="badge badge--ok">Active</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div><!-- /panel templates -->
+
+    <!-- PANEL: SOPs -->
+    <div data-pg="know" class="s8-panel--hidden">
+      <p class="admin-section-head">Standard Operating Procedures</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Process</th><th>Owner</th><th>Agent</th><th>Steps</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-title">New Client Onboarding</td>
+              <td>Creator</td>
+              <td>Sales Agent</td>
+              <td>Inquiry → Proposal → Contract → Invoice → Kickoff</td>
+              <td><span class="badge badge--active">Active — Manual</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Product Launch</td>
+              <td>Creator</td>
+              <td>Marketing Agent</td>
+              <td>Draft → Brand Audit → Publish → Announce → Monitor</td>
+              <td><span class="badge badge--active">Active — Manual</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Lore Proposal to Canon</td>
+              <td>Creator (Approver)</td>
+              <td>Lore Agent</td>
+              <td>Propose → proposed-new-canon/ → Creator Review → Canon/</td>
+              <td><span class="badge badge--ok">Active</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Sprint Execution</td>
+              <td>Creator</td>
+              <td>Claude (CTO)</td>
+              <td>Brief → Execute → Report → Approve → Deploy</td>
+              <td><span class="badge badge--ok">Active</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Website Code Change</td>
+              <td>Creator (Approver)</td>
+              <td>Website Agent</td>
+              <td>Propose → Build → Review → Creator Approve → Deploy</td>
+              <td><span class="badge badge--ok">Active</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div><!-- /panel SOPs -->
+
+    <!-- PANEL: BRAND STANDARDS -->
+    <div data-pg="know" class="s8-panel--hidden">
+      <p class="admin-section-head">Brand Identity Standards</p>
+      <div class="admin-grid" style="margin-bottom:1.5rem">
+        <div class="admin-card">
+          <p class="admin-card-label">Color Palette</p>
+          <div style="display:flex;gap:.5rem;margin:.4rem 0">
+            <div style="width:32px;height:32px;border-radius:3px;background:#0a0a0f;border:1px solid rgba(255,255,255,.15)" title="Obsidian"></div>
+            <div style="width:32px;height:32px;border-radius:3px;background:#d4af37" title="Brass/Gold"></div>
+            <div style="width:32px;height:32px;border-radius:3px;background:#e8e0d0" title="Mist"></div>
+            <div style="width:32px;height:32px;border-radius:3px;background:#9b85e0" title="Violet"></div>
+            <div style="width:32px;height:32px;border-radius:3px;background:#56cce0" title="Cyan"></div>
+          </div>
+          <p class="admin-card-note">Obsidian · Brass · Mist · Violet · Cyan — defined in CSS custom properties</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Typography</p>
+          <p class="admin-card-value" style="font-size:.9rem">Cinzel · Cormorant · Inter</p>
+          <p class="admin-card-note">Cinzel = display headers / Cormorant = lore serif / Inter = UI body text</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Brand Voice</p>
+          <p class="admin-card-value" style="font-size:.9rem">Sage · Warrior · Mystic</p>
+          <p class="admin-card-note">Afrofuturist sacred tech. World-builder not hype man. Serious, not cold. Dense, not complicated.</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Visual Law</p>
+          <p class="admin-card-value" style="font-size:.9rem">afrofuturist_sacred_tech</p>
+          <p class="admin-card-note">Every Midjourney prompt must carry this baseline tag. Enforced in sky-khan-visual-engine code.</p>
+        </div>
+      </div>
+      <div class="admin-card" style="margin-bottom:1rem">
+        <p class="admin-card-label">Responsible Agent</p>
+        <p class="admin-card-note">Brand Agent — maintains visual identity, audits all public-facing content against Sky Khan aesthetic. Sky Khan aesthetic is NON-NEGOTIABLE baseline.</p>
+      </div>
+    </div><!-- /panel brand -->
+
+    <!-- PANEL: CHECKLISTS -->
+    <div data-pg="know" class="s8-panel--hidden">
+      <p class="admin-section-head">Operational Checklists</p>
+
+      <p class="admin-section-head" style="margin-top:1.2rem">Sprint Completion Checklist</p>
+      <div class="admin-card" style="margin-bottom:1rem">
+        <div class="s8-checklist">
+          <label class="s8-check-item"><input type="checkbox" /> All deliverables built and verified</label>
+          <label class="s8-check-item"><input type="checkbox" /> SPR_00X_RELEASE_PACKET.md written and saved</label>
+          <label class="s8-check-item"><input type="checkbox" /> PROJECT_STATUS.md updated</label>
+          <label class="s8-check-item"><input type="checkbox" /> PROJECT_EXECUTION_LOG.md appended</label>
+          <label class="s8-check-item"><input type="checkbox" /> CEO_DASHBOARD.md updated</label>
+          <label class="s8-check-item"><input type="checkbox" /> REPORT_INDEX.md entry added</label>
+          <label class="s8-check-item"><input type="checkbox" /> Next sprint recommended with BV score</label>
+          <label class="s8-check-item"><input type="checkbox" /> Creator approval received before Deploy</label>
+        </div>
+      </div>
+
+      <p class="admin-section-head">Product Launch Checklist</p>
+      <div class="admin-card" style="margin-bottom:1rem">
+        <div class="s8-checklist">
+          <label class="s8-check-item"><input type="checkbox" /> Product live on Gumroad at correct price</label>
+          <label class="s8-check-item"><input type="checkbox" /> Product description reviewed by Marketing Agent</label>
+          <label class="s8-check-item"><input type="checkbox" /> Cover image meets brand standards</label>
+          <label class="s8-check-item"><input type="checkbox" /> RMHQ Product Center entry updated</label>
+          <label class="s8-check-item"><input type="checkbox" /> Announcement prepared (email + social)</label>
+          <label class="s8-check-item"><input type="checkbox" /> Creator approved all copy before publish</label>
+        </div>
+      </div>
+
+      <p class="admin-section-head">Client Onboarding Checklist</p>
+      <div class="admin-card">
+        <div class="s8-checklist">
+          <label class="s8-check-item"><input type="checkbox" /> Inquiry received and logged in CRM</label>
+          <label class="s8-check-item"><input type="checkbox" /> Proposal drafted by Sales Agent</label>
+          <label class="s8-check-item"><input type="checkbox" /> Creator reviewed and approved proposal</label>
+          <label class="s8-check-item"><input type="checkbox" /> Proposal sent to client</label>
+          <label class="s8-check-item"><input type="checkbox" /> Proposal accepted — invoice generated</label>
+          <label class="s8-check-item"><input type="checkbox" /> Payment received (PayPal / Stripe)</label>
+          <label class="s8-check-item"><input type="checkbox" /> Kickoff call scheduled via Calendly</label>
+          <label class="s8-check-item"><input type="checkbox" /> Client record updated in CRM</label>
+        </div>
+      </div>
+    </div><!-- /panel checklists -->
+
+  </main>
+</div>
+<script src="../js/admin-utils.js" defer></script>
+</body>
+</html>
+
+
+

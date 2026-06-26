@@ -1,0 +1,101 @@
+{
+  "_comment": "Central payment configuration for Ronin Monk Media LLC. Never store private keys, passwords, or bank info here. Update status fields when account status changes. All payment button URLs on the site should trace back to this file.",
+
+  "paypal": {
+    "label": "PayPal (Active)",
+    "url": "https://www.paypal.com/ncp/payment/VNU3CJ7J34D5Q",
+    "status": "active",
+    "note": "Temporary test link. Replace with Stripe when account is approved. Update status to 'retired' and set url to null at that time."
+  },
+
+  "stripe": {
+    "label": "Stripe",
+    "url": null,
+    "status": "pending-approval",
+    "publishable_key": null,
+    "note": "Account under review. When approved: add publishable key, add price IDs per service, update status to 'active'. Do not store secret key here."
+  },
+
+  "gumroad": {
+    "storefront": "https://roninmonkmedia.gumroad.com",
+    "products": {
+      "ronin-monk-sagas": {
+        "title": "Ronin Monk Sagas",
+        "price": 8.99,
+        "url": "https://roninmonkmedia.gumroad.com/l/ronin-monk-sagas",
+        "status": "unverified",
+        "category": "fiction",
+        "note": "Verify this is the correct slug. Log into Gumroad to confirm."
+      },
+      "tablets-of-lutz": {
+        "title": "Tablets of Lutz",
+        "price": 11.99,
+        "url": "https://roninmonkmedia.gumroad.com/l/tablets-of-lutz",
+        "status": "unverified",
+        "category": "fiction",
+        "note": "Verify slug. Log into Gumroad to confirm."
+      },
+      "neo-mycelium": {
+        "title": "Neo Mycelium",
+        "price": 7.99,
+        "url": "https://roninmonkmedia.gumroad.com/l/neo-mycelium",
+        "status": "unverified",
+        "category": "fiction",
+        "note": "Verify slug. Log into Gumroad to confirm."
+      }
+    }
+  },
+
+  "bandcamp": {
+    "storefront": "https://shinobikush.bandcamp.com",
+    "products": {
+      "static-before-sound": {
+        "title": "Static Before Sound",
+        "price_min": 5.00,
+        "price_type": "pay-what-you-want",
+        "url": "https://shinobikush.bandcamp.com",
+        "status": "unverified",
+        "category": "music",
+        "note": "Log into Bandcamp to confirm album is published and price is set."
+      }
+    }
+  },
+
+  "services": {
+    "worldbuilding-consultation": {
+      "title": "Worldbuilding Consultation",
+      "price_standard": 125.00,
+      "price_extended": 175.00,
+      "cta_url": "/pages/contact.html",
+      "payment_provider": "paypal",
+      "paypal_url": "https://www.paypal.com/ncp/payment/VNU3CJ7J34D5Q",
+      "stripe_price_id": null,
+      "status": "active-contact-form",
+      "note": "PayPal link active for payment. Contact form is primary CTA. Update stripe_price_id when Stripe approved."
+    },
+    "narrative-brand-audit": {
+      "title": "Narrative Brand Audit",
+      "price": 275.00,
+      "cta_url": "/pages/contact.html",
+      "payment_provider": "paypal",
+      "paypal_url": "https://www.paypal.com/ncp/payment/VNU3CJ7J34D5Q",
+      "stripe_price_id": null,
+      "status": "active-contact-form",
+      "note": "Route to contact form. PayPal available. Update stripe_price_id when Stripe approved."
+    },
+    "ghostwriting": {
+      "title": "Ghostwriting",
+      "price_per_word_fiction": 0.12,
+      "price_per_word_brand": 0.15,
+      "minimum_words": 2000,
+      "minimum_total": 240.00,
+      "deposit_percent": 50,
+      "cta_url": "/pages/contact.html",
+      "payment_provider": "paypal",
+      "paypal_url": "https://www.paypal.com/ncp/payment/VNU3CJ7J34D5Q",
+      "stripe_price_id": null,
+      "status": "active-contact-form",
+      "note": "50% deposit required. Routed to contact form. Update stripe_price_id when Stripe approved."
+    }
+  }
+}

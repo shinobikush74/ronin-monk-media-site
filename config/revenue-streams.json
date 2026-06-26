@@ -1,0 +1,88 @@
+{
+  "_comment": "Revenue Streams — Ronin Monk Media LLC. Single source of truth for all revenue channels.",
+  "_revenue_rule": "Every action must answer: What is most likely to move Ronin Monk Media toward its next $100?",
+  "streams": [
+    {
+      "id": "gumroad",
+      "name": "Gumroad",
+      "type": "product",
+      "status": "active",
+      "current_revenue": 0,
+      "products": [
+        { "title": "Sky Khan Transmission: Entry Signal", "price": 0, "slug": "kemzf", "sales": 1 },
+        { "title": "The Sky Khan Codex: Fracture of the Violet Oath", "price": 10, "slug": "fractureofthevioletoath", "sales": 0 },
+        { "title": "The Codex of the Waste-Born", "price": 5, "slug": "jkowu", "sales": 0, "limited": 20 },
+        { "title": "The Frequency Wars: Initiation Protocol", "price": 15, "slug": "jhoct", "sales": 0 }
+      ],
+      "notes": "4 products live. 1 sale at $0. Needs promotion to convert."
+    },
+    {
+      "id": "paypal",
+      "name": "PayPal",
+      "type": "service",
+      "status": "verified",
+      "current_revenue": 0,
+      "link": "paypal.com/ncp/payment/VNU3CJ7J34D5Q",
+      "services": [
+        { "name": "Worldbuilding Consultation", "price_range": "$125–$175" },
+        { "name": "Narrative Brand Audit", "price": 275 },
+        { "name": "Ghostwriting", "rate": "$0.12/word", "minimum": 240 }
+      ],
+      "notes": "Verified live. No service bookings yet. Needs outreach."
+    },
+    {
+      "id": "bandcamp",
+      "name": "Bandcamp",
+      "type": "music",
+      "status": "active",
+      "current_revenue": 0,
+      "url": "shinobikush.bandcamp.com",
+      "notes": "Track live (Dee Lite). Embed on music.html. Static Before Sound album pending upload."
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "type": "service",
+      "status": "pending_approval",
+      "current_revenue": 0,
+      "notes": "Awaiting Stripe account approval email. Will replace PayPal when active."
+    },
+    {
+      "id": "wavlake",
+      "name": "Wavlake / Lightning",
+      "type": "music",
+      "status": "placeholder",
+      "current_revenue": 0,
+      "notes": "Bitcoin Lightning music streaming. Future integration for international micro-payments."
+    },
+    {
+      "id": "affiliates",
+      "name": "Affiliate Revenue",
+      "type": "affiliate",
+      "status": "placeholder",
+      "current_revenue": 0,
+      "notes": "ClickBank / Amazon / Direct affiliate programs. Future sprint."
+    },
+    {
+      "id": "email",
+      "name": "Email List",
+      "type": "audience",
+      "status": "placeholder",
+      "subscribers": 0,
+      "notes": "Netlify Forms active but destination not yet configured. Email list not started."
+    }
+  ],
+  "goals": {
+    "first_100": "First $100 in revenue — primary target",
+    "monthly_target_month1": 500,
+    "monthly_target_month3": 2000,
+    "monthly_target_month6": 5000
+  },
+  "highest_roi_actions": [
+    "Personal outreach to 5 contacts about Worldbuilding Consultation ($125–$175)",
+    "Promote Codex of the Waste-Born ($5, limited 20) — urgency + low price = easiest first sale",
+    "Post YouTube short linking to Gumroad",
+    "Share Entry Signal (free) as lead magnet → upsell to $10 Codex",
+    "Email past contacts about Narrative Brand Audit ($275)"
+  ]
+}

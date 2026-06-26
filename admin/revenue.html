@@ -1,0 +1,485 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Revenue Center — RMHQ · Ronin Monk Media LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body class="theme-obsidian admin-body">
+<div class="admin-shell">
+
+  <header class="admin-topbar">
+    <a class="admin-home-link" href="/">← Public Site</a>
+    <span class="admin-brand">RMHQ</span>
+    <span class="admin-badge">Creator OS · v3.0</span>
+    <span class="admin-topbar-right" id="mc-datetime">Ronin Monk Media LLC</span>
+  </header>
+
+  <aside class="admin-sidebar" role="navigation" aria-label="RMHQ Navigation">
+    <p class="admin-nav-section">Command</p>
+    <a class="admin-nav-item" href="/admin/"><span class="admin-nav-icon">⬛</span> Mission Control</a>
+    <a class="admin-nav-item" href="/admin/crm.html"><span class="admin-nav-icon">👥</span> CRM</a>
+    <p class="admin-nav-section">Revenue</p>
+    <a class="admin-nav-item active" href="/admin/revenue.html"><span class="admin-nav-icon">💰</span> Revenue Center</a>
+    <a class="admin-nav-item" href="/admin/proposals.html"><span class="admin-nav-icon">📄</span> Proposals &amp; Invoices</a>
+    <p class="admin-nav-section">Grow</p>
+    <a class="admin-nav-item" href="/admin/products.html"><span class="admin-nav-icon">📦</span> Product Center</a>
+    <a class="admin-nav-item" href="/admin/marketing.html"><span class="admin-nav-icon">📈</span> Marketing Center</a>
+    <a class="admin-nav-item" href="/admin/analytics.html"><span class="admin-nav-icon">📊</span> Analytics</a>
+    <a class="admin-nav-item" href="/admin/client-portal.html"><span class="admin-nav-icon">🤝</span> Client Portal</a>
+    <p class="admin-nav-section">Create</p>
+    <a class="admin-nav-item" href="/admin/publishing.html"><span class="admin-nav-icon">📚</span> Publishing Center</a>
+    <a class="admin-nav-item" href="/admin/music-center.html"><span class="admin-nav-icon">🎵</span> Music Center</a>
+    <a class="admin-nav-item" href="/admin/content.html"><span class="admin-nav-icon">✍️</span> Creator Studio</a>
+    <a class="admin-nav-item" href="/admin/lore.html"><span class="admin-nav-icon">📜</span> Lore Engine</a>
+    <p class="admin-nav-section">Scale</p>
+    <a class="admin-nav-item" href="/admin/calendar.html"><span class="admin-nav-icon">🗓️</span> Calendar</a>
+    <a class="admin-nav-item" href="/admin/game.html"><span class="admin-nav-icon">🎮</span> Game Center</a>
+    <a class="admin-nav-item" href="/admin/automation.html"><span class="admin-nav-icon">⚡</span> Automation Center</a>
+    <p class="admin-nav-section">Intelligence</p>
+    <a class="admin-nav-item" href="/admin/knowledge.html"><span class="admin-nav-icon">🧠</span> Knowledge Center</a>
+    <a class="admin-nav-item" href="/admin/queue.html"><span class="admin-nav-icon">🔄</span> Agent Queue</a>
+    <a class="admin-nav-item" href="/admin/audience.html"><span class="admin-nav-icon">🌍</span> Audience Intel</a>
+    <p class="admin-nav-section">System</p>
+    <a class="admin-nav-item" href="/admin/agents.html"><span class="admin-nav-icon">🤖</span> AI Workforce</a>
+    <a class="admin-nav-item" href="/admin/reports.html"><span class="admin-nav-icon">📋</span> Reports</a>
+    <a class="admin-nav-item" href="/admin/settings.html"><span class="admin-nav-icon">⚙️</span> Settings</a>
+  </aside>
+
+  <main class="admin-main" id="main">
+
+    <div class="mc-page-header">
+      <div>
+        <p class="admin-page-eyebrow">Financial Operations</p>
+        <h1 class="admin-page-title">CEO Revenue Dashboard</h1>
+        <p class="admin-page-sub">All revenue data, stream breakdown, and audience intelligence in one screen.</p>
+      </div>
+      <span class="mc-sprint-label">Sprint 009</span>
+    </div>
+
+    <!-- REVENUE PRIORITY RULE -->
+    <div class="s9-revenue-rule" style="margin-bottom:1.5rem">
+      <span class="s9-rule-icon">◈</span>
+      <span class="s9-rule-text">Revenue Priority Rule — Every action must answer: <strong>What is most likely to move Ronin Monk Media toward its next $100?</strong></span>
+    </div>
+
+    <!-- TAB NAV -->
+    <nav class="s8-tabs" style="margin-bottom:1.5rem">
+      <button class="s8-tab s8-tab--active" data-tg="rev" onclick="s8Tab('rev',0)">CEO Dashboard</button>
+      <button class="s8-tab" data-tg="rev" onclick="s8Tab('rev',1)">Revenue by Stream</button>
+      <button class="s8-tab" data-tg="rev" onclick="s8Tab('rev',2)">Forecast</button>
+      <button class="s8-tab" data-tg="rev" onclick="s8Tab('rev',3)">Business Intelligence</button>
+    </nav>
+
+    <!-- PANEL 0: CEO DASHBOARD -->
+    <div data-pg="rev">
+
+      <p class="admin-section-head">Revenue Summary</p>
+      <div class="s8-metric-grid" style="margin-bottom:1.5rem">
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Revenue Today</p>
+          <p class="s8-metric-value s8-metric-value--warn">$0</p>
+          <p class="s8-metric-note">Update manually after each sale</p>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">This Week</p>
+          <p class="s8-metric-value s8-metric-value--warn">$0</p>
+          <p class="s8-metric-note">Week starting Mon</p>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">This Month</p>
+          <p class="s8-metric-value s8-metric-value--warn">$0</p>
+          <p class="s8-metric-note">Goal: $500</p>
+          <div class="s8-goal-bar"><div class="s8-goal-fill" style="width:0%"></div></div>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Monthly Goal</p>
+          <p class="s8-metric-value">$500</p>
+          <p class="s8-metric-note">First milestone</p>
+        </div>
+      </div>
+
+      <p class="admin-section-head">Audience Metrics</p>
+      <div class="s8-metric-grid" style="margin-bottom:1.5rem">
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Email Subscribers</p>
+          <p class="s8-metric-value s8-metric-value--warn">0</p>
+          <p class="s8-metric-note">Netlify Forms active — list not configured</p>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">YouTube Subscribers</p>
+          <p class="s8-metric-value">—</p>
+          <p class="s8-metric-note">Check YouTube Studio manually</p>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Bandcamp Followers</p>
+          <p class="s8-metric-value">—</p>
+          <p class="s8-metric-note">Check shinobikush.bandcamp.com</p>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Gumroad Customers</p>
+          <p class="s8-metric-value">1</p>
+          <p class="s8-metric-note">Entry Signal — 1 download at $0</p>
+        </div>
+      </div>
+
+      <p class="admin-section-head">Highest Revenue Intelligence</p>
+      <div class="admin-grid" style="margin-bottom:1.5rem">
+        <div class="admin-card">
+          <p class="admin-card-label">Highest Revenue Product</p>
+          <p class="admin-card-value" style="font-size:.95rem;color:var(--brass-2)">None yet</p>
+          <p class="admin-card-note">Best candidate: Frequency Wars $15</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Highest Revenue Service</p>
+          <p class="admin-card-value" style="font-size:.95rem;color:var(--brass-2)">None yet</p>
+          <p class="admin-card-note">Best candidate: Brand Audit $275</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Highest ROI Task Today</p>
+          <p class="admin-card-value" style="font-size:.85rem;color:var(--brass-1)">5 Personal Outreach Messages</p>
+          <p class="admin-card-note">Worldbuilding Consult $125–$175 per close</p>
+        </div>
+        <div class="admin-card">
+          <p class="admin-card-label">Easiest First Sale</p>
+          <p class="admin-card-value" style="font-size:.85rem;color:var(--brass-1)">Codex of the Waste-Born</p>
+          <p class="admin-card-note">$5 · Limited 20 units · Urgency built in</p>
+        </div>
+      </div>
+
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Responsible Agent</span><span class="s8-ai-val">Sales Agent (Active — manual)</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Automation Level</span><span class="s8-ai-val">0% — All manual</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Revenue Intelligence Agent</span><span class="s8-ai-val">Blueprinted — Sprint 010+</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">All transactions</span></div>
+        </div>
+      </div>
+
+    </div><!-- /panel 0 -->
+
+    <!-- PANEL 1: REVENUE BY STREAM -->
+    <div data-pg="rev" class="s8-panel--hidden">
+
+      <p class="admin-section-head">Revenue by Stream</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Stream</th><th>Type</th><th>Status</th><th>Current Revenue</th><th>Products / Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-title">Gumroad</td>
+              <td>Digital Products</td>
+              <td><span class="badge badge--ok">Active</span></td>
+              <td>$0</td>
+              <td>4 products live · 1 download at $0</td>
+            </tr>
+            <tr>
+              <td class="td-title">PayPal</td>
+              <td>Services</td>
+              <td><span class="badge badge--ok">Verified Live</span></td>
+              <td>$0</td>
+              <td>3 services · Consult $125–$175 · Audit $275 · Ghost $0.12/wd</td>
+            </tr>
+            <tr>
+              <td class="td-title">Bandcamp</td>
+              <td>Music</td>
+              <td><span class="badge badge--ok">Active</span></td>
+              <td>$0</td>
+              <td>Dee Lite track live · Static Before Sound pending upload</td>
+            </tr>
+            <tr>
+              <td class="td-title">Stripe</td>
+              <td>Services (future)</td>
+              <td><span class="badge badge--warn">Pending Approval</span></td>
+              <td>$0</td>
+              <td>Awaiting Stripe approval email</td>
+            </tr>
+            <tr>
+              <td class="td-title">Wavlake / Lightning</td>
+              <td>Music (micro)</td>
+              <td><span class="badge">Placeholder</span></td>
+              <td>$0</td>
+              <td>Bitcoin Lightning streaming — future integration</td>
+            </tr>
+            <tr>
+              <td class="td-title">Affiliate Revenue</td>
+              <td>Affiliate</td>
+              <td><span class="badge">Placeholder</span></td>
+              <td>$0</td>
+              <td>ClickBank / Amazon — future sprint</td>
+            </tr>
+            <tr>
+              <td class="td-title">Email List</td>
+              <td>Audience</td>
+              <td><span class="badge badge--warn">Not Configured</span></td>
+              <td>0 subs</td>
+              <td>Netlify Forms active · list destination not set</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="admin-section-head">Gumroad Products</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Title</th><th>Price</th><th>Sales</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-title">Sky Khan Transmission: Entry Signal</td>
+              <td>$0+ (free)</td>
+              <td>1</td>
+              <td>Lead magnet — use to upsell Codex $10</td>
+            </tr>
+            <tr>
+              <td class="td-title">The Codex of the Waste-Born</td>
+              <td>$5</td>
+              <td>0</td>
+              <td><span class="badge badge--warn">Limited — 20 remaining</span> — promote urgency</td>
+            </tr>
+            <tr>
+              <td class="td-title">The Sky Khan Codex: Fracture of the Violet Oath</td>
+              <td>$10</td>
+              <td>0</td>
+              <td>Primary upsell from Entry Signal</td>
+            </tr>
+            <tr>
+              <td class="td-title">The Frequency Wars: Initiation Protocol</td>
+              <td>$15</td>
+              <td>0</td>
+              <td>Highest price point — collectors + lore fans</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="admin-section-head">PayPal Services</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Service</th><th>Price</th><th>Bookings</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-title">Worldbuilding Consultation</td>
+              <td>$125–$175</td>
+              <td>0</td>
+              <td>Highest ROI via personal outreach</td>
+            </tr>
+            <tr>
+              <td class="td-title">Narrative Brand Audit</td>
+              <td>$275</td>
+              <td>0</td>
+              <td>Highest single sale value</td>
+            </tr>
+            <tr>
+              <td class="td-title">Ghostwriting</td>
+              <td>$0.12/word · $240 min</td>
+              <td>0</td>
+              <td>Recurring potential — ongoing projects</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div><!-- /panel 1 -->
+
+    <!-- PANEL 2: FORECAST -->
+    <div data-pg="rev" class="s8-panel--hidden">
+
+      <p class="admin-section-head">Revenue Projections</p>
+      <div class="s8-metric-grid" style="margin-bottom:1.5rem">
+        <div class="s8-metric-card s8-metric-card--highlight">
+          <p class="s8-metric-label">First $100 Target</p>
+          <p class="s8-metric-value s8-metric-value--warn">$0 / $100</p>
+          <p class="s8-metric-note">Primary near-term goal</p>
+          <div class="s8-goal-bar"><div class="s8-goal-fill" style="width:0%"></div></div>
+          <p class="s8-metric-note">Gap: $100</p>
+        </div>
+        <div class="s8-metric-card s8-metric-card--highlight">
+          <p class="s8-metric-label">Month 1 Goal</p>
+          <p class="s8-metric-value s8-metric-value--warn">$0 / $500</p>
+          <p class="s8-metric-note">0% complete</p>
+          <div class="s8-goal-bar"><div class="s8-goal-fill" style="width:0%"></div></div>
+          <p class="s8-metric-note">Gap: $500</p>
+        </div>
+        <div class="s8-metric-card s8-metric-card--highlight">
+          <p class="s8-metric-label">Month 3 Goal</p>
+          <p class="s8-metric-value s8-metric-value--warn">$0 / $2,000</p>
+          <p class="s8-metric-note">Requires consistent outreach</p>
+          <div class="s8-goal-bar"><div class="s8-goal-fill" style="width:0%"></div></div>
+        </div>
+        <div class="s8-metric-card s8-metric-card--highlight">
+          <p class="s8-metric-label">Month 6 Goal</p>
+          <p class="s8-metric-value s8-metric-value--warn">$0 / $5,000</p>
+          <p class="s8-metric-note">Requires product + service mix</p>
+          <div class="s8-goal-bar"><div class="s8-goal-fill" style="width:0%"></div></div>
+        </div>
+      </div>
+
+      <p class="admin-section-head">Revenue Scenarios</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Scenario</th><th>Trigger</th><th>Est. Value</th><th>Probability</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-title">First Gumroad Sale</td>
+              <td>Promote Codex of the Waste-Born ($5, limited)</td>
+              <td>$5–$15</td>
+              <td>High</td>
+              <td><span class="badge badge--warn">Needs Promotion</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">First Service Booking</td>
+              <td>5–10 personal outreach messages</td>
+              <td>$125–$275</td>
+              <td>Medium</td>
+              <td><span class="badge badge--warn">Pending Outreach</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Hit First $100</td>
+              <td>1 Consult OR 7 product sales OR mix</td>
+              <td>$100</td>
+              <td>Achievable</td>
+              <td><span class="badge badge--active">Active Goal</span></td>
+            </tr>
+            <tr>
+              <td class="td-title">Monthly $500</td>
+              <td>3–4 service bookings or 50+ product sales</td>
+              <td>$500</td>
+              <td>Achievable</td>
+              <td><span class="badge badge--active">In Progress</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Responsible Agent</span><span class="s8-ai-val">Research Agent (Active) + Sales Agent (Active)</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Forecast Automation</span><span class="s8-ai-val">Manual — Sprint 013+</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">All projections advisory only</span></div>
+        </div>
+      </div>
+
+    </div><!-- /panel 2 -->
+
+    <!-- PANEL 3: BUSINESS INTELLIGENCE -->
+    <div data-pg="rev" class="s8-panel--hidden">
+
+      <p class="admin-section-head">Business Intelligence</p>
+      <div class="s8-metric-grid" style="margin-bottom:1.5rem">
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Top Product (Revenue)</p>
+          <p class="s8-metric-value" style="font-size:.9rem">None yet</p>
+          <p class="s8-metric-note">Best positioned: Frequency Wars $15</p>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Top Service (Revenue)</p>
+          <p class="s8-metric-value" style="font-size:.9rem">None yet</p>
+          <p class="s8-metric-note">Best positioned: Brand Audit $275</p>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Top Market</p>
+          <p class="s8-metric-value" style="font-size:.9rem">US / UK</p>
+          <p class="s8-metric-note">Tier S — highest revenue potential</p>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Top Client</p>
+          <p class="s8-metric-value" style="font-size:.9rem">None yet</p>
+          <p class="s8-metric-note">First client not yet acquired</p>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Payment Infrastructure</p>
+          <p class="s8-metric-value" style="font-size:.9rem;color:var(--brass-1)">2 of 3 Live</p>
+          <p class="s8-metric-note">PayPal ✓ · Gumroad ✓ · Stripe pending</p>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Content Platforms Live</p>
+          <p class="s8-metric-value" style="font-size:.9rem;color:var(--brass-1)">5</p>
+          <p class="s8-metric-note">Bandcamp · SoundCloud · YouTube · Mixcloud · Vimeo</p>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Fastest Path to $100</p>
+          <p class="s8-metric-value" style="font-size:.85rem;color:var(--brass-1)">1 Consultation</p>
+          <p class="s8-metric-note">$125 Worldbuilding Consult via PayPal</p>
+        </div>
+        <div class="s8-metric-card">
+          <p class="s8-metric-label">Avg Days to Close</p>
+          <p class="s8-metric-value" style="font-size:.9rem">—</p>
+          <p class="s8-metric-note">No closed deals yet</p>
+        </div>
+      </div>
+
+      <p class="admin-section-head">Highest ROI Actions (Today)</p>
+      <div class="admin-table-wrap" style="margin-bottom:1.5rem">
+        <table class="admin-table">
+          <thead>
+            <tr><th>#</th><th>Action</th><th>Est. Revenue</th><th>Effort</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td class="td-title">Personal outreach — 5 contacts re: Worldbuilding Consultation</td>
+              <td>$125–$175 per close</td>
+              <td>1–2 hrs</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="td-title">Promote Codex of the Waste-Born ($5, limited 20)</td>
+              <td>$5 per sale · urgency</td>
+              <td>30 min</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td class="td-title">Post YouTube Short linking to Gumroad</td>
+              <td>Audience → funnel</td>
+              <td>1 hr</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="td-title">Share Entry Signal as lead magnet → upsell Violet Oath $10</td>
+              <td>$10 per upsell</td>
+              <td>30 min</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td class="td-title">Email past contacts re: Narrative Brand Audit ($275)</td>
+              <td>$275 per close</td>
+              <td>1 hr</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="s8-ai-prep">
+        <p class="s8-ai-prep-head">AI Preparation</p>
+        <div class="s8-ai-prep-grid">
+          <div class="s8-ai-row"><span class="s8-ai-label">Responsible Agent</span><span class="s8-ai-val">Research Agent (Active — manual reporting)</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">BI Automation Agent</span><span class="s8-ai-val">Blueprinted — Sprint 015+</span></div>
+          <div class="s8-ai-row"><span class="s8-ai-label">Creator Approval Required</span><span class="s8-ai-val badge badge--warn">All strategic decisions</span></div>
+        </div>
+      </div>
+
+    </div><!-- /panel 3 -->
+
+  </main>
+</div>
+<script src="../js/admin-utils.js" defer></script>
+</body>
+</html>
+
+
