@@ -9,23 +9,25 @@
 
 | Field | Value |
 |-------|-------|
-| Platform | RMHQ Creator OS v5.0 |
-| Sprint | Sprint 009C COMPLETE — Pre-Deploy Audit |
-| Next Action | 2 Creator actions required → then CLEARED FOR DEPLOY |
-| Admin Pages | 23 (all audited, all clean) |
+| Platform | **Ronin Monk Media Creator OS v2.0** |
+| Sprint | Sprint 009E/F COMPLETE — Code on GitHub |
+| Repository | https://github.com/shinobikush74/ronin-monk-media-site |
+| Commit | `0a17d44` — feat(v2): Mission Control, Audience Intelligence, Revenue Center… |
+| Admin Pages | 23 (all audited, all clean, all on GitHub) |
 | Revenue Status | Infrastructure complete · No confirmed paid sales yet |
-| Deployment | NOT YET — see Creator Actions below |
+| Deployment | **PENDING — 1 Creator action: reconnect Netlify to new repo** |
 
 ---
 
-## DEPLOYMENT CLEARANCE — 2 CREATOR ACTIONS REQUIRED
+## NETLIFY RECONNECT — CREATOR ACTION REQUIRED
 
 | # | Action | Where | Status |
 |---|--------|--------|--------|
-| C3 | Configure Netlify Forms email notifications | Netlify dashboard → Site → Forms → codex-signup + contact → Notifications | **Creator to complete** |
-| C4 | Verify PayPal payment link is correct | Open `paypal.com/ncp/payment/VNU3CJ7J34D5Q` in browser and confirm it's your payment page | **Creator to complete** |
+| C1 | Connect Netlify to new GitHub repo | Netlify → Site config → Build & deploy → Repository → Link to `shinobikush74/ronin-monk-media-site` · branch: `main` · publish dir: `.` · no build command | **Creator to complete** |
+| C2 | Configure Netlify Forms email notifications | Netlify → Site → Forms → codex-signup + contact → Notifications (after first deploy completes) | **Creator to complete post-deploy** |
+| C3 | Verify PayPal payment link | Open `paypal.com/ncp/payment/VNU3CJ7J34D5Q` and confirm it's your page | **Creator to complete** |
 
-**After both actions: platform is CLEARED FOR DEPLOYMENT.**
+**After C1: Netlify auto-deploys. Claude performs production audit. Then Claude stops for Sprint 010 approval.**
 
 ---
 

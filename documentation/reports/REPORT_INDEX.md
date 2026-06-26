@@ -20,6 +20,7 @@
 | RPT-012 | SPR_009B_DEPLOYMENT_BLOCKER_FIX_RELEASE_PACKET.md | 009B | Deployment Blocker Fix — External JS + CSP frame-src | 2026-06-26 | Complete |
 | RPT-013 | SPR_009C_PRE_DEPLOY_AUDIT_REPORT.md | 009C | Final Pre-Deploy Audit — 2 fixes applied, 93/100 readiness | 2026-06-26 | Complete |
 | RPT-014 | SPR_009D_PUBLIC_SITE_CSS_HOTFIX.md | 009D | Public Site CSS Hotfix — 15 pages fixed, 0 root-relative paths remain | 2026-06-26 | Complete |
+| RPT-015 | SPR_009E_009F_GITHUB_DEPLOYMENT_REPORT.md | 009E/F | GitHub Push — 81 files to ronin-monk-media-site, Creator OS v2.0 on GitHub | 2026-06-26 | Complete |
 
 ---
 

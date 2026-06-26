@@ -133,6 +133,17 @@
 
 ---
 
+## TASK-019 | Sprint 009E/F — GitHub Repository Push
+**Date:** 2026-06-26
+**Repository:** https://github.com/shinobikush74/ronin-monk-media-site
+**Commit:** `0a17d44` — feat(v2): Mission Control, Audience Intelligence, Revenue Center, Knowledge Center, Netlify production hardening
+**Files committed:** 81 files, 13,026 insertions
+**Protected IP excluded:** `codex-primer-drafts/`, `midjourney-prompts/`, `twine-adventure/`, `pages/blog/_TEMPLATE.html`
+**Issue resolved:** Initial remote pointed to `veil-codex-core` (Sky Khan Lore Engine — wrong repo). Remote corrected to `ronin-monk-media-site` before push. No force push. No history overwrite.
+**Outcome:** Ronin Monk Media Creator OS v2.0 codebase live on GitHub. Netlify reconnect pending Creator action.
+
+---
+
 ## TASK-018 | Sprint 009D — Public Site CSS Hotfix
 **Date:** 2026-06-26
 **Root Cause:** All 15 public pages used root-relative CSS/JS paths (`/css/styles.css`, `/js/main.js`). These fail when pages are opened via file:// protocol on Windows — browser resolves `/` as `C:\`, not the project root. Same root cause fixed for admin pages in Sprint 009A but not applied to public pages at that time.
