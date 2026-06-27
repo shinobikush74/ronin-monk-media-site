@@ -50,6 +50,7 @@
 | 012B | Constitution v1.4 — Compounding Principle | **Complete** | 2026-06-26 | Amendment: Compounding Principle. Constitution LOCKED at v1.4. |
 | 013 | Operation Forge Order 003 — Revenue Acceleration System v1.0 | **Complete** | 2026-06-26 | RAS v1.0 built. 7 command modules (6 new HTML pages). 4 documentation playbooks. Sprint 013 CSS (.s13-*). Mission Control rebuilt with RAS integration. |
 | 014 | Operation Forge Order 004 — First Revenue Campaign | **Complete** | 2026-06-26 | 5 campaigns live. 4 new admin pages. 9 documentation files. 5 proposal templates. Sprint 014 CSS (.s14-*). Mission Control: Revenue Focus panel + Campaign strip. |
+| 014A | Operation Forge Order 004A — Opportunity Acquisition System v1.0 | **AWAITING CREATOR APPROVAL** | 2026-06-26 | OAS v1.0 built. 6 modules, 6 documentation files, 1 new admin page (opportunity-acquisition.html). Sprint 014A CSS (.s14a-*). 15 target client types. 3 example audits. 3 example outreach messages. 1 complete transformation proposal. Mission Control updated. |
 
 ---
 

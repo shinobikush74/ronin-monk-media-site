@@ -41,7 +41,8 @@
 | RPT-028 | SPR_012_RELEASE_PACKET.md | 012 | Operation Forge — ROS v1.0 Architecture Presentation | 2026-06-26 | Complete |
 | RPT-031 | SPR_012A_RELEASE_PACKET.md | 012A | Constitution v1.3 — Phase IV Declaration | 2026-06-26 | Complete |
 | RPT-032 | SPR_013_RELEASE_PACKET.md | 013 | Operation Forge Order 003 — Revenue Acceleration System v1.0 | 2026-06-26 | Complete |
-| RPT-033 | SPR_014_RELEASE_PACKET.md | 014 | Operation Forge Order 004 — First Revenue Campaign | 2026-06-26 | **AWAITING CREATOR APPROVAL** |
+| RPT-033 | SPR_014_RELEASE_PACKET.md | 014 | Operation Forge Order 004 — First Revenue Campaign | 2026-06-26 | Complete |
+| RPT-046 | SPR_014A_RELEASE_PACKET.md | 014A | Operation Forge Order 004A — Opportunity Acquisition System v1.0 | 2026-06-26 | **AWAITING CREATOR APPROVAL** |
 | RPT-028 | ../BRAND_DOCTRINE.md | 010A | Brand Doctrine — Applied synthesis of the Constitution into operational brand standards | 2026-06-26 | Active |
 
 ---
