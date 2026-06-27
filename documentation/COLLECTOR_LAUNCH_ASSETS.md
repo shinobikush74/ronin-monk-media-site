@@ -30,16 +30,17 @@ Convert the Sky Khan universe into a living collector economy. Give the right pe
 ## BUNDLE STRATEGY
 
 ### Bundle 1 — The Order Starter Pack ($18)
+**URL:** https://roninmonkmedia.gumroad.com/l/uklpa  
 **Contents:** Entry Signal + Codex ($5) + Violet Oath ($10) = $15 value sold for $18  
-**Wait** — bundle is priced higher to capture the convenience premium, not as a discount. Bundles are for the collector who wants to commit, not the bargain hunter.  
 **Promotion:** "Start here. Three texts. The Order begins."  
-**Status:** Creator must create this bundle on Gumroad.
+**Status:** LIVE ✅
 
 ### Bundle 2 — The Vault Collection ($27)
+**URL:** https://roninmonkmedia.gumroad.com/l/kxxlea  
 **Contents:** All four artifacts (Entry Signal + Codex + Violet Oath + Frequency Wars) = $30 separately  
 **Save $3** — the only true discount in the catalog  
 **Promotion:** "The complete collection. One universe. Four texts."  
-**Status:** Creator must create this bundle on Gumroad.
+**Status:** LIVE ✅
 
 ### Bundle 3 — Music + Lore Bundle (Planned)
 **Contents:** Dee Lite track on Bandcamp + Codex ($5) = Entry into both sound and lore  
